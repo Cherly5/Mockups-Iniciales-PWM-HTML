@@ -1,0 +1,164 @@
+.stats-container1 {
+  width: 100%;
+  flex-direction: column;
+}
+ 
+.stats-max-width {
+  gap: var(--dl-space-space-fourunits);
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+ 
+.stats-container2 {
+  max-width: 50%;
+}
+ 
+.stats-container3 {
+  align-self: center;
+  align-items: flex-start;
+  margin-left: auto;
+}
+ 
+.stats-container4 {
+  width: 100%;
+}
+ 
+.stats-container5 {
+  width: 100%;
+  height: 100%;
+  align-items: flex-start;
+}
+ 
+.stats-container6 {
+  width: 100%;
+  height: 100%;
+  align-items: flex-start;
+}
+ 
+.stats-container7 {
+  width: 100%;
+}
+ 
+.stats-container8 {
+  width: 100%;
+  height: 100%;
+  align-items: flex-start;
+}
+ 
+.stats-container9 {
+  width: 100%;
+  height: 100%;
+  align-items: flex-start;
+}
+ 
+.stats-fragment10 {
+  display: contents;
+}
+ 
+.stats-text21 {
+  display: inline-block;
+}
+ 
+.stats-fragment11 {
+  display: contents;
+}
+ 
+.stats-text22 {
+  display: inline-block;
+}
+ 
+.stats-fragment12 {
+  display: contents;
+}
+ 
+.stats-text23 {
+  display: inline-block;
+}
+ 
+.stats-fragment13 {
+  display: contents;
+}
+ 
+.stats-text24 {
+  display: inline-block;
+}
+ 
+.stats-fragment14 {
+  display: contents;
+}
+ 
+.stats-text25 {
+  display: inline-block;
+}
+ 
+.stats-fragment15 {
+  display: contents;
+}
+ 
+.stats-text26 {
+  display: inline-block;
+}
+ 
+.stats-fragment16 {
+  display: contents;
+}
+ 
+.stats-text27 {
+  display: inline-block;
+}
+ 
+.stats-fragment17 {
+  display: contents;
+}
+ 
+.stats-text28 {
+  display: inline-block;
+}
+ 
+.stats-fragment18 {
+  display: contents;
+}
+ 
+.stats-text29 {
+  display: inline-block;
+}
+ 
+.stats-fragment19 {
+  display: contents;
+}
+ 
+.stats-text30 {
+  display: inline-block;
+}
+ 
+.stats-fragment20 {
+  display: contents;
+}
+ 
+.stats-text31 {
+  display: inline-block;
+}
+ 
+@media(max-width: 991px) {
+  .stats-max-width {
+    gap: var(--dl-space-space-twounits);
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .stats-container2 {
+    width: 100%;
+    max-width: 100%;
+  }
+  .stats-container3 {
+    align-self: flex-start;
+    margin-left: 0px;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .stats-image {
+    width: 100%;
+  }
+}

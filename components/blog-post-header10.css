@@ -1,0 +1,148 @@
+.blog-post-header10-blog-post-header3 {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+ 
+.blog-post-header10-max-width {
+  gap: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.blog-post-header10-heading {
+  align-self: center;
+  text-align: center;
+}
+ 
+.blog-post-header10-image {
+  width: 50%;
+  object-fit: cover;
+}
+ 
+.blog-post-header10-container1 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+ 
+.blog-post-header10-container2 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+ 
+.blog-post-header10-content {
+  gap: var(--dl-space-space-oneandhalfunits);
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+}
+ 
+.blog-post-header10-author-name {
+  font-size: 32px;
+  align-self: flex-start;
+  font-style: italic;
+  text-align: left;
+  font-weight: 200;
+}
+ 
+.blog-post-header10-share-buttons1 {
+  align-self: flex-start;
+}
+ 
+.blog-post-header10-content-recipe-tags {
+  gap: var(--dl-space-space-oneandhalfunits);
+  width: 564px;
+  height: 100%;
+  display: flex;
+  align-self: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: center;
+}
+ 
+.blog-post-header10-share-buttons2 {
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  align-self: flex-start;
+}
+ 
+.blog-post-header10-container3 {
+  width: 263px;
+  height: 108px;
+}
+ 
+.blog-post-header10-container4 {
+  display: contents;
+}
+ 
+.blog-post-header10-fragment1 {
+  display: contents;
+}
+ 
+.blog-post-header10-text1 {
+  display: inline-block;
+}
+ 
+.blog-post-header10-fragment2 {
+  display: contents;
+}
+ 
+.blog-post-header10-text2 {
+  display: inline-block;
+}
+ 
+.blog-post-header10-fragment3 {
+  display: contents;
+}
+ 
+.blog-post-header10-text3 {
+  display: inline-block;
+}
+ 
+@media(max-width: 991px) {
+  .blog-post-header10-card {
+    flex-direction: column;
+  }
+  .blog-post-header10-image {
+    width: 100%;
+    height: 500px;
+  }
+  .blog-post-header10-content {
+    width: 100%;
+  }
+  .blog-post-header10-content-recipe-tags {
+    width: 100%;
+  }
+}
+ 
+@media(max-width: 767px) {
+  .blog-post-header10-content {
+    flex-direction: column;
+  }
+  .blog-post-header10-content-recipe-tags {
+    flex-direction: column;
+  }
+}
+ 
+@media(max-width: 479px) {
+  .blog-post-header10-title {
+    text-align: center;
+  }
+  .blog-post-header10-author-name {
+    align-self: center;
+  }
+  .blog-post-header10-share-buttons1 {
+    align-self: center;
+  }
+  .blog-post-header10-share-buttons2 {
+    align-self: center;
+  }
+}

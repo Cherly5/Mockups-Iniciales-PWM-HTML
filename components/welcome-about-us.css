@@ -1,0 +1,93 @@
+.welcome-about-us-header26 {
+  gap: var(--dl-space-space-twounits);
+}
+ 
+.welcome-about-us-max-width {
+  align-self: center;
+}
+ 
+.welcome-about-us-column {
+  gap: var(--dl-space-space-oneandhalfunits);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+ 
+.welcome-about-us-content {
+  gap: var(--dl-space-space-oneandhalfunits);
+  width: 100%;
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.welcome-about-us-text1 {
+  text-align: center;
+}
+ 
+.welcome-about-us-text2 {
+  text-align: center;
+}
+ 
+.welcome-about-us-actions {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  align-items: flex-start;
+}
+ 
+.welcome-about-us-button2 {
+  animation-name: none;
+  animation-delay: 0s;
+  animation-duration: 300ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+ 
+.welcome-about-us-fragment1 {
+  display: contents;
+}
+ 
+.welcome-about-us-text5 {
+  display: inline-block;
+}
+ 
+.welcome-about-us-fragment2 {
+  display: contents;
+}
+ 
+.welcome-about-us-text6 {
+  display: inline-block;
+}
+ 
+.welcome-about-us-fragment3 {
+  display: contents;
+}
+ 
+.welcome-about-us-text7 {
+  display: inline-block;
+}
+ 
+.welcome-about-us-fragment4 {
+  display: contents;
+}
+ 
+.welcome-about-us-text8 {
+  display: inline-block;
+}
+ 
+@media(max-width: 479px) {
+  .welcome-about-us-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+  .welcome-about-us-button1 {
+    width: 100%;
+  }
+  .welcome-about-us-button2 {
+    width: 100%;
+  }
+}
