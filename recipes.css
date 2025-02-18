@@ -3343,7 +3343,29 @@
 }
  
 .intro-container2 {
-  display: contents;
+  /* display: contents; */
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  animation: scroll-x 5s linear infinite; /* Usa la animación horizontal */
+}
+
+@keyframes scroll-x {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - 16px));
+  }
+}
+
+@keyframes scroll-y {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(calc(-100% - 16px));
+  }
 }
  
 .recipes-fragment92 {
