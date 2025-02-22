@@ -1,0 +1,53 @@
+Este código en el <head> de tu documento HTML está añadiendo dos bloques de estilo (CSS) a tu página web.
+ A continuación, te explico qué hace cada uno de estos bloques:
+
+1. Estilos de "reset" (data-tag="reset-style-sheet"):
+Este bloque de CSS es un reset de estilo básico,
+lo cual significa que intenta normalizar la apariencia de los elementos en diferentes navegadores.
+Los reset styles hacen que los elementos de HTML se vean de manera consistente sin importar el navegador o dispositivo.
+Aquí están las principales cosas que hace:
+
+html { line-height: 1.15; }: Define el alto de línea en el elemento <html>, ayudando a la legibilidad del texto.
+
+body { margin: 0; }: Elimina el margen predeterminado del cuerpo de la página.
+
+* { box-sizing: border-box; }: Cambia el modelo de caja de todos los elementos a border-box,
+lo que significa que el ancho y alto incluyen los bordes y el relleno.
+
+p, li, ul, pre, div, h1, h2, h3, h4, h5, h6, figure, blockquote, figcaption { margin: 0; padding: 0; }:
+Elimina márgenes y rellenos predeterminados en varios elementos para tener un control más preciso.
+
+button, input, optgroup, select, textarea { font-family: inherit; }: Hereda la fuente en los elementos de
+formulario como botones e inputs.
+
+button { background-color: transparent; }: Elimina el fondo de los botones.
+
+button:focus, [type="button"]:focus { outline: 1px dotted ButtonText; }:
+Define un estilo de contorno al hacer foco en botones e inputs.
+
+a { color: inherit; text-decoration: inherit; }: Hace que los enlaces hereden los estilos de color y decoración
+de texto del entorno, es decir, no tendrán el color azul ni subrayado por defecto.
+
+img { display: block; }: Cambia la visualización de las imágenes para que se comporten como elementos de bloque
+(evitando espacio en blanco debajo de ellas).
+
+details { display: block; }: Asegura que los elementos <details> se comporten como bloques y no tengan márgenes
+ni rellenos adicionales.
+
+html { scroll-behavior: smooth; }: Activa el desplazamiento suave para la página, lo que hace que cuando se navega
+por anclajes, el desplazamiento sea más fluido.
+
+
+2. Estilos predeterminados (data-tag="default-style-sheet"):
+Este bloque define los estilos predeterminados para la fuente y los colores de la página:
+
+html { font-family: Inter, serif; font-size: 16px; }: Establece la fuente de la página como Inter (una fuente sans-serif) y un tamaño de fuente de 16px.
+body { font-weight: 400; font-style: normal; text-decoration: none; text-transform: none; letter-spacing: normal; line-height: 1.15; color: var(--dl-color-theme-neutral-dark); background: var(--dl-color-theme-neutral-light); fill: var(--dl-color-theme-neutral-dark); }: Aplica los siguientes estilos al cuerpo de la página:
+font-weight: 400 (peso de fuente normal).
+font-style: normal (sin cursivas).
+text-decoration: none (sin decoraciones de texto como subrayado).
+text-transform: none (sin transformación de texto como mayúsculas).
+letter-spacing: normal (espaciado normal entre letras).
+line-height: 1.15 (alineación de texto).
+color: var(--dl-color-theme-neutral-dark) y background: var(--dl-color-theme-neutral-light) utilizan variables CSS para definir los colores de texto y fondo de la página.
+En resumen, el primer bloque hace un restablecimiento de estilos (eliminando márgenes y rellenos predeterminados y asegurando que los elementos sean consistentes entre navegadores), y el segundo bloque establece los estilos visuales básicos para la página, como la fuente, colores y estilo del texto.

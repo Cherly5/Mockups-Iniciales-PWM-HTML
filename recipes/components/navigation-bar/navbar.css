@@ -1,0 +1,304 @@
+.navbar-wrapper {
+    display: contents;
+}
+
+.navbar-menu-listed-column-item {
+    gap: var(--dl-space-space-unit);
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    padding: var(--dl-space-space-oneandhalfunits);
+    align-self: stretch;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.navbar-menu-header-item {
+    gap: var(--dl-space-space-unit);
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    padding: var(--dl-space-space-oneandhalfunits);
+    align-self: stretch;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+
+.navbar-menu-listed-column-item-content {
+    width: 340px;
+    display: flex;
+    flex-grow: 1;
+    align-items: flex-start;
+    flex-shrink: 0;
+    flex-direction: column;
+}
+
+.navbar-menu-header-item-content {
+    display: flex;
+    flex-grow: 1;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.navbar-page-image {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar-fragment {
+    display: contents;
+}
+
+.navbar-text {
+    display: inline-block;
+}
+
+
+.navbar-page {
+    font-style: normal;
+    font-weight: 600;
+}
+
+
+
+
+.navbar-container1 {
+    top: 0;
+    width: 100%;
+    display: flex;
+    z-index: 1000;
+    position: sticky;
+    justify-content: center;
+    background-color: var(--dl-color-theme-neutral-light);
+}
+
+.navbar-container2 {
+    display: flex;
+    align-items: center;
+    animation-name: rotateInDownLeft;
+    flex-direction: row;
+    animation-delay: 0s;
+    justify-content: flex-end;
+    animation-duration: 500ms;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+.navbar-container5 {
+    width: 100%;
+    display: grid;
+    grid-gap: var(--dl-space-space-halfunit);
+    grid-template-columns: 1fr;
+}
+
+.navbar-container6 {
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    animation-name: fadeInDownBig;
+    animation-delay: 0s;
+    justify-content: center;
+    background-color: var(--dl-color-theme-neutral-light);
+    animation-duration: 300ms;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+
+
+.navbar-navbar-interactive {
+    width: 100%;
+    display: flex;
+    z-index: 100;
+    max-width: var(--dl-size-size-maxwidth);
+    align-items: center;
+    padding-left: var(--dl-space-space-threeunits);
+    padding-right: var(--dl-space-space-threeunits);
+    padding-bottom: var(--dl-space-space-oneandhalfunits);
+    justify-content: space-between;
+}
+
+.navbar-desktop-menu {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-image {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+}
+
+.navbar-links1 {
+    gap: var(--dl-space-space-twounits);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-left: var(--dl-space-space-twounits);
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.navbar-links2 {
+    gap: var(--dl-space-space-unit);
+    flex: 0 0 auto;
+    width: 100%;
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+}
+
+
+.navbar-link4-dropdown-trigger {
+    gap: 4px;
+    cursor: pointer;
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+.navbar-link5-menu-list {
+    width: 100%;
+    display: grid;
+    padding: var(--dl-space-space-oneandhalfunits);
+    grid-gap: var(--dl-space-space-halfunit);
+    max-width: var(--dl-size-size-maxwidth);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.navbar-icon-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+.navbar-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.navbar-icon-pop-up {
+    width: var(--dl-size-size-xsmall);
+    height: var(--dl-size-size-xsmall);
+}
+
+.navbar-buttons1,.navbar-buttons2 {
+    gap: var(--dl-space-space-twounits);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.navbar-buttons2 {
+    margin-top: var(--dl-space-space-twounits);
+}
+
+.navbar-action {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-burger-menu {
+    display: none;
+}
+
+.navbar-mobile-menu {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    padding: var(--dl-space-space-twounits);
+    z-index: 100;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--dl-color-theme-neutral-light);
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.navbar-top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--dl-space-space-threeunits);
+    justify-content: space-between;
+}
+
+.navbar-logo {
+    height: 3rem;
+}
+
+.navbar-close-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-trigger {
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.navbar-icon-group {
+    gap: var(--dl-space-space-twounits);
+    display: flex;
+}
+
+
+@media(max-width: 767px) {
+    .navbar-navbar-interactive {
+        padding-left: var(--dl-space-space-twounits);
+        padding-right: var(--dl-space-space-twounits);
+    }
+    .navbar-desktop-menu {
+        display: none;
+    }
+    .navbar-burger-menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar-mobile-menu {
+        padding-top: var(--dl-space-space-oneandhalfunits);
+        padding-bottom: var(--dl-space-space-oneandhalfunits);
+    }
+    .navbar-container5 {
+        grid-gap: 0;
+    }
+    .navbar-link5-menu-list {
+        display: none;
+    }
+}
+
+@media(max-width: 479px) {
+    .navbar-navbar-interactive {
+        padding: var(--dl-space-space-unit);
+    }
+    .navbar-mobile-menu {
+        padding: var(--dl-space-space-unit);
+    }
+}
