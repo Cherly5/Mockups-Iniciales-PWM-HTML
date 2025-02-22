@@ -58,7 +58,8 @@
 <div>
   <link href="./recipes.css" rel="stylesheet" />
   <link href="./components/navigation-bar/navbar.css" rel="stylesheet" />
-
+  <link href="./components/welcome-browser/welcome-browser.css" rel="stylesheet" />
+  <link href="./components/popular-ingredients/popular-ingredients.css" rel="stylesheet" />
   <div class="recipes-container">
     <navbar-wrapper class="navbar-wrapper" rootclassname="navbarundefined">
 
@@ -395,249 +396,240 @@
 
       </header>
     </navbar-wrapper>
-
-    <hero9-wrapper class="hero9-wrapper">
-      <!--Hero9 component-->
-      <div class="hero9-header30 thq-section-padding">
+    <welcome-browser-wrapper class="welcome-browser-wrapper">
+      <div class="welcome-browser-header thq-section-padding">
         <img
                 alt="Image of a variety of delicious dishes"
                 src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MDM5Mnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                class="hero9-image"
+                class="welcome-browser-image"
         />
-        <div class="hero9-container"></div>
-        <div class="hero9-max-width thq-section-max-width">
-          <div class="hero9-content">
-            <h1 class="hero9-text1 thq-heading-1">
-              <fragment class="recipes-fragment27">
-                    <span class="recipes-text29">
-                      Discover Delicious Recipes
-                    </span>
+        <div class="welcome-browser-container"></div>
+        <div class="welcome-browser-max-width thq-section-max-width">
+          <div class="welcome-browser-content">
+            <h1 class="welcome-browser-text thq-heading-1">
+              <fragment class="welcome-browser-fragment">
+                <span class="welcome-browser-text-inline">Discover Delicious Recipes</span>
               </fragment>
             </h1>
-            <p class="hero9-text2 thq-body-large">
-              <fragment class="recipes-fragment26">
-                    <span class="recipes-text28">
-                      Explore a wide range of mouth-watering recipes from around
-                      the world. From quick and easy meals to gourmet dishes, we
-                      have something for every taste bud.
-                    </span>
+            <p class="welcome-browser-text thq-body-large">
+              <fragment class="welcome-browser-fragment">
+                <span class="welcome-browser-text-inline">
+                  Explore a wide range of mouth-watering recipes from around the
+                  world. From quick and easy meals to gourmet dishes, we have
+                  something for every taste bud.
+                </span>
               </fragment>
             </p>
-            <div class="hero9-actions">
-              <button class="thq-button-filled hero9-button1">
-                    <span class="hero9-text3 thq-body-small">
-                      <fragment class="recipes-fragment24">
-                        <span class="recipes-text26">Browse Recipes</span>
-                      </fragment>
-                    </span>
+            <div class="welcome-browser-actions">
+              <button class="thq-button-filled welcome-browser-button">
+                <span class="welcome-browser-text thq-body-small">
+                  <fragment class="welcome-browser-fragment">
+                    <span class="welcome-browser-text-inline">Browse Recipes</span>
+                  </fragment>
+                </span>
               </button>
-              <button class="thq-button-outline hero9-button2">
-                    <span class="hero9-text4 thq-body-small">
-                      <fragment class="recipes-fragment25">
-                        <span class="recipes-text27">Get Cooking</span>
-                      </fragment>
-                    </span>
+              <button class="thq-button-outline welcome-browser-button">
+                <span class="welcome-browser-text thq-body-small">
+                  <fragment class="welcome-browser-fragment">
+                    <span class="welcome-browser-text-inline">Get Cooking</span>
+                  </fragment>
+                </span>
               </button>
             </div>
           </div>
         </div>
       </div>
-    </hero9-wrapper>
-    <features22-wrapper class="features22-wrapper">
-      <!--Features22 component-->
-      <div class="features22-layout349 thq-section-padding">
-        <div class="features22-max-width thq-section-max-width">
-          <div class="features22-container1">
+    </welcome-browser-wrapper>
+    <ingredients-wrapper class="ingredients-wrapper">
+      <div class="ingredients-layout thq-section-padding">
+        <div class="ingredients-max-width thq-section-max-width">
+          <div class="ingredients-container1">
             <h2 class="thq-heading-2">
-              <fragment class="recipes-fragment29">
-                <span class="recipes-text31">Popular Ingredients</span>
+              <fragment class="ingredients-fragment">
+                <span class="ingredients-text-inline">Features</span>
               </fragment>
             </h2>
-            <span class="features22-text11 thq-body-small">
-                  <fragment class="recipes-fragment28">
-                    <span class="recipes-text30">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Suspendisse varius enim in eros elementum tristique. Duis
-                      cursus, mi quis viverra ornare, eros dolor interdum nulla.
-                    </span>
-                  </fragment>
+            <span class="ingredients-text thq-body-small">
+              <fragment class="ingredients-fragment">
+                <span class="ingredients-text-inline">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Suspendisse varius enim in eros elementum tristique. Duis
+                  cursus, mi quis viverra ornare, eros dolor interdum nulla.
                 </span>
+              </fragment>
+            </span>
           </div>
-          <div class="features22-container2 thq-grid-auto-300">
-            <div class="features22-card1 thq-flex-column thq-card">
+          <div class="ingredients-container2 thq-grid-auto-300">
+            <div class="ingredients-card thq-flex-column thq-card">
               <img
                       alt="Image depicting a variety of dishes from different cultures"
                       src="https://images.unsplash.com/photo-1636773572958-4601d8d0b222?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjUwMHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                      class="features22-image1 thq-img-round thq-img-ratio-1-1"
+                      class="ingredients-image thq-img-round thq-img-ratio-1-1"
               />
               <h2 class="thq-heading-2">
-                <fragment class="recipes-fragment30">
-                      <span class="recipes-text32">
-                        Wide Variety of Recipes
-                      </span>
+                <fragment class="ingredients-fragment">
+                  <span class="ingredients-text-inline">Wide Variety of Recipes</span>
                 </fragment>
               </h2>
-              <span class="features22-text13 thq-body-small">
-                    <fragment class="recipes-fragment38">
-                      <span class="recipes-text40">
-                        Explore a diverse range of delicious recipes from
-                        different cuisines.
-                      </span>
-                    </fragment>
+              <span class="ingredients-text thq-body-small">
+                <fragment class="ingredients-fragment">
+                  <span class="ingredients-text-inline">
+                    Explore a diverse range of delicious recipes from different
+                    cuisines.
                   </span>
+                </fragment>
+              </span>
             </div>
-            <div class="features22-card2 thq-flex-column thq-card">
+            <div class="ingredients-card thq-flex-column thq-card">
               <img
                       alt="Image showing a cooking process with clear instructions"
                       src="https://images.unsplash.com/photo-1510693206972-df098062cb71?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjUwMXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                      class="features22-image2 thq-img-round thq-img-ratio-1-1"
+                      class="ingredients-image thq-img-round thq-img-ratio-1-1"
               />
               <h2 class="thq-heading-2">
-                <fragment class="recipes-fragment31">
-                      <span class="recipes-text33">
-                        Step-by-Step Instructions
-                      </span>
+                <fragment class="ingredients-fragment">
+                  <span class="ingredients-text-inline">
+                    Step-by-Step Instructions
+                  </span>
                 </fragment>
               </h2>
-              <span class="features22-text15 thq-body-small">
-                    <fragment class="recipes-fragment39">
-                      <span class="recipes-text41">
-                        Follow easy-to-understand recipes with detailed
-                        step-by-step instructions.
-                      </span>
-                    </fragment>
+              <span class="ingredients-text thq-body-small">
+                <fragment class="ingredients-fragment">
+                  <span class="ingredients-text-inline">
+                    Follow easy-to-understand recipes with detailed step-by-step
+                    instructions.
                   </span>
+                </fragment>
+              </span>
             </div>
-            <div class="features22-card3 thq-flex-column thq-card">
+            <div class="ingredients-card thq-flex-column thq-card">
               <img
                       alt="Image showcasing different ingredient options for substitution"
                       src="https://images.unsplash.com/photo-1570112686245-ec7e043ad444?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjUwMXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                      class="features22-image3 thq-img-round thq-img-ratio-1-1"
+                      class="ingredients-image thq-img-round thq-img-ratio-1-1"
               />
               <h1 class="thq-heading-2">
-                <fragment class="recipes-fragment32">
-                      <span class="recipes-text34">
-                        Ingredient Substitution Advice
-                      </span>
+                <fragment class="ingredients-fragment">
+                  <span class="ingredients-text-inline">
+                    Ingredient Substitution Advice
+                  </span>
                 </fragment>
               </h1>
-              <span class="features22-text17 thq-body-small">
-                    <fragment class="recipes-fragment40">
-                      <span class="recipes-text42">
-                        Find helpful tips on substituting ingredients to suit
-                        dietary preferences or restrictions.
-                      </span>
-                    </fragment>
+              <span class="ingredients-text thq-body-small">
+                <fragment class="ingredients-fragment">
+                  <span class="ingredients-text-inline">
+                    Find helpful tips on substituting ingredients to suit
+                    dietary preferences or restrictions.
                   </span>
+                </fragment>
+              </span>
             </div>
-            <div class="features22-card4 thq-flex-column thq-card">
+            <div class="ingredients-card thq-flex-column thq-card">
               <img
                       alt="Image featuring fresh and high-quality food ingredients"
                       src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjUwMXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                      class="features22-image4 thq-img-round thq-img-ratio-1-1"
+                      class="ingredients-image thq-img-round thq-img-ratio-1-1"
               />
               <h1 class="thq-heading-2">
-                <fragment class="recipes-fragment33">
-                  <span class="recipes-text35">Quality Ingredients</span>
+                <fragment class="ingredients-fragment">
+                  <span class="ingredients-text-inline">Quality Ingredients</span>
                 </fragment>
               </h1>
-              <span class="features22-text19 thq-body-small">
-                    <fragment class="recipes-fragment41">
-                      <span class="recipes-text43">
-                        Learn about the importance of using quality ingredients
-                        in your cooking.
-                      </span>
-                    </fragment>
+              <span class="ingredients-text thq-body-small">
+                <fragment class="ingredients-fragment">
+                  <span class="ingredients-text-inline">
+                    Learn about the importance of using quality ingredients in
+                    your cooking.
                   </span>
+                </fragment>
+              </span>
             </div>
-            <div class="features22-card5 thq-flex-column thq-card">
+            <div class="ingredients-card thq-flex-column thq-card">
               <img
                       alt="Image showing positive reviews and feedback from users"
                       src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjQ5OXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                      class="features22-image5 thq-img-round thq-img-ratio-1-1"
+                      class="ingredients-image thq-img-round thq-img-ratio-1-1"
               />
               <h1 class="thq-heading-2">
-                <fragment class="recipes-fragment34">
-                      <span class="recipes-text36">
-                        Testimonials from Users
-                      </span>
+                <fragment class="ingredients-fragment">
+                  <span class="ingredients-text-inline">Testimonials from Users</span>
                 </fragment>
               </h1>
-              <span class="features22-text21 thq-body-small">
-                    <fragment class="recipes-fragment42">
-                      <span class="recipes-text44">
-                        Read testimonials from satisfied users who have tried
-                        and loved our recipes.
-                      </span>
-                    </fragment>
+              <span class="ingredients-text thq-body-small">
+                <fragment class="ingredients-fragment">
+                  <span class="ingredients-text-inline">
+                    Read testimonials from satisfied users who have tried and
+                    loved our recipes.
                   </span>
+                </fragment>
+              </span>
             </div>
-            <div class="features22-card6 thq-flex-column thq-card">
+            <div class="ingredients-card thq-flex-column thq-card">
               <img
                       alt="Image illustrating current food trends and popular dishes"
                       src="https://images.unsplash.com/photo-1510403926823-881457de56ba?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjUwMXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                      class="features22-image6 thq-img-round thq-img-ratio-1-1"
+                      class="ingredients-image thq-img-round thq-img-ratio-1-1"
               />
               <h1 class="thq-heading-2">
-                <fragment class="recipes-fragment35">
-                  <span class="recipes-text37">Food Trends Articles</span>
+                <fragment class="ingredients-fragment">
+                  <span class="ingredients-text-inline">Food Trends Articles</span>
                 </fragment>
               </h1>
-              <span class="features22-text23 thq-body-small">
-                    <fragment class="recipes-fragment43">
-                      <span class="recipes-text45">
-                        Stay updated on the latest food trends and culinary
-                        innovations.
-                      </span>
-                    </fragment>
+              <span class="ingredients-text thq-body-small">
+                <fragment class="ingredients-fragment">
+                  <span class="ingredients-text-inline">
+                    Stay updated on the latest food trends and culinary
+                    innovations.
                   </span>
+                </fragment>
+              </span>
             </div>
-            <div class="features22-card7 thq-flex-column thq-card">
+            <div class="ingredients-card thq-flex-column thq-card">
               <img
                       alt="Image representing partnership and collaboration in the culinary world"
                       src="https://images.unsplash.com/photo-1585162344582-ac008beec6e2?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjUwMHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                      class="features22-image7 thq-img-round thq-img-ratio-1-1"
+                      class="ingredients-image thq-img-round thq-img-ratio-1-1"
               />
               <h1 class="thq-heading-2">
-                <fragment class="recipes-fragment36">
-                      <span class="recipes-text38">
-                        Collaboration Opportunities
-                      </span>
+                <fragment class="ingredients-fragment">
+                  <span class="ingredients-text-inline">
+                    Collaboration Opportunities
+                  </span>
                 </fragment>
               </h1>
-              <span class="features22-text25 thq-body-small">
-                    <fragment class="recipes-fragment44">
-                      <span class="recipes-text46">
-                        Connect with us for inquiries or collaborations in the
-                        food industry.
-                      </span>
-                    </fragment>
+              <span class="ingredients-text thq-body-small">
+                <fragment class="ingredients-fragment">
+                  <span class="ingredients-text-inline">
+                    Connect with us for inquiries or collaborations in the food
+                    industry.
                   </span>
+                </fragment>
+              </span>
             </div>
-            <div class="features22-card8 thq-flex-column thq-card">
+            <div class="ingredients-card thq-flex-column thq-card">
               <img
                       alt="Image showing a chef sharing cooking tips and advice"
                       src="https://images.unsplash.com/photo-1636648980523-ab269ed42385?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjUwMHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                      class="features22-image8 thq-img-round thq-img-ratio-1-1"
+                      class="ingredients-image thq-img-round thq-img-ratio-1-1"
               />
               <h1 class="thq-heading-2">
-                <fragment class="recipes-fragment37">
-                  <span class="recipes-text39">Expert Cooking Tips</span>
+                <fragment class="ingredients-fragment">
+                  <span class="ingredients-text-inline">Expert Cooking Tips</span>
                 </fragment>
               </h1>
-              <span class="features22-text27 thq-body-small">
-                    <fragment class="recipes-fragment45">
-                      <span class="recipes-text47">
-                        Discover expert tips and tricks to enhance your cooking
-                        skills and techniques.
-                      </span>
-                    </fragment>
+              <span class="ingredients-text thq-body-small">
+                <fragment class="ingredients-fragment">
+                  <span class="ingredients-text-inline">
+                    Discover expert tips and tricks to enhance your cooking
+                    skills and techniques.
                   </span>
+                </fragment>
+              </span>
             </div>
           </div>
         </div>
       </div>
-    </features22-wrapper>
+    </ingredients-wrapper>
     <gallery7-wrapper class="gallery7-wrapper">
       <!--Gallery7 component-->
       <div class="gallery7-gallery3 thq-section-padding">
