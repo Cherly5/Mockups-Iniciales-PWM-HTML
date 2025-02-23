@@ -1,0 +1,106 @@
+.our-recipes-gallery-wrapper {
+  display: contents;
+}
+
+.our-recipes-gallery {
+  width: 100%;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+
+.our-recipes-gallery-max-width {
+  gap: var(--dl-space-space-threeunits);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.our-recipes-gallery-section-title {
+  gap: 24px;
+  width: auto;
+  display: flex;
+  max-width: 800px;
+  align-items: center;
+  flex-shrink: 0;
+  flex-direction: column;
+}
+
+.our-recipes-gallery-text {
+  text-align: center;
+}
+
+.our-recipes-gallery-text-inline {
+  display: inline-block;
+}
+
+.our-recipes-gallery-container {
+  gap: var(--dl-space-space-oneandhalfunits);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.our-recipes-gallery-content {
+  gap: var(--dl-space-space-oneandhalfunits);
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  flex-shrink: 0;
+  justify-content: center;
+}
+
+
+.our-recipes-gallery-container-column {
+  gap: var(--dl-space-space-oneandhalfunits);
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.our-recipes-gallery-image-large {
+  width: 100%;
+  flex-grow: 1;
+  object-fit: cover;
+}
+
+.our-recipes-gallery-image-short {
+  width: 100%;
+  flex-grow: 0.5;
+  object-fit: cover;
+}
+
+ 
+.our-recipes-gallery-fragment {
+  display: contents;
+}
+ 
+@media(max-width: 991px) {
+  .our-recipes-gallery-content {
+    align-items: center;
+    flex-direction: column;
+  }
+  .our-recipes-gallery-container-column {
+    width: 100%;
+  }
+  .our-recipes-gallery-image-large {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}
+ 
+@media(max-width: 767px) {
+  .our-recipes-gallery-section-title {
+    gap: var(--dl-space-space-oneandhalfunits);
+  }
+}
