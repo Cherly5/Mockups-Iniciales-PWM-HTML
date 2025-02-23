@@ -8,7 +8,28 @@
   <meta property="twitter:card" content="summary_large_image" />
 
   <style data-tag="reset-style-sheet">
-    html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;  -webkit-font-smoothing: antialiased;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}button:focus-visible,[type="button"]:focus-visible,[type="reset"]:focus-visible,[type="submit"]:focus-visible {  border-style: none;  padding: 0;}button:focus,[type="button"]:focus,[type="reset"]:focus,[type="submit"]:focus-visible {  outline: 1px dotted ButtonText;} a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}details {  display: block;  margin: 0;  padding: 0;}summary::-webkit-details-marker {  display: none;}[data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}[data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}html { scroll-behavior: smooth  }
+    html {  line-height: 1.15;}
+    body {  margin: 0;}
+    * {  box-sizing: border-box;
+      border-width: 0;
+      border-style: solid;
+      -webkit-font-smoothing: antialiased;}
+    p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}
+    button {  background-color: transparent;}
+    button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}
+    button,select {  text-transform: none;}
+    button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;  color: inherit;}
+    button:focus-visible,[type="button"]:focus-visible,[type="reset"]:focus-visible,[type="submit"]:focus-visible {  border-style: none;  padding: 0;}
+    button:focus,[type="button"]:focus,[type="reset"]:focus,[type="submit"]:focus {  outline: 1px dotted ButtonText;}
+    a {  color: inherit;  text-decoration: inherit;}
+    input {  padding: 2px 4px;}
+    img {  display: block;}
+    details {  display: block;  margin: 0;  padding: 0;}
+    summary::-webkit-details-marker {  display: none;}
+    [data-thq="accordion"] [data-thq="accordion-content"] {  max-height: 0;  overflow: hidden;  transition: max-height 0.3s ease-in-out;  padding: 0;}
+    [data-thq="accordion"] details[data-thq="accordion-trigger"][open] + [data-thq="accordion-content"] {  max-height: 1000vh;}
+    details[data-thq="accordion-trigger"][open] summary [data-thq="accordion-icon"] {  transform: rotate(180deg);}
+    html { scroll-behavior: smooth  }
   </style>
   <style data-tag="default-style-sheet">
     html {
@@ -60,6 +81,10 @@
   <link href="./components/navigation-bar/navbar.css" rel="stylesheet" />
   <link href="./components/welcome-browser/welcome-browser.css" rel="stylesheet" />
   <link href="./components/popular-ingredients/popular-ingredients.css" rel="stylesheet" />
+  <link href="./components/our-recipes-gallery/our-recipes-gallery.css" rel="stylesheet" />
+  <link href="./components/recipes-testimonials/recipes-testimonials.css" rel="stylesheet" />
+  <link href="./components/footer/footer.css" rel="stylesheet" />
+
   <div class="recipes-container">
     <navbar-wrapper class="navbar-wrapper" rootclassname="navbarundefined">
 
@@ -69,7 +94,7 @@
           <div data-thq="thq-navbar-nav" class="navbar-desktop-menu">
             <img
                     alt="image"
-                    src="/public/external/logo2-removebg-preview-200h.png"
+                    src="/public/external/logo-food-champs.png"
                     class="navbar-image"
             />
             <nav id="navigation-bar" class="navbar-links1">
@@ -240,7 +265,7 @@
               <div class="navbar-top">
                 <img
                         alt="image"
-                        src="../public/external/logo2-removebg-preview-200h.png"
+                        src="../public/external/logo-food-champs.png"
                         class="navbar-image"
                 />
                 <div data-thq="thq-close-menu" class="navbar-close-menu">
@@ -460,18 +485,19 @@
             </span>
           </div>
           <div class="ingredients-container2 thq-grid-auto-300">
-            <div class="ingredients-card thq-flex-column thq-card">
-              <img
-                      alt="Image depicting a variety of dishes from different cultures"
-                      src="https://images.unsplash.com/photo-1636773572958-4601d8d0b222?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjUwMHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                      class="ingredients-image thq-img-round thq-img-ratio-1-1"
-              />
-              <h2 class="thq-heading-2">
-                <fragment class="ingredients-fragment">
-                  <span class="ingredients-text-inline">Wide Variety of Recipes</span>
-                </fragment>
-              </h2>
-              <span class="ingredients-text thq-body-small">
+            <div class="ingredients-container-column">
+              <div class="ingredients-card thq-flex-column thq-card">
+                <img
+                        alt="Image depicting a variety of dishes from different cultures"
+                        src="https://images.unsplash.com/photo-1636773572958-4601d8d0b222?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjUwMHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                        class="ingredients-image thq-img-round thq-img-ratio-1-1"
+                />
+                <h2 class="thq-heading-2">
+                  <fragment class="ingredients-fragment">
+                    <span class="ingredients-text-inline">Wide Variety of Recipes</span>
+                  </fragment>
+                </h2>
+                <span class="ingredients-text thq-body-small">
                 <fragment class="ingredients-fragment">
                   <span class="ingredients-text-inline">
                     Explore a diverse range of delicious recipes from different
@@ -479,21 +505,21 @@
                   </span>
                 </fragment>
               </span>
-            </div>
-            <div class="ingredients-card thq-flex-column thq-card">
-              <img
-                      alt="Image showing a cooking process with clear instructions"
-                      src="https://images.unsplash.com/photo-1510693206972-df098062cb71?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjUwMXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                      class="ingredients-image thq-img-round thq-img-ratio-1-1"
-              />
-              <h2 class="thq-heading-2">
-                <fragment class="ingredients-fragment">
+              </div>
+              <div class="ingredients-card thq-flex-column thq-card">
+                <img
+                        alt="Image showing a cooking process with clear instructions"
+                        src="https://images.unsplash.com/photo-1510693206972-df098062cb71?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjUwMXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                        class="ingredients-image thq-img-round thq-img-ratio-1-1"
+                />
+                <h2 class="thq-heading-2">
+                  <fragment class="ingredients-fragment">
                   <span class="ingredients-text-inline">
                     Step-by-Step Instructions
                   </span>
-                </fragment>
-              </h2>
-              <span class="ingredients-text thq-body-small">
+                  </fragment>
+                </h2>
+                <span class="ingredients-text thq-body-small">
                 <fragment class="ingredients-fragment">
                   <span class="ingredients-text-inline">
                     Follow easy-to-understand recipes with detailed step-by-step
@@ -501,21 +527,23 @@
                   </span>
                 </fragment>
               </span>
+              </div>
             </div>
-            <div class="ingredients-card thq-flex-column thq-card">
-              <img
-                      alt="Image showcasing different ingredient options for substitution"
-                      src="https://images.unsplash.com/photo-1570112686245-ec7e043ad444?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjUwMXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                      class="ingredients-image thq-img-round thq-img-ratio-1-1"
-              />
-              <h1 class="thq-heading-2">
-                <fragment class="ingredients-fragment">
+            <div class="ingredients-container-column">
+              <div class="ingredients-card thq-flex-column thq-card">
+                <img
+                        alt="Image showcasing different ingredient options for substitution"
+                        src="https://images.unsplash.com/photo-1570112686245-ec7e043ad444?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjUwMXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                        class="ingredients-image thq-img-round thq-img-ratio-1-1"
+                />
+                <h1 class="thq-heading-2">
+                  <fragment class="ingredients-fragment">
                   <span class="ingredients-text-inline">
                     Ingredient Substitution Advice
                   </span>
-                </fragment>
-              </h1>
-              <span class="ingredients-text thq-body-small">
+                  </fragment>
+                </h1>
+                <span class="ingredients-text thq-body-small">
                 <fragment class="ingredients-fragment">
                   <span class="ingredients-text-inline">
                     Find helpful tips on substituting ingredients to suit
@@ -523,19 +551,19 @@
                   </span>
                 </fragment>
               </span>
-            </div>
-            <div class="ingredients-card thq-flex-column thq-card">
-              <img
-                      alt="Image featuring fresh and high-quality food ingredients"
-                      src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjUwMXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                      class="ingredients-image thq-img-round thq-img-ratio-1-1"
-              />
-              <h1 class="thq-heading-2">
-                <fragment class="ingredients-fragment">
-                  <span class="ingredients-text-inline">Quality Ingredients</span>
-                </fragment>
-              </h1>
-              <span class="ingredients-text thq-body-small">
+              </div>
+              <div class="ingredients-card thq-flex-column thq-card">
+                <img
+                        alt="Image featuring fresh and high-quality food ingredients"
+                        src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjUwMXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                        class="ingredients-image thq-img-round thq-img-ratio-1-1"
+                />
+                <h1 class="thq-heading-2">
+                  <fragment class="ingredients-fragment">
+                    <span class="ingredients-text-inline">Quality Ingredients</span>
+                  </fragment>
+                </h1>
+                <span class="ingredients-text thq-body-small">
                 <fragment class="ingredients-fragment">
                   <span class="ingredients-text-inline">
                     Learn about the importance of using quality ingredients in
@@ -543,19 +571,21 @@
                   </span>
                 </fragment>
               </span>
+              </div>
             </div>
-            <div class="ingredients-card thq-flex-column thq-card">
-              <img
-                      alt="Image showing positive reviews and feedback from users"
-                      src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjQ5OXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                      class="ingredients-image thq-img-round thq-img-ratio-1-1"
-              />
-              <h1 class="thq-heading-2">
-                <fragment class="ingredients-fragment">
-                  <span class="ingredients-text-inline">Testimonials from Users</span>
-                </fragment>
-              </h1>
-              <span class="ingredients-text thq-body-small">
+            <div class="ingredients-container-column">
+              <div class="ingredients-card thq-flex-column thq-card">
+                <img
+                        alt="Image showing positive reviews and feedback from users"
+                        src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjQ5OXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                        class="ingredients-image thq-img-round thq-img-ratio-1-1"
+                />
+                <h1 class="thq-heading-2">
+                  <fragment class="ingredients-fragment">
+                    <span class="ingredients-text-inline">Testimonials from Users</span>
+                  </fragment>
+                </h1>
+                <span class="ingredients-text thq-body-small">
                 <fragment class="ingredients-fragment">
                   <span class="ingredients-text-inline">
                     Read testimonials from satisfied users who have tried and
@@ -563,19 +593,19 @@
                   </span>
                 </fragment>
               </span>
-            </div>
-            <div class="ingredients-card thq-flex-column thq-card">
-              <img
-                      alt="Image illustrating current food trends and popular dishes"
-                      src="https://images.unsplash.com/photo-1510403926823-881457de56ba?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjUwMXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                      class="ingredients-image thq-img-round thq-img-ratio-1-1"
-              />
-              <h1 class="thq-heading-2">
-                <fragment class="ingredients-fragment">
-                  <span class="ingredients-text-inline">Food Trends Articles</span>
-                </fragment>
-              </h1>
-              <span class="ingredients-text thq-body-small">
+              </div>
+              <div class="ingredients-card thq-flex-column thq-card">
+                <img
+                        alt="Image illustrating current food trends and popular dishes"
+                        src="https://images.unsplash.com/photo-1510403926823-881457de56ba?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjUwMXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                        class="ingredients-image thq-img-round thq-img-ratio-1-1"
+                />
+                <h1 class="thq-heading-2">
+                  <fragment class="ingredients-fragment">
+                    <span class="ingredients-text-inline">Food Trends Articles</span>
+                  </fragment>
+                </h1>
+                <span class="ingredients-text thq-body-small">
                 <fragment class="ingredients-fragment">
                   <span class="ingredients-text-inline">
                     Stay updated on the latest food trends and culinary
@@ -583,21 +613,23 @@
                   </span>
                 </fragment>
               </span>
+              </div>
             </div>
-            <div class="ingredients-card thq-flex-column thq-card">
-              <img
-                      alt="Image representing partnership and collaboration in the culinary world"
-                      src="https://images.unsplash.com/photo-1585162344582-ac008beec6e2?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjUwMHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                      class="ingredients-image thq-img-round thq-img-ratio-1-1"
-              />
-              <h1 class="thq-heading-2">
-                <fragment class="ingredients-fragment">
+            <div class="ingredients-container-column">
+              <div class="ingredients-card thq-flex-column thq-card">
+                <img
+                        alt="Image representing partnership and collaboration in the culinary world"
+                        src="https://images.unsplash.com/photo-1585162344582-ac008beec6e2?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjUwMHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                        class="ingredients-image thq-img-round thq-img-ratio-1-1"
+                />
+                <h1 class="thq-heading-2">
+                  <fragment class="ingredients-fragment">
                   <span class="ingredients-text-inline">
                     Collaboration Opportunities
                   </span>
-                </fragment>
-              </h1>
-              <span class="ingredients-text thq-body-small">
+                  </fragment>
+                </h1>
+                <span class="ingredients-text thq-body-small">
                 <fragment class="ingredients-fragment">
                   <span class="ingredients-text-inline">
                     Connect with us for inquiries or collaborations in the food
@@ -605,19 +637,19 @@
                   </span>
                 </fragment>
               </span>
-            </div>
-            <div class="ingredients-card thq-flex-column thq-card">
-              <img
-                      alt="Image showing a chef sharing cooking tips and advice"
-                      src="https://images.unsplash.com/photo-1636648980523-ab269ed42385?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjUwMHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                      class="ingredients-image thq-img-round thq-img-ratio-1-1"
-              />
-              <h1 class="thq-heading-2">
-                <fragment class="ingredients-fragment">
-                  <span class="ingredients-text-inline">Expert Cooking Tips</span>
-                </fragment>
-              </h1>
-              <span class="ingredients-text thq-body-small">
+              </div>
+              <div class="ingredients-card thq-flex-column thq-card">
+                <img
+                        alt="Image showing a chef sharing cooking tips and advice"
+                        src="https://images.unsplash.com/photo-1636648980523-ab269ed42385?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjUwMHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                        class="ingredients-image thq-img-round thq-img-ratio-1-1"
+                />
+                <h1 class="thq-heading-2">
+                  <fragment class="ingredients-fragment">
+                    <span class="ingredients-text-inline">Expert Cooking Tips</span>
+                  </fragment>
+                </h1>
+                <span class="ingredients-text thq-body-small">
                 <fragment class="ingredients-fragment">
                   <span class="ingredients-text-inline">
                     Discover expert tips and tricks to enhance your cooking
@@ -625,111 +657,113 @@
                   </span>
                 </fragment>
               </span>
+              </div>
             </div>
+
+
+
           </div>
         </div>
       </div>
     </ingredients-wrapper>
-    <gallery7-wrapper class="gallery7-wrapper">
-      <!--Gallery7 component-->
-      <div class="gallery7-gallery3 thq-section-padding">
-        <div class="gallery7-max-width">
-          <div class="gallery7-section-title">
-            <h2 class="gallery7-text1 thq-heading-2">
-              <fragment class="recipes-fragment47">
-                    <span class="recipes-text49">
-                      Explore Our Culinary Creations
-                    </span>
+    <our-recipes-gallery-wrapper class="our-recipes-gallery-wrapper">
+      <div class="our-recipes-gallery thq-section-padding">
+        <div class="our-recipes-gallery-max-width">
+          <div class="our-recipes-gallery-section-title">
+            <h2 class="our-recipes-gallery-text thq-heading-2">
+              <fragment class="our-recipes-gallery-fragment">
+                <span class="our-recipes-gallery-text-inline">
+                  Explore Our Culinary Creations
+                </span>
               </fragment>
             </h2>
-            <span class="gallery7-text2 thq-body-large">
-                  <fragment class="recipes-fragment46">
-                    <span class="recipes-text48">
-                      Browse through a selection of our visually stunning and
-                      delectable dishes. From appetizers to desserts, we have
-                      something for every palate.
-                    </span>
-                  </fragment>
+            <span class="our-recipes-gallery-text thq-body-large">
+              <fragment class="our-recipes-gallery-fragment">
+                <span class="our-recipes-gallery-text-inline">
+                  Browse through a selection of our visually stunning and
+                  delectable dishes. From appetizers to desserts, we have
+                  something for every palate.
                 </span>
+              </fragment>
+            </span>
           </div>
-          <div class="gallery7-container1">
-            <div class="gallery7-content">
-              <div class="gallery7-container2">
+          <div class="our-recipes-gallery-container">
+            <div class="our-recipes-gallery-content">
+              <div class="our-recipes-gallery-container-column">
                 <img
                         alt="Delicious Pasta Carbonara"
                         src="https://images.unsplash.com/photo-1715204800869-5c24da515b33?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MDM5M3w&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                        class="gallery7-image1 thq-img-ratio-1-1"
+                        class="our-recipes-gallery-image-large thq-img-ratio-1-1"
                 />
                 <img
                         alt="Mouth-watering Chocolate Lava Cake"
                         src="https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MDM5M3w&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                        class="gallery7-image2 thq-img-ratio-1-1"
+                        class="our-recipes-gallery-image-large thq-img-ratio-1-1"
                 />
               </div>
-              <div class="gallery7-container3">
+              <div class="our-recipes-gallery-container-column">
                 <img
                         alt="Fresh and Colorful Greek Salad"
                         src="https://images.unsplash.com/photo-1528649247577-4f5a475af4d0?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MDM5Mnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                        class="gallery7-image3 thq-img-ratio-4-3"
+                        class="our-recipes-gallery-image-short thq-img-ratio-4-3"
                 />
                 <img
                         alt="Sizzling BBQ Ribs"
                         src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MDM5Mnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                        class="gallery7-image4 thq-img-ratio-1-1"
+                        class="our-recipes-gallery-image-large thq-img-ratio-1-1"
                 />
                 <img
                         alt="Decadent Tiramisu Dessert"
                         src="https://images.unsplash.com/photo-1625144093498-bf62fca631c5?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MDM5Mnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                        class="gallery7-image5 thq-img-ratio-4-3"
+                        class="our-recipes-gallery-image-short thq-img-ratio-4-3"
                 />
               </div>
-              <div class="gallery7-container4">
+              <div class="our-recipes-gallery-container-column">
                 <img
                         alt="Spicy Chicken Tacos"
                         src="https://images.unsplash.com/photo-1547417080-bdc11256756f?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MDM5M3w&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                        class="gallery7-image6 thq-img-ratio-1-1"
+                        class="our-recipes-gallery-image-large thq-img-ratio-1-1"
                 />
                 <img
                         alt="Refreshing Watermelon Salad"
                         src="https://images.unsplash.com/photo-1681168714705-532b9764e4f9?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MDM5Mnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                        class="gallery7-image7 thq-img-ratio-1-1"
+                        class="our-recipes-gallery-image-large thq-img-ratio-1-1"
                 />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </gallery7-wrapper>
-    <testimonial7-wrapper class="testimonial7-wrapper">
-      <!--Testimonial7 component-->
+    </our-recipes-gallery-wrapper>
+    <recipes-testimonials-wrapper class="recipes-testimonials-wrapper">
       <div class="thq-section-padding">
         <h1>
-          <fragment class="recipes-fragment48">
-            <span class="recipes-text50">Learn Popular Recipes</span>
+          <fragment class="recipes-testimonials-fragment">
+            <span class="recipes-testimonials-text-inline">Learn Popular Recipes</span>
           </fragment>
         </h1>
-        <div class="testimonial7-max-width thq-section-max-width">
+        <div class="recipes-testimonials-max-width thq-section-max-width">
           <div
                   data-thq="slider"
                   data-loop="true"
                   data-autoplay="true"
                   data-navigation="true"
                   data-pagination="true"
-                  class="testimonial7-slider swiper"
+                  class="recipes-testimonials-slider swiper"
           >
             <div data-thq="slider-wrapper" class="swiper-wrapper">
               <div
                       data-thq="slider-slide"
-                      class="testimonial7-slider-slide1 swiper-slide"
+                      class="recipes-testimonials-slide swiper-slide"
               >
-                <div class="testimonial7-container2">
+                <div class="recipes-testimonials-slide-container">
                   <img
                           alt="Sarah Smith Image"
                           src="https://images.unsplash.com/photo-1603388290000-b9f8934776f4?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjY0Nnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                          class="testimonial7-thumbnail1 thq-img-ratio-1-1"
+                          class="recipes-testimonials-thumbnail thq-img-ratio-1-1"
                   />
-                  <div class="testimonial7-content1">
-                    <div class="testimonial7-stars1">
+                  <div class="recipes-testimonials-content">
+                    <div class="recipes-testimonials-stars">
                       <svg viewBox="0 0 1024 1024" class="thq-icon-small">
                         <path
                                 d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
@@ -752,32 +786,34 @@
                       ></path>
                     </svg>
                     </div>
-                    <p class="thq-body-large testimonial7-text11">
-                      <fragment class="recipes-fragment49">
-                            <span class="recipes-text51">
-                              FoodChampsHQ has revolutionized the way I cook at
-                              home. The recipes are easy to follow and always
-                              turn out delicious!
-                            </span>
+                    <p class="thq-body-large recipes-testimonials-text">
+                      <fragment class="recipes-testimonials-fragment">
+                        <span class="recipes-testimonials-text-inline">
+                          FoodChampsHQ has revolutionized the way I cook at
+                          home. The recipes are easy to follow and always turn
+                          out delicious!
+                        </span>
                       </fragment>
                     </p>
-                    <div class="testimonial7-avatar1">
-                      <div class="testimonial7-avatar-content1">
-                            <span class="testimonial7-text12 thq-body-small">
-                              <fragment class="recipes-fragment52">
-                                <span class="recipes-text54">Sarah Smith</span>
-                              </fragment>
-                            </span>
+                    <div class="recipes-testimonials-avatar">
+                      <div class="recipes-testimonials-avatar-content">
+                        <span class="recipes-testimonials-text thq-body-small">
+                          <fragment class="recipes-testimonials-fragment">
+                            <span class="recipes-testimonials-text-inline">Sarah Smith</span>
+                          </fragment>
+                        </span>
                         <span class="thq-body-small">
-                              <fragment class="recipes-fragment55">
-                                <span class="recipes-text57">Food Blogger</span>
-                              </fragment>
+                          <fragment class="recipes-testimonials-fragment">
+                            <span class="recipes-testimonials-text-inline">
+                              Food Blogger
                             </span>
+                          </fragment>
+                        </span>
                       </div>
                       <img
                               alt="Food Blogger Association"
                               src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
-                              class="testimonial7-logo1"
+                              class="recipes-testimonials-logo"
                       />
                     </div>
                   </div>
@@ -785,16 +821,16 @@
               </div>
               <div
                       data-thq="slider-slide"
-                      class="testimonial7-slider-slide2 swiper-slide"
+                      class="recipes-testimonials-slide swiper-slide"
               >
-                <div class="testimonial7-container3">
+                <div class="recipes-testimonials-slide-container">
                   <img
                           alt="John Doe Image"
                           src="https://images.unsplash.com/photo-1506716681432-e29d83314064?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjY0Nnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                          class="testimonial7-thumbnail2"
+                          class="recipes-testimonials-thumbnail"
                   />
-                  <div class="testimonial7-content2">
-                    <div class="testimonial7-stars2">
+                  <div class="recipes-testimonials-content">
+                    <div class="recipes-testimonials-stars">
                       <svg viewBox="0 0 1024 1024" class="thq-icon-small">
                         <path
                                 d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
@@ -817,32 +853,32 @@
                       ></path>
                     </svg>
                     </div>
-                    <p class="thq-body-large testimonial7-text14">
-                      <fragment class="recipes-fragment50">
-                            <span class="recipes-text52">
-                              I love trying out new recipes from FoodChampsHQ.
-                              The ingredient substitution advice has been a
-                              game-changer for me!
-                            </span>
+                    <p class="thq-body-large recipes-testimonials-text">
+                      <fragment class="recipes-testimonials-fragment">
+                        <span class="recipes-testimonials-text-inline">
+                          I love trying out new recipes from FoodChampsHQ. The
+                          ingredient substitution advice has been a game-changer
+                          for me!
+                        </span>
                       </fragment>
                     </p>
-                    <div class="testimonial7-avatar2">
-                      <div class="testimonial7-avatar-content2">
-                            <span class="testimonial7-text15 thq-body-small">
-                              <fragment class="recipes-fragment53">
-                                <span class="recipes-text55">John Doe</span>
-                              </fragment>
-                            </span>
+                    <div class="recipes-testimonials-avatar">
+                      <div class="recipes-testimonials-avatar-content">
+                        <span class="recipes-testimonials-text thq-body-small">
+                          <fragment class="recipes-testimonials-fragment">
+                            <span class="recipes-testimonials-text-inline">John Doe</span>
+                          </fragment>
+                        </span>
                         <span class="thq-body-small">
-                              <fragment class="recipes-fragment56">
-                                <span class="recipes-text58">Home Cook</span>
-                              </fragment>
-                            </span>
+                          <fragment class="recipes-testimonials-fragment">
+                            <span class="recipes-testimonials-text-inline">Home Cook</span>
+                          </fragment>
+                        </span>
                       </div>
                       <img
                               alt="Home Cooking Club"
                               src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
-                              class="testimonial7-logo2"
+                              class="recipes-testimonials-logo"
                       />
                     </div>
                   </div>
@@ -850,16 +886,16 @@
               </div>
               <div
                       data-thq="slider-slide"
-                      class="testimonial7-slider-slide3 swiper-slide"
+                      class="recipes-testimonials-slide swiper-slide"
               >
-                <div class="testimonial7-container4">
+                <div class="recipes-testimonials-slide-container">
                   <img
                           alt="Emily Johnson Image"
                           src="https://images.unsplash.com/photo-1541614101331-1a5a3a194e92?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjY0Nnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                          class="testimonial7-thumbnail3"
+                          class="recipes-testimonials-thumbnail"
                   />
-                  <div class="testimonial7-content3">
-                    <div class="testimonial7-stars3">
+                  <div class="recipes-testimonials-content">
+                    <div class="recipes-testimonials-stars">
                       <svg viewBox="0 0 1024 1024" class="thq-icon-small">
                         <path
                                 d="M512 736l-264 160 70-300-232-202 306-26 120-282 120 282 306 26-232 202 70 300z"
@@ -882,36 +918,36 @@
                       ></path>
                     </svg>
                     </div>
-                    <p class="thq-body-large testimonial7-text17">
-                      <fragment class="recipes-fragment51">
-                            <span class="recipes-text53">
-                              FoodChampsHQ has made cooking fun and exciting for
-                              me. I highly recommend this website to anyone
-                              looking to explore new cuisines!
-                            </span>
+                    <p class="thq-body-large recipes-testimonials-text">
+                      <fragment class="recipes-testimonials-fragment">
+                        <span class="recipes-testimonials-text-inline">
+                          FoodChampsHQ has made cooking fun and exciting for me.
+                          I highly recommend this website to anyone looking to
+                          explore new cuisines!
+                        </span>
                       </fragment>
                     </p>
-                    <div class="testimonial7-avatar3">
-                      <div class="testimonial7-avatar-content3">
-                            <span class="testimonial7-text18 thq-body-small">
-                              <fragment class="recipes-fragment54">
-                                <span class="recipes-text56">
-                                  Emily Johnson
-                                </span>
-                              </fragment>
+                    <div class="recipes-testimonials-avatar">
+                      <div class="recipes-testimonials-avatar-content">
+                        <span class="recipes-testimonials-text thq-body-small">
+                          <fragment class="recipes-testimonials-fragment">
+                            <span class="recipes-testimonials-text-inline">
+                              Emily Johnson
                             </span>
+                          </fragment>
+                        </span>
                         <span class="thq-body-small">
-                              <fragment class="recipes-fragment57">
-                                <span class="recipes-text59">
-                                  Food Enthusiast
-                                </span>
-                              </fragment>
+                          <fragment class="recipes-testimonials-fragment">
+                            <span class="recipes-testimonials-text-inline">
+                              Food Enthusiast
                             </span>
+                          </fragment>
+                        </span>
                       </div>
                       <img
                               alt="Food Enthusiasts Society"
                               src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
-                              class="testimonial7-logo3"
+                              class="recipes-testimonials-logo"
                       />
                     </div>
                   </div>
@@ -920,7 +956,7 @@
             </div>
             <div
                     data-thq="slider-pagination"
-                    class="testimonial7-slider-pagination swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"
+                    class="recipes-testimonials-slider-pagination swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"
             >
               <div
                       data-thq="slider-pagination-bullet"
@@ -935,20 +971,13 @@
                       class="swiper-pagination-bullet"
               ></div>
             </div>
-            <div
-                    data-thq="slider-button-prev"
-                    class="swiper-button-prev"
-            ></div>
-            <div
-                    data-thq="slider-button-next"
-                    class="swiper-button-next"
-            ></div>
+            <div data-thq="slider-button-prev" class="swiper-button-prev"></div>
+            <div data-thq="slider-button-next" class="swiper-button-next"></div>
           </div>
         </div>
       </div>
-    </testimonial7-wrapper>
+    </recipes-testimonials-wrapper>
     <footer-wrapper class="footer-wrapper">
-      <!--Footer component-->
       <footer class="footer-footer7 thq-section-padding footer">
         <div class="footer-max-width thq-section-max-width">
           <div class="footer-content">
@@ -966,8 +995,8 @@
                       rel="noreferrer noopener"
                       class="thq-body-small"
               >
-                <fragment class="recipes-fragment58">
-                  <span class="recipes-text60">Home</span>
+                <fragment class="footer-fragment">
+                  <span class="footer-text">Home</span>
                 </fragment>
               </a>
               <a
@@ -976,18 +1005,18 @@
                       rel="noreferrer noopener"
                       class="thq-body-small"
               >
-                <fragment class="recipes-fragment59">
-                  <span class="recipes-text61">Recipes</span>
+                <fragment class="footer-fragment">
+                  <span class="footer-text">Recipes</span>
                 </fragment>
               </a>
               <a
-                      href="./a-recipe.html"
+                      href="../about.html"
                       target="_blank"
                       rel="noreferrer noopener"
                       class="thq-body-small"
               >
-                <fragment class="recipes-fragment60">
-                  <span class="recipes-text62">About Us</span>
+                <fragment class="footer-fragment">
+                  <span class="footer-text">About Us</span>
                 </fragment>
               </a>
             </div>

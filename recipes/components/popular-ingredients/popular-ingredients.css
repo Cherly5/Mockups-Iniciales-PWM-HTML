@@ -33,11 +33,22 @@
 .ingredients-container2 {
   width: 100%;
 }
- 
+
+
+.ingredients-container-column {
+  gap: var(--dl-space-space-oneandhalfunits);
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
 .ingredients-card {
   color: var(--dl-color-theme-neutral-light);
   height: auto;
   display: flex;
+  flex: 1;
   align-self: flex-start;
   align-items: center;
   flex-direction: column;
