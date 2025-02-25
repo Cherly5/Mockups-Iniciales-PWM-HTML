@@ -1,6 +1,6 @@
 .sign-up-container1 {
-  width: 1599px;
-  height: 1011px;
+  width: 90%;
+  height: 90%;
   display: flex;
   position: relative;
   align-items: center;
@@ -37,6 +37,7 @@
   display: flex;
   overflow: hidden;
   align-items: center;
+  padding: var(--dl-space-space-fiveunits);
   flex-shrink: 0;
   justify-content: center;
 }
