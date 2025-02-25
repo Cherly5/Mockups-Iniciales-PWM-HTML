@@ -16,7 +16,7 @@
 }
 
 .profile-container2 {
-  width: 50%;
+  width: 100%;
   height: 100%;
   display: flex;
   align-self: center;
@@ -45,8 +45,8 @@
 
 .profile-title-root2 {
   gap: var(--dl-space-space-halfunit);
-  width: 100%;
-  height: 701px;
+  width: 90%;
+  height: 90%;
   display: flex;
   align-items: flex-start;
   flex-direction: column-reverse;
@@ -60,7 +60,7 @@
 
 .profile-form-root {
   gap: var(--dl-space-space-unit);
-  width: 635px;
+  width: 50%;
   height: 100%;
   display: flex;
   overflow: hidden;
@@ -297,7 +297,7 @@
     height: var(--dl-size-size-xxlarge);
   }
   .profile-form-root {
-    width: 100%;
+    width: 50%;
   }
 }
 

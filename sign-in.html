@@ -55,32 +55,12 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="/components/navbar2.css" />
     <link href="components/footer.css" rel="stylesheet" />
+    <script src="xlu-include-file.js"></script>
   </head>
   <body>
     <div>
-      <!-- Navbar -->
-      <header class="navbar2-container1 navbar2">
-        <header data-thq="thq-navbar" class="navbar2-navbar-interactive">
-          <img
-                  alt="logo"
-                  src="public/external/logo2-removebg-preview-200h.png"
-                  class="navbar2-image"
-          />
-          <nav class="navbar2-links1">
-            <a href="index.html" class="navbar2-link11 thq-body-small thq-link">
-              Home
-            </a>
-            <a href="recipes.html" class="thq-body-small thq-link">Recipes</a>
-            <a href="blog.html" class="navbar2-link31 thq-body-small thq-link">
-              Blog
-            </a>
-            <a href="about.html" class="thq-body-small thq-link">About Us</a>
-          </nav>
-          <a href="profile.html" class="navbar2-link32 thq-body-small thq-link">
-            Your Profile
-          </a>
-        </header>
-      </header>
+      <nav id="navbar2" xlu-include-file="components/navbar2.html">
+      </nav>
 
       <div class="sign-in-container1 thq-section-padding sign-in">
         <div class="sign-in-max-width thq-section-max-width">
@@ -172,53 +152,7 @@
         </div>
       </div>
 
-      <!-- FOOTER -->
-      <footer class="footer-footer7 thq-section-padding footer">
-        <div class="footer-max-width thq-section-max-width">
-          <div class="footer-content">
-            <div class="footer-logo1">
-              <img
-                      alt="Foodie Recipes Logo"
-                      src="https://presentation-website-assets.teleporthq.io/logos/logo.png"
-                      class="footer-logo2"
-              />
-            </div>
-            <div class="footer-links">
-              <a
-                      href="https://example.com"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      class="thq-body-small"
-              >
-                <span class="footer-text4">Home</span>
-              </a>
-              <a
-                      href="https://example.com"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      class="thq-body-small"
-              >
-                <span class="footer-text3">Recipes</span>
-              </a>
-              <a
-                      href="https://example.com"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      class="thq-body-small"
-              >
-                <span class="footer-text2">About Us</span>
-              </a>
-            </div>
-          </div>
-          <div class="footer-credits">
-            <div class="thq-divider-horizontal"></div>
-            <div class="footer-row">
-              <div class="footer-container">
-                <span class="thq-body-small">© 2025 FoodChampsHQ</span>
-              </div>
-            </div>
-          </div>
-        </div>
+      <footer id="footer" xlu-include-file="components/footer.html">
       </footer>
 
     </div>
@@ -226,5 +160,10 @@
       defer=""
       src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
     ></script>
+    <script>
+
+      xLuIncludeFile();
+
+    </script>
   </body>
 </html>
