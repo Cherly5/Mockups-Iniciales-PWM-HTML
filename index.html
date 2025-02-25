@@ -52,6 +52,7 @@
           rel="stylesheet"
           href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
   />
+  <script src="xlu-include-file.js"></script>
 </head>
 <body>
 <link rel="stylesheet" href="./style.css" />
@@ -59,8 +60,11 @@
   <link href="./index.css" rel="stylesheet" />
 
   <div class="home-container">
+    <!--<nav id="navbar" xlu-include-file="/components/navbar.html">
+    </nav> -->
+    <!--
     <navbar-wrapper class="navbar-wrapper" rootclassname="navbarundefined">
-      <!--Navbar component-->
+      Navbar component
       <header class="navbar-container1 navbarroot-class-name1">
         <header data-thq="thq-navbar" class="navbar-navbar-interactive">
           <div data-thq="thq-navbar-nav" class="navbar-desktop-menu">
@@ -351,9 +355,11 @@
         </header>
         <div class="navbar-container6"></div>
       </header>
-    </navbar-wrapper>
-    <intro-wrapper class="intro-wrapper">
-      <!--Intro component-->
+    </navbar-wrapper> -->
+    <intro id="intro" xlu-include-file="/components/intro.html">
+    </intro>
+    <!--<intro-wrapper class="intro-wrapper">
+      Intro component
       <div class="intro-header78 intro">
         <div class="intro-column thq-section-padding thq-section-max-width">
           <div class="intro-content1">
@@ -534,7 +540,7 @@
           </div>
         </div>
       </div>
-    </intro-wrapper>
+    </intro-wrapper>-->
     <gallery9-wrapper class="gallery9-wrapper">
       <!--Gallery9 component-->
       <div class="gallery9-gallery3 thq-section-padding">
@@ -636,18 +642,6 @@
                         data-thq="slider-pagination"
                         class="gallery9-slider-pagination swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"
                 >
-                  <div
-                          data-thq="slider-pagination-bullet"
-                          class="swiper-pagination-bullet swiper-pagination-bullet-active"
-                  ></div>
-                  <div
-                          data-thq="slider-pagination-bullet"
-                          class="swiper-pagination-bullet"
-                  ></div>
-                  <div
-                          data-thq="slider-pagination-bullet"
-                          class="swiper-pagination-bullet"
-                  ></div>
                 </div>
               </div>
             </div>
@@ -887,5 +881,10 @@
         defer=""
         src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
 ></script>
+<script>
+
+  xLuIncludeFile();
+
+</script>
 </body>
 </html>
