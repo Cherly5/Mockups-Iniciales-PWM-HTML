@@ -1,0 +1,131 @@
+
+.recipe-front-wrapper {
+  display: contents;
+}
+.recipe-front-blog-post-header3 {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+ 
+.recipe-front-max-width {
+  gap: var(--dl-space-space-oneandhalfunits);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+ 
+.recipe-front-heading {
+  align-self: center;
+  text-align: center;
+}
+ 
+.recipe-front-image {
+  width: 50%;
+  object-fit: cover;
+}
+ 
+.recipe-front-container {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--dl-space-space-oneandhalfunits);
+}
+ 
+.recipe-front-content {
+  gap: var(--dl-space-space-oneandhalfunits);
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+}
+ 
+.recipe-front-author-name {
+  font-size: 32px;
+  align-self: flex-start;
+  font-style: italic;
+  text-align: left;
+  font-weight: 200;
+}
+ 
+.recipe-front-share-buttons {
+  align-self: flex-start;
+}
+
+
+
+.recipe-front-container3 {
+
+  width: 263px;
+  height: 108px;
+  display: contents;
+}
+
+
+#recipe-tags {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las etiquetas se pasen a la siguiente línea */
+  gap: 8px; /* Espacio entre etiquetas */
+  max-width: 100%; /* Limita el ancho del contenedor */
+}
+.recipe-tag {
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 8px;
+  font-size: 14px;
+  display: block;
+  width: fit-content; /* Permite que cada etiqueta solo ocupe el espacio necesario */
+  max-width: 100%;
+}
+
+.recipe-tag-allergen { background-color: #f8d7da; color: #721c24;}
+.recipe-tag-category { background-color: #d4edda; color: #155724;}
+
+ 
+.recipe-front-fragment {
+  display: contents;
+}
+ 
+.recipe-front-text {
+  display: inline-block;
+}
+
+ 
+@media(max-width: 991px) {
+  .recipe-front-card {
+    flex-direction: column;
+  }
+  .recipe-front-image {
+    width: 100%;
+    height: 500px;
+  }
+  .recipe-front-content {
+    width: 100%;
+  }
+  .recipe-front-content-recipe-tags {
+
+    flex-direction: column;
+  }
+}
+ 
+@media(max-width: 767px) {
+  .recipe-front-content {
+    flex-direction: column;
+  }
+  
+}
+ 
+@media(max-width: 479px) {
+  .recipe-front-title {
+    text-align: center;
+  }
+  .recipe-front-author-name {
+    align-self: center;
+  }
+  .recipe-front-share-buttons {
+    align-self: center;
+  }
+}

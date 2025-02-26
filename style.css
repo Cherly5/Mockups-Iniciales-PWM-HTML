@@ -413,7 +413,6 @@
 }
  
 .thq-animated-group-horizontal-reverse {
-  gap: var(--dl-space-space-unit);
   display: flex;
   animation: scroll-x 20s linear infinite;
   min-width: 100%;
@@ -434,7 +433,6 @@
 }
  
 .thq-animated-group-horizontal {
-  gap: var(--dl-space-space-unit);
   display: flex;
   animation: scroll-x 20s linear infinite;
   min-width: 100%;
