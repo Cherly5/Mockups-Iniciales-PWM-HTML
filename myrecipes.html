@@ -52,17 +52,18 @@
                 rel="stylesheet"
                 href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
         />
+        <script src="xlu-include-file.js"></script>
     </head>
     <body>
         <link rel="stylesheet" href="./style.css" />
         <div>
             <link href="./myrecipes.css" rel="stylesheet" />
-            <div class="recipes-container">
-                <navbar-wrapper-yd78
+            <div class="myrecipes-container">
+                <!--<navbar-wrapper-yd78
                         class="navbar-wrapper-yd78"
                         rootclassname="navbarundefined"
                 >
-                    <!--Navbar component-->
+                    Navbar component
                     <header class="navbar-container7 navbarroot-class-name4">
                         <header data-thq="thq-navbar" class="navbar-navbar-interactive1">
                             <div data-thq="thq-navbar-nav" class="navbar-desktop-menu1">
@@ -353,9 +354,13 @@
                         </header>
                         <div class="navbar-container12"></div>
                     </header>
-                </navbar-wrapper-yd78>
-                <gallery81-wrapper class="gallery81-wrapper">
-                    <!--Gallery81 component-->
+                </navbar-wrapper-yd78>-->
+                <!--<nav id="navbar" xlu-include-file="/components/navbar.html">
+                </nav>-->
+                <gallery81 id="gallery81" xlu-include-file="/components/gallery81.html">
+                </gallery81>
+                <!--<gallery81-wrapper class="gallery81-wrapper">
+                    Gallery81 component
                     <div class="gallery81-gallery3 thq-section-padding">
                         <div class="gallery81-max-width thq-section-max-width">
                             <div class="gallery81-section-title">
@@ -444,9 +449,11 @@
                             </div>
                         </div>
                     </div>
-                </gallery81-wrapper>
-                <content-list5-wrapper class="content-list5-wrapper">
-                    <!--ContentList5 component-->
+                </gallery81-wrapper>-->
+                <content-list5 id="content-list5" xlu-include-file="/components/content-list5.html">
+                </content-list5>
+                <!--<content-list5-wrapper class="content-list5-wrapper">
+                    ContentList5 component
                     <div class="content-list5-container1 thq-section-padding">
                         <div
                                 class="content-list5-max-width thq-flex-column thq-section-max-width"
@@ -842,9 +849,11 @@
                             </div>
                         </div>
                     </div>
-                </content-list5-wrapper>
-                <footer-wrapper-qeo3 class="footer-wrapper-qeo3">
-                    <!--Footer component-->
+                </content-list5-wrapper>-->
+                <footer id="footer" xlu-include-file="/components/footer.html">
+                </footer>
+                <!--<footer-wrapper-qeo3 class="footer-wrapper-qeo3">
+                    Footer component
                     <footer class="footer-footer71 thq-section-padding footer">
                         <div class="footer-max-width1 thq-section-max-width">
                             <div class="footer-content1">
@@ -898,7 +907,13 @@
                             </div>
                         </div>
                     </footer>
-                </footer-wrapper-qeo3>
+                </footer-wrapper-qeo3>-->
             </div>
         </div>
+        <script>
+
+            xLuIncludeFile();
+
+        </script>
     </body>
+</html>
