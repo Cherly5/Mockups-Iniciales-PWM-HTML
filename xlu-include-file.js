@@ -74,6 +74,26 @@ async function xLuIncludeFile() {
                     //a.innerHTML = await response.text();
                     a.innerHTML = content;
                     z[i].parentNode.replaceChild(a, z[i]);
+
+
+                    // Ahora ejecutamos el script si existe
+                    const scripts = a.querySelectorAll('script');
+                    scripts.forEach(script => {
+                        if (script.src) {
+                            // Si el script tiene src, lo cargamos dinámicamente
+                            const newScript = document.createElement('script');
+                            newScript.src = script.src;
+                            newScript.defer = true;
+                            newScript.innerText = script.innerText;
+                            document.body.appendChild(newScript);
+
+                        } else {
+                            // Si el script es inline, lo ejecutamos directamente
+                            eval(script.innerText);
+
+                        }
+                    });
+
                     xLuIncludeFile();
                 }
             } catch (error) {

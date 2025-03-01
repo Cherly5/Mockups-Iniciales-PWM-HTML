@@ -90,6 +90,7 @@
     transform: translateX(0);
   }
   to {
-    transform: translateX(-50%);
+    transform: translateX(calc(-100% * 1/3 ));
+    /* 4 images 3 times so a third of the width*/
   }
 }

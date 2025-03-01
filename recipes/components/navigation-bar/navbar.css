@@ -205,6 +205,7 @@
 
 .navbar-buttons2 {
     margin-top: var(--dl-space-space-twounits);
+    padding: var(--dl-space-space-halfunit);
 }
 
 .navbar-action {
@@ -213,6 +214,10 @@
 }
 
 .navbar-burger-menu {
+    display: none;
+}
+
+.navbar-burger-menu.hidden {
     display: none;
 }
 
@@ -229,6 +234,11 @@
     justify-content: space-between;
     background-color: var(--dl-color-theme-neutral-light);
 }
+
+.navbar-mobile-menu.active {
+    display: block;
+}
+
 
 .navbar-nav {
     display: flex;
@@ -267,6 +277,7 @@
 .navbar-icon-group {
     gap: var(--dl-space-space-twounits);
     display: flex;
+    padding: var(--dl-space-space-twounits);
 }
 
 
