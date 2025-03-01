@@ -94,6 +94,11 @@ async function xLuIncludeFile() {
                         }
                     });
 
+                    // Ajustar rutas únicamente en el footer
+                    if (file.includes('footer.html')) {
+                        adjustFooterLinks();
+                    }
+
                     xLuIncludeFile();
                 }
             } catch (error) {
@@ -105,3 +110,23 @@ async function xLuIncludeFile() {
     }
 }
 
+// Función para ajustar rutas dinámicamente
+function adjustFooterLinks() {
+    const currentPath = window.location.pathname; // Ruta actual, ej.: "/paginas/subcarpeta/contact.html"
+    const levelsUp = currentPath.split('/').length - 3; // Cuántos niveles subir
+    const basePath = '../'.repeat(levelsUp); // Genera la ruta base
+
+    // Ajusta las rutas de los enlaces
+    const linkIndex = document.getElementById('link-index');
+    const linkAbout = document.getElementById('link-about');
+    const linkRecipes = document.getElementById('link-recipes');
+    const linkSignUp = document.getElementById('link-sign-up');
+    const linkSignIn = document.getElementById('link-sign-in');
+
+
+    if (linkIndex) linkIndex.href = basePath + 'index.html';
+    if (linkAbout) linkAbout.href = basePath + 'about_us/about_us.html';
+    if (linkRecipes) linkRecipes.href = basePath + 'recipes/xlu-include-recipes/recipes.html';
+    if (linkSignUp) linkSignUp.href = basePath + '/sign_up/sign_up.html';
+    if (linkSignIn) linkSignIn.href = basePath + '/sign_in/sign_in.html';
+}
