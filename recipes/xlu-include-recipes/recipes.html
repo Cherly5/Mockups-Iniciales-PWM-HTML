@@ -74,19 +74,18 @@
           rel="stylesheet"
           href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
   />
-</head>
-<body>
-<link rel="stylesheet" href="../../style.css" />
-<div>
-  <link href="../components/navigation-bar/navbar.css" rel="stylesheet" />
+  <link href="../../navigation-bar/navbar.css" rel="stylesheet" />
   <link href="../components/welcome-browser/welcome-browser.css" rel="stylesheet" />
   <link href="../components/popular-ingredients/popular-ingredients.css" rel="stylesheet" />
   <link href="../components/our-recipes-gallery/our-recipes-gallery.css" rel="stylesheet" />
   <link href="../components/recipes-testimonials/recipe-testimonials.css" rel="stylesheet" />
-  <link href="../components/footer/footer.css" rel="stylesheet" />
-
+  <link href="../../footer/footer.css" rel="stylesheet" />
+</head>
+<body>
+<link rel="stylesheet" href="../../style.css" />
+<div>
   <div class="recipes-container">
-    <navbar-wrapper class="navbar-wrapper" rootclassname="navbarundefined" xlu-include-file="./navbar.html">
+    <navbar-wrapper class="navbar-wrapper" rootclassname="navbarundefined" xlu-include-file="../../navigation-bar/navbar.html">
 
     </navbar-wrapper>
     <welcome-browser-wrapper class="welcome-browser-wrapper" xlu-include-file="./welcome-browser.html" >
@@ -102,7 +101,7 @@
     <recipes-testimonials-wrapper class="recipes-testimonials-wrapper" xlu-include-file="./recipe-testimonials.html">
 
     </recipes-testimonials-wrapper>
-    <footer-wrapper class="footer-wrapper" xlu-include-file="./footer.html"></footer-wrapper>
+    <footer-wrapper class="footer-wrapper" xlu-include-file="../../footer/footer.html"></footer-wrapper>
   </div>
   <div xlu-include-file="./script.html">
   </div>
