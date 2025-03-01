@@ -1,9 +1,7 @@
 <div class="recipe-front-blog-post-header3 thq-section-padding">
     <div class="recipe-front-max-width thq-section-max-width">
-        <h3 class="recipe-front-heading thq-heading-2">
-            <fragment class="recipe-front-fragment">
-                <span class="recipe-front-text">Recipes</span>
-            </fragment>
+        <h3 class="recipe-front-heading thq-heading-2 recipe-front-text">
+            Recipes
         </h3>
         <div class="thq-flex-row recipe-front-card">
             <img
@@ -14,18 +12,8 @@
             <div class="recipe-front-container">
                 <div class="recipe-front-container">
                     <div class="recipe-front-content thq-flex-column">
-                        <h1 class="thq-heading-1 recipe-front-title">
-                            <fragment class="recipe-front-fragment">
-                      <span class="recipe-front-text">
-                        Delicious Recipes to Satisfy Your Cravings
-                      </span>
-                            </fragment>
-                        </h1>
-                        <span class="recipe-front-author-name thq-body-small">
-                    <fragment class="recipe-front-fragment">
-                      <span class="recipe-front-text">FoodChampsHQ</span>
-                    </fragment>
-                  </span>
+                        <h1 class="thq-heading-1 recipe-front-title recipe-front-text">Delicious Recipes to Satisfy Your Cravings</h1>
+                        <span class="recipe-front-author-name thq-body-small recipe-front-text">FoodChampsHQ</span>
                         <div class="recipe-front-share-buttons thq-flex-row">
                             <button class="thq-button-filled thq-button-icon">
                                 <svg viewBox="0 0 1024 1024" class="thq-icon-small">
@@ -69,7 +57,7 @@
                 </div>
                 <div id="recipe-tags" class=" flex flex-wrap gap-2">
                     <script>
-                        const categorias = ['Vegetariano', 'Vegano', 'Sin Gluten'];
+                        const categories = ['Vegetariano', 'Vegano', 'Sin Gluten'];
                         const alergenos = ['Lácteos', 'Frutos Secos', 'Gluten'];
 
                         const container = document.getElementById('recipe-tags');
@@ -83,8 +71,8 @@
                         }
 
                         // Agregar categorías
-                        categorias.forEach(categoria => {
-                            container.appendChild(crearTag(categoria, 'recipe-tag-category'));
+                        categories.forEach(category => {
+                            container.appendChild(crearTag(category, 'recipe-tag-category'));
                         });
 
                         // Agregar alérgenos
@@ -92,7 +80,6 @@
                             container.appendChild(crearTag(alergeno, 'recipe-tag-allergen'));
                         });
                     </script>
-
                 </div>
             </div>
         </div>

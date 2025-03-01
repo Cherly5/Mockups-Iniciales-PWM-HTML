@@ -72,12 +72,13 @@
 </head>
 <body>
 <link rel="stylesheet" href="/style.css" />
-<div>
-    <link href="./navbar.css" rel="stylesheet" />
+<link href="./navbar.css" rel="stylesheet" />
+<navbar-wrapper class="navbar-wrapper" rootclassname="navbarundefined">
+
     <header class="navbar-container1 navbar">
         <header data-thq="thq-navbar" class="navbar-navbar-interactive">
-            <!-- visible at 767px width -->
-            <!-- header -->
+            <!-- navbar-big-header-menu -->
+            <!-- thin -->
             <div data-thq="thq-navbar-nav" class="navbar-desktop-menu">
                 <img
                         alt="image"
@@ -86,37 +87,26 @@
                 />
                 <nav id="navigation-bar" class="navbar-links1">
                     <a href="/index.html" class="thq-body-small thq-link">
-                        <fragment class="navbar-fragment">
-                            <span class="navbar-text">Home</span>
-                        </fragment>
+                        <span class="navbar-text">Home</span>
                     </a>
                     <a
                             href="../../xlu-include-recipes/recipes.html"
                             class="thq-body-small thq-link"
                     >
-                        <fragment class="navbar-fragment">
-                  <span class="navbar-text">
-                    <span>Recipes</span>
-                    <br />
-                  </span>
-                        </fragment>
+                        <span class="navbar-text">Recipes</span>
                     </a>
                     <a
-                            href="https://www.teleporthq.io"
+                            href="/404.html"
                             target="_blank"
                             rel="noreferrer noopener"
                             class="thq-body-small thq-link"
                     >
-                        <fragment class="navbar-fragment">
-                            <span class="navbar-text">Blog</span>
-                        </fragment>
+                        <span class="navbar-text">Blog</span>
                     </a>
                     <div class="navbar-link4-dropdown-trigger">
-                <a href="/about.html" class="thq-body-small thq-link">
-                  <fragment class="navbar-fragment">
-                    <span class="navbar-text">About us</span>
-                  </fragment>
-                </a>
+                        <a href="/about.html" class="thq-body-small thq-link">
+                            <span class="navbar-text">About us</span>
+                        </a>
                         <div class="navbar-icon-container">
                             <div class="navbar-container2">
                                 <svg viewBox="0 0 1024 1024" class="navbar-icon">
@@ -130,28 +120,18 @@
                     <button
                             class="navbar-action11 thq-button-animated thq-button-filled"
                     >
-                <span>
-                  <fragment class="navbar-fragment">
-                    <span class="navbar-text">Sign Up</span>
-                  </fragment>
-                </span>
+                        <span class="navbar-text">Sign Up</span>
                     </button>
                     <button
                             class="navbar-action21 thq-button-animated thq-button-outline"
                     >
-                <span>
-                  <fragment class="navbar-fragment">
-                    <span class="navbar-text">Sign In</span>
-                  </fragment>
-                </span>
+                        <span class="navbar-text">Sign In</span>
                     </button>
                 </div>
             </div>
-            <!-- shadow-header if wanted -->
         </header>
-
     </header>
-</div>
+</navbar-wrapper>
 <script
         defer=""
         src="../../teleport-custom-scripts.js"
