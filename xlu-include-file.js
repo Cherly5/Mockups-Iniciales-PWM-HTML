@@ -94,7 +94,7 @@ async function xLuIncludeFile() {
                         }
                     });
 
-                    xLuIncludeFile();
+                    await xLuIncludeFile();
                 }
             } catch (error) {
                 console.error("Error fetching file:", error);
