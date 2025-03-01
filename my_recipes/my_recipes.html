@@ -52,29 +52,29 @@
                 rel="stylesheet"
                 href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
         />
-        <link href="components/footer.css" rel="stylesheet" />
-        <link rel="stylesheet" href="./style.css" />
-        <link href="./myrecipes.css" rel="stylesheet" />
-        <link href="/components/navbar.css" rel="stylesheet" />
-        <script src="xlu-include-file.js"></script>
+        <link href="../components/footer.css" rel="stylesheet" />
+        <link rel="stylesheet" href="../style.css" />
+        <link href="my_recipes.css" rel="stylesheet" />
+        <link href="../components/navbar.css" rel="stylesheet" />
+        <script src="../xlu-include-file.js"></script>
 
     </head>
     <body>
-        <nav id="navbar" xlu-include-file="components/navbar.html">
+        <nav id="navbar" xlu-include-file="../components/navbar.html">
         </nav>
         <div>
-            <div class="myrecipes-container">
+            <div class="my_recipes-container">
 
-                <gallery81 id="gallery81" xlu-include-file="/components/gallery81.html">
-                </gallery81>
+                <slider_my_recipes id="slider_my_recipes" xlu-include-file="../my_recipes/components/slider_my_recipes/slider_my_recipes.html">
+                </slider_my_recipes>
 
-                <content-list5 id="content-list5" xlu-include-file="/components/content-list5.html">
-                </content-list5>
+                <my_recipe_description id="my_recipe_description" xlu-include-file="../my_recipes/components/my_recipe_description/my_recipe_description.html">
+                </my_recipe_description>
 
 
 
             </div>
-            <footer id="footer" xlu-include-file="/components/footer.html">
+            <footer id="footer" xlu-include-file="../components/footer.html">
             </footer>
         </div>
         <script>
