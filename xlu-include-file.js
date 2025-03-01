@@ -80,6 +80,10 @@ async function xLuIncludeFile() {
                         adjustLinks('navbar');
                     } else if (file.includes('footer.html')) {
                         adjustLinks('footer');
+                    } else if (file.includes('welcome_about_us.html')) {
+                        adjustLinks('welcome_about_us');
+                    } else if (file.includes('marketing.html')) {
+                        adjustLinks('marketing');
                     }
 
                     // Ahora ejecutamos el script si existe
@@ -122,6 +126,10 @@ function adjustLinks(component) {
         container = document.querySelector('nav'); // Buscar el navbar
     } else if (component === 'footer') {
         container = document.querySelector('footer'); // Buscar el footer
+    } else if (component === 'welcome_about_us') {
+        container = document.querySelector('#welcome_about_us');
+    } else if (component === 'marketing') {
+        container = document.querySelector('#marketing');
     }
 
     if (!container) {
@@ -139,7 +147,7 @@ function adjustLinks(component) {
 
     if (linkIndex) linkIndex.href = basePath + 'index.html';
     if (linkAbout) linkAbout.href = basePath + 'about_us/about_us.html';
-    if (linkRecipes) linkRecipes.href = basePath + 'recipes/xlu-include-recipes/recipes.html';
+    if (linkRecipes) linkRecipes.href = basePath + 'recipes/recipes.html';
     if (linkSignUp) linkSignUp.href = basePath + 'sign_up/sign_up.html';
     if (linkSignIn) linkSignIn.href = basePath + 'sign_in/sign_in.html';
     if (linkMyRecipes) linkMyRecipes.href = basePath + 'my_recipes/my_recipes.html';

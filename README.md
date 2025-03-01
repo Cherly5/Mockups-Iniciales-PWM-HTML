@@ -9,7 +9,10 @@ Algunas de las ideas para las funcionalidades básicas que tuvimos:
 - Tener cuenta de usuario, acceder al perfil, poder iniciar sesión o registrarse  
 - Una página principal: 
 - Una página sobre los creadores de la empresa  
-- Una página de las recetas propias
+- Una página de las recetas propias  
+Aunque no se pedía para la entrega del primer SPRINT, hemos modificado el script del profesor para facilitar la navegación (de los botones en navbar y footer), dado que refactorizando y ordenando el código por páginas y componentes hemos tenido problemas con las rutas.    
+
+La página de inicio de la aplicación web es index.html (/index.html)  
 
 ## Enlaces
 https://play.teleporthq.io/projects/blind-coordinated-reindeer-lp532x/editor/TQ_LGrnaUtnz0  
@@ -30,13 +33,13 @@ Profile (Dentro de About) - profile.html
 
 Archivo template - Archivo en el que se carga
 
-components/welcome-about-us.html - about.html  
-components/stats.html - about.html
-components/sponsors.html - about.html  
-components/marketing.html - about.html
-components/team.html - about.html  
-components/footer.html - about.html, index.html, profile.html, sign-in.html, sign-up.html, myrecipes.html
-components/navbar2.html - profile.html, myrecipes.html,
+about_us/components/welcome-about-us.html - about.html  
+about_us/components/stats.html - about.html
+about_us/components/sponsors.html - about.html  
+about_us/components/marketing.html - about.html
+about_us/components/team.html - about.html  
+footer/footer.html - about.html, index.html, profile.html, sign-in.html, sign-up.html, my_recipes.html
+navigation-bar/navbar.html - profile.html, my_recipes.html,
 
 
 
