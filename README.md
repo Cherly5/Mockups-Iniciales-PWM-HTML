@@ -22,6 +22,9 @@ La página de inicio de la aplicación web es index.html (index.html)
 https://play.teleporthq.io/projects/blind-coordinated-reindeer-lp532x/editor/TQ_LGrnaUtnz0  
 https://trello.com/invite/b/67a12067101310ab70e0df07/ATTIf800b4b7ce7b2330fade3ac22e341f6633C80819/trabajo-de-pwm
 
+# Ruta al pdf con los Mockups y Storyboard
+MockUps_Storyboard.pdf  
+
 ## Aspectos a tener en consideración
 Aunque no se pedía para la entrega del primer SPRINT, hemos modificado el script del profesor para facilitar la navegación (de los botones en navbar y footer), dado que refactorizando y ordenando el código por páginas y componentes hemos tenido problemas con las rutas.  
 Tenemos dos páginas, que están enumeradas en el apartado de listado de páginas y cuyos templates están también listados en el apartado de listado de templates, a las cuales no se puede acceder por navegación en la página web.
