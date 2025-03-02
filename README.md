@@ -33,43 +33,43 @@ Los mockups de varias páginas distintas del proyecto web están desarrollados d
 
 Página(s) TeleportHQ - Fichero HTML al que corresponde
 
-Home - index.html
-About - about.html
-SignUp (Dentro de About) - sign_up/sign_up.html
-SignIn (Dentro de About) - sign_in/sign_in.html
-Profile (Dentro de About) - profile/profile.html
-MyRecipes (Dentro de Home) - my_recipes/my_recipes.html
-Recipes - recipes/recipes.html
-a-recipe (Dentro de Recipes) - recipes/xlu-include-recipes/a-recipe.html
+Home - index.html  
+About - about.html  
+SignUp (Dentro de About) - sign_up/sign_up.html  
+SignIn (Dentro de About) - sign_in/sign_in.html  
+Profile (Dentro de About) - profile/profile.html  
+MyRecipes (Dentro de Home) - my_recipes/my_recipes.html  
+Recipes - recipes/recipes.html  
+a-recipe (Dentro de Recipes) - recipes/xlu-include-recipes/a-recipe.html  
 
 ## Templates y archivo en el que se cargan
 
 Archivo template - Archivo en el que se carga
 
 about_us/components/welcome_about_us/welcome_about_us.html - about_us/about.html  
-about_us/components/stats/stats.html - about_us/about.html
+about_us/components/stats/stats.html - about_us/about.html  
 about_us/components/sponsors/sponsors.html - about_us/about.html  
-about_us/components/marketing/marketing.html - about_us/about.html
+about_us/components/marketing/marketing.html - about_us/about.html  
 about_us/components/team/team.html - about_us/about.html  
 
 footer/footer.html - about_us/about.html, index.html, profile/profile.html, sign_in/sign_in.html, sign_up/sign_up.html, my_recipes/my_recipes.html, recipes/recipes.html, recipes/xlu-include-recipes/a-recipe.html  
 navigation-bar/navbar.html - about_us/about.html, index.html, profile/profile.html, sign_in/sign_in.html, sign_up/sign_up.html, my_recipes/my_recipes.html, recipes/recipes.html, recipes/xlu-include-recipes/a-recipe.html  
 
-index/index_marketing1/index_marketing1.html - index.html
-index/index_marketing2/index_marketing2.html - index.html
-index/index_slider/index_slider.html - index.html
+index/index_marketing1/index_marketing1.html - index.html  
+index/index_marketing2/index_marketing2.html - index.html  
+index/index_slider/index_slider.html - index.html  
 
 my_recipes/components/my_recipe_description/my_recipe_description.html - my_recipes/my_recipes.html  
 my_recipes/components/slider_my_recipes/slider_my_recipes.html - my_recipes/my_recipes.html  
 
-recipes/components/welcome-browser/welcome-browser.html - recipes/recipes.html
-recipes/components/popular-ingredients/popular-ingredients.html - recipes/recipes.html
-recipes/components/our-recipes-gallery/our-recipes-gallery.html - recipes/recipes.html
-recipes/components/recipes-testimonials/recipe-testimonials.html - recipes/recipes.html
+recipes/components/welcome-browser/welcome-browser.html - recipes/recipes.html  
+recipes/components/popular-ingredients/popular-ingredients.html - recipes/recipes.html  
+recipes/components/our-recipes-gallery/our-recipes-gallery.html - recipes/recipes.html  
+recipes/components/recipes-testimonials/recipe-testimonials.html - recipes/recipes.html  
 
 recipes/components/recipe-front/recipe-front.html - recipes/xlu-include-recipes/a-recipe.html  
 recipes/components/recipe-steps/recipe-steps.html - recipes/xlu-include-recipes/a-recipe.html  
-recipes/components/keep-cocking/keep-cocking.html - recipes/xlu-include-recipes/a-recipe.html
+recipes/components/keep-cocking/keep-cocking.html - recipes/xlu-include-recipes/a-recipe.html  
 
 ## Requisitos funcionales
 
