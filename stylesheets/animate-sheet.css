@@ -55,12 +55,13 @@
 }
 @media print, (prefers-reduced-motion: reduce) {
   
+  /*
   .animate__animated {
     animation-duration: 1ms !important;
     transition-duration: 1ms !important;
     animation-iteration-count: 1 !important;
   }
-  
+  */
 
   .animate__animated[class*='Out'] {
     opacity: 0;
