@@ -80,34 +80,19 @@
   <link href="components/our-recipes-gallery/our-recipes-gallery.css" rel="stylesheet" />
   <link href="components/recipes-testimonials/recipe-testimonials.css" rel="stylesheet" />
   <link href="../footer/footer.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
-<link rel="stylesheet" href="../style.css" />
 <div>
-  <div class="recipes-container">
-    <nav class="navbar-wrapper" xlu-include-file="../navigation-bar/navbar.html">
-
-    </nav>
-    <welcome-browser-wrapper class="welcome-browser-wrapper" xlu-include-file="components/welcome-browser/welcome-browser.html" >
-
-    </welcome-browser-wrapper>
-    <ingredients-wrapper class="ingredients-wrapper"
-                         xlu-include-file="components/popular-ingredients/popular-ingredients.html">
-
-    </ingredients-wrapper>
-    <our-recipes-gallery-wrapper class="our-recipes-gallery-wrapper" xlu-include-file="components/our-recipes-gallery/our-recipes.html">
-
-    </our-recipes-gallery-wrapper>
-    <recipes-testimonials-wrapper class="recipes-testimonials-wrapper" xlu-include-file="components/recipes-testimonials/recipe-testimonials.html">
-
-    </recipes-testimonials-wrapper>
-    <footer-wrapper class="footer-wrapper" xlu-include-file="../footer/footer.html"></footer-wrapper>
-  </div>
+    <navbar-wrapper  xlu-include-file="../navigation-bar/navbar.html"></navbar-wrapper>
+    <welcome-browser-wrapper xlu-include-file="components/welcome-browser/welcome-browser.html" ></welcome-browser-wrapper>
+    <ingredients-wrapper xlu-include-file="components/popular-ingredients/popular-ingredients.html"></ingredients-wrapper>
+    <our-recipes-gallery-wrapper xlu-include-file="components/our-recipes-gallery/our-recipes.html"></our-recipes-gallery-wrapper>
+    <recipes-testimonials-wrapper xlu-include-file="components/recipes-testimonials/recipe-testimonials.html"></recipes-testimonials-wrapper>
+    <footer-wrapper xlu-include-file="../footer/footer.html"></footer-wrapper>
   <script src="../teleport-custom-scripts.js">
   </script>
 </div>
-<!-- https://unpkg.com/@teleporthq/teleport-custom-scripts@0.0.29/dist/index.umd.js -->
-
 <script>
   xLuIncludeFile();
 </script>

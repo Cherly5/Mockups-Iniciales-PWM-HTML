@@ -63,18 +63,17 @@
     />
 
     <script src="/xlu-include-file.js"></script>
+    <link rel="stylesheet" href="../style.css" />
+    <link href="../navigation-bar/navbar.css" rel="stylesheet" />
+    <link href="../footer/footer.css" rel="stylesheet" />
+    <link href="components/recipe-front/recipe-front.css" rel="stylesheet" />
+    <link href="components/recipe-steps/recipe-steps.css" rel="stylesheet" />
+    <link href="components/star-rating-component/starRating.css" rel="stylesheet" />
+    <link href="components/keep-cooking/keep-cooking.css" rel="stylesheet" />
 </head>
 <body>
-<link rel="stylesheet" href="../style.css" />
-<link href="../navigation-bar/navbar.css" rel="stylesheet" />
-<link href="../footer/footer.css" rel="stylesheet" />
-<link href="components/recipe-front/recipe-front.css" rel="stylesheet" />
-<link href="components/recipe-steps/recipe-steps.css" rel="stylesheet" />
-<link href="components/star-rating-component/starRating.css" rel="stylesheet" />
-<link href="components/keep-cooking/keep-cooking.css" rel="stylesheet" />
-
 <div>
-    <nav xlu-include-file="../navigation-bar/navbar.html"></nav>
+    <navbar-wrapper xlu-include-file="../navigation-bar/navbar.html"></navbar-wrapper>
     <recipe-front-wrapper xlu-include-file="./components/recipe-front/recipe-front.html"></recipe-front-wrapper>
     <recipe-steps-wrapper xlu-include-file="./components/recipe-steps/recipe-steps.html"></recipe-steps-wrapper>
     <keep-cooking-wrapper xlu-include-file="./components/keep-cooking/keep-cooking.html"></keep-cooking-wrapper>
