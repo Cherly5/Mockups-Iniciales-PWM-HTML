@@ -29,7 +29,7 @@ MockUps_Storyboard.pdf
 Aunque no se pedía para la entrega del primer SPRINT, hemos modificado el script del profesor para facilitar la navegación (de los botones en navbar y footer), dado que refactorizando y ordenando el código por páginas y componentes hemos tenido problemas con las rutas.  
 Tenemos dos páginas, que están enumeradas en el apartado de listado de páginas y cuyos templates están también listados en el apartado de listado de templates, a las cuales no se puede acceder por navegación en la página web.
 Ésto se debe a que son páginas que ya dependen de la funcionalidad de la página web, algo que trataremos más en el próximo SPRINT.  
-Éstas dos páginas son: profile/profile.html y recipes/xlu-include-recipes/a-recipe.html.
+Estas dos páginas son: profile/profile.html y recipes/xlu-include-recipes/a-recipe.html.
 
 ## Listado de páginas del proyecto
 Los mockups de varias páginas distintas del proyecto web están desarrollados dentro de la misma página, ya que solo se permite crear 3 páginas en TeleportHQ
@@ -43,7 +43,7 @@ SignIn (Dentro de About) - sign_in/sign_in.html
 Profile (Dentro de About) - profile/profile.html  
 MyRecipes (Dentro de Home) - my_recipes/my_recipes.html  
 Recipes - recipes/recipes.html  
-a-recipe (Dentro de Recipes) - recipes/xlu-include-recipes/a-recipe.html  
+a-recipe (Dentro de Recipes) - recipes/recipe-page.html  
 
 ## Templates y archivo en el que se cargan
 
@@ -70,9 +70,9 @@ recipes/components/popular-ingredients/popular-ingredients.html - recipes/recipe
 recipes/components/our-recipes-gallery/our-recipes-gallery.html - recipes/recipes.html  
 recipes/components/recipes-testimonials/recipe-testimonials.html - recipes/recipes.html  
 
-recipes/components/recipe-front/recipe-front.html - recipes/xlu-include-recipes/a-recipe.html  
-recipes/components/recipe-steps/recipe-steps.html - recipes/xlu-include-recipes/a-recipe.html  
-recipes/components/keep-cocking/keep-cocking.html - recipes/xlu-include-recipes/a-recipe.html  
+recipes/components/recipe-front/recipe-front.html - recipes/recipe-page.html  
+recipes/components/recipe-steps/recipe-steps.html - recipes/recipe-page.html  
+recipes/components/keep-cooking/keep-cooking.html - recipes/recipe-page.html  
 
 ## Requisitos funcionales
 
