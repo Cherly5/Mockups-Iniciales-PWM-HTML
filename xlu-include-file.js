@@ -75,6 +75,16 @@ async function xLuIncludeFile() {
                     a.innerHTML = content;
                     z[i].parentNode.replaceChild(a, z[i]);
 
+                    // Ajustar rutas dinámicamente dependiendo del archivo cargado
+                    if (file.includes('navbar.html')) {
+                        adjustLinks('navbar');
+                    } else if (file.includes('footer.html')) {
+                        adjustLinks('footer');
+                    } else if (file.includes('welcome_about_us.html')) {
+                        adjustLinks('welcome_about_us');
+                    } else if (file.includes('marketing.html')) {
+                        adjustLinks('marketing');
+                    }
 
                     // Ahora ejecutamos el script si existe
                     const scripts = a.querySelectorAll('script');
@@ -105,3 +115,40 @@ async function xLuIncludeFile() {
     }
 }
 
+// Función genérica para ajustar enlaces en navbar o footer
+function adjustLinks(component) {
+    const currentPath = window.location.pathname; // Ruta actual
+    const levelsUp = currentPath.split('/').length - 3; // Niveles para regresar a la raíz
+    const basePath = '../'.repeat(levelsUp); // Ruta base generada
+
+    let container;
+    if (component === 'navbar') {
+        container = document.querySelector('nav'); // Buscar el navbar
+    } else if (component === 'footer') {
+        container = document.querySelector('footer'); // Buscar el footer
+    } else if (component === 'welcome_about_us') {
+        container = document.querySelector('#welcome_about_us');
+    } else if (component === 'marketing') {
+        container = document.querySelector('#marketing');
+    }
+
+    if (!container) {
+        console.error(`${component} no encontrado en el DOM.`);
+        return;
+    }
+
+    // Ajustar enlaces del navbar o footer
+    const linkIndex = container.querySelector('#link-index');
+    const linkAbout = container.querySelector('#link-about');
+    const linkRecipes = container.querySelector('#link-recipes');
+    const linkSignUp = container.querySelector('#link-sign-up');
+    const linkSignIn = container.querySelector('#link-sign-in');
+    const linkMyRecipes = container.querySelector('#link-my-recipes');
+
+    if (linkIndex) linkIndex.href = basePath + 'index.html';
+    if (linkAbout) linkAbout.href = basePath + 'about_us/about_us.html';
+    if (linkRecipes) linkRecipes.href = basePath + 'recipes/recipes.html';
+    if (linkSignUp) linkSignUp.href = basePath + 'sign_up/sign_up.html';
+    if (linkSignIn) linkSignIn.href = basePath + 'sign_in/sign_in.html';
+    if (linkMyRecipes) linkMyRecipes.href = basePath + 'my_recipes/my_recipes.html';
+}

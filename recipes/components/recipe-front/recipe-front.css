@@ -19,6 +19,14 @@
   align-self: center;
   text-align: center;
 }
+
+.recipe-front-card {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se acomoden sin desbordar */
+  align-items: stretch;
+  width: 100%;
+  overflow: hidden;
+}
  
 .recipe-front-image {
   width: 50%;
@@ -98,6 +106,7 @@
   .recipe-front-card {
     flex-direction: column;
   }
+
   .recipe-front-image {
     width: 100%;
     height: 500px;

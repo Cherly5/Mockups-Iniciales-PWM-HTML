@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>recipes - Mockups Iniciales PWM</title>
+        <meta property="og:title" content="myrecipes - Mockups Iniciales PWM" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <meta property="twitter:card" content="summary_large_image" />
+
+        <link rel="stylesheet" data-tag="reset-style-sheet" href="../stylesheets/reset-style-sheet.css"  />
+        <link rel="stylesheet" data-tag="default-style-sheet" href="../stylesheets/default-style-sheet.css" />>
+        <link rel="stylesheet" href="../stylesheets/animate-sheet.css"/>
+        <link rel="stylesheet" href="../stylesheets/noto-sans-font.css" data-tag="font"/>
+        <link rel="stylesheet" href="../stylesheets/STIX-two-text-font.css" data-tag="font"/>
+        <link rel="stylesheet" href="../stylesheets/Inter-font.css" data-tag="font"/>
+        <link rel="stylesheet" href="../stylesheets/style.css" />
+
+        <link href="../footer/footer.css" rel="stylesheet" />
+        <link href="my_recipes.css" rel="stylesheet" />
+        <link href="../navigation-bar/navbar.css" rel="stylesheet" />
+        <script src="../xlu-include-file.js"></script>
+
+    </head>
+    <body>
+        <nav class="navbar-wrapper" id="navbar" xlu-include-file="../navigation-bar/navbar.html">
+        </nav>
+        <div>
+            <div class="my_recipes-container">
+
+                <slider_my_recipes id="slider_my_recipes" xlu-include-file="../my_recipes/components/slider_my_recipes/slider_my_recipes.html">
+                </slider_my_recipes>
+
+                <my_recipe_description id="my_recipe_description" xlu-include-file="../my_recipes/components/my_recipe_description/my_recipe_description.html">
+                </my_recipe_description>
+
+
+
+            </div>
+            <footer id="footer" xlu-include-file="../footer/footer.html">
+            </footer>
+        </div>
+        <script>
+
+            xLuIncludeFile();
+
+        </script>
+    </body>
+</html>
