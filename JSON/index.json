@@ -1,0 +1,25 @@
+{
+  "keep-cooking": {
+    "title": "",
+    "text": "",
+    "images": {
+      "normal": [],
+      "reverse": []
+    }
+  },
+  "slide": {
+    "title": "",
+    "text": "",
+    "image": ""
+  },
+  "marketing": [
+    {
+      "image": "",
+      "tabs": [{
+        "title": "",
+        "content": ""
+      }],
+      "side": "right or left"
+    }
+  ]
+}
