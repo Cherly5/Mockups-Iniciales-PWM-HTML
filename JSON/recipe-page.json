@@ -1,0 +1,27 @@
+{
+  "front": {
+    "slogan": "",
+    "image": "",
+    "title": "",
+    "author": "",
+    "tags": [],
+    "allergens": []
+  },
+  "steps": {
+    "title": "",
+    "ingredients": [""],
+    "step": [{
+      "name": "",
+      "description": ""
+    }],
+    "valuation": null
+  },
+  "keep-cooking": {
+    "title": "",
+    "text": "",
+    "images": {
+      "normal": [],
+      "reverse": []
+    }
+  }
+}
