@@ -29,25 +29,31 @@
       fill: var(--dl-color-theme-neutral-dark);
     }
   </style>
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" data-tag="reset-style-sheet" href="stylesheets/reset-style-sheet.css"  />
+  <link rel="stylesheet" data-tag="default-style-sheet" href="stylesheets/default-style-sheet.css" />
+  <link rel="stylesheet" href="stylesheets/animate-sheet.css"/>
+  <link rel="stylesheet" href="stylesheets/noto-sans-font.css" data-tag="font"/>
+  <link rel="stylesheet" href="stylesheets/STIX-two-text-font.css" data-tag="font"/>
+  <link rel="stylesheet" href="stylesheets/Inter-font.css" data-tag="font"/>
+  <link rel="stylesheet" href="stylesheets/style.css" />
   <link href="./index.css" rel="stylesheet" />
-  <link href="/recipes/components/keep-cooking/keep-cooking.css" rel="stylesheet" />
+  <link href="recipes/components/keep-cooking/keep-cooking.css" rel="stylesheet" />
   <link href="navigation-bar/navbar.css" rel="stylesheet" />
   <script src="script.js" defer></script>
 </head>
 <body>
 
-<div id="navbar"></div> <!-- Contenedor para el navbar -->
-<div id="keep-cooking"></div> <!-- Contenedor para el navbar -->
-<div id="index_slider"></div>
-<div id="index_marketing1"></div> <!-- Contenedor para el navbar -->
-<div id="index_marketing2"></div> <!-- Contenedor para el navbar -->
-<div id="footer"></div> <!-- Contenedor para el navbar -->
+<nav id="navbar"></nav> <!-- Contenedor para el navbar -->
 
-<script
-        defer=""
-        src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
-></script>
+<div id="keep-cooking"></div> <!-- Contenedor para el navbar -->
+
+<div id="index_slider"></div> <!-- Contenedor para el slider -->
+
+<div id="index_marketing1"></div> <!-- Contenedor para el marketing 1 -->
+
+<div id="index_marketing2"></div> <!-- Contenedor para el marketing 2 -->
+
+<footer id="footer"></footer> <!-- Contenedor para el footer -->
+
 </body>
-</html>
 </html>
