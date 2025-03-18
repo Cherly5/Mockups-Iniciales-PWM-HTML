@@ -1,8 +1,24 @@
-.recipes-testimonials-wrapper {
+
+.swiper-horizontal {
+  touch-action: pan-y;
+}
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 0;
+  z-index: 1;
+  display: block;
+}
+
+
+.index-slider-wrapper {
   display: contents;
 }
 
-.recipes-testimonials-max-width {
+.index-slider-max-width {
   width: 100%;
   display: flex;
   position: relative;
@@ -12,21 +28,29 @@
 
 .swiper-wrapper {
   align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+  transition-timing-function: initial;
+  box-sizing: content-box;
 }
 
-.recipes-testimonials-slider {
+.index-slider-slider {
   width: 100%;
   height: auto;
   display: inline-block;
 }
-.recipes-testimonials-slide{
+.index-slider-slide{
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
 
-.recipes-testimonials-slide-container {
+.index-slider-slide-container {
   gap: var(--dl-space-space-twounits);
   flex: 0 0 auto;
   display: flex;
@@ -36,7 +60,7 @@
   justify-content: center;
 }
  
-.recipes-testimonials-thumbnail {
+.index-slider-thumbnail {
   flex-grow: 1;
   max-width: 640px;
   width: auto;
@@ -44,7 +68,7 @@
   border-radius: var(--dl-radius-radius-radius4);
 }
  
-.recipes-testimonials-content {
+.index-slider-content {
   gap: var(--dl-space-space-twounits);
   flex: 1;
   width: 100%;
@@ -56,13 +80,13 @@
   flex-direction: column;
 }
  
-.recipes-testimonials-stars {
+.index-slider-stars {
   display: flex;
   align-items: center;
   flex-direction: row;
 }
  
-.recipes-testimonials-avatar {
+.index-slider-avatar {
   gap: var(--dl-space-space-oneandhalfunits);
   width: 100%;
   display: flex;
@@ -70,48 +94,48 @@
   align-items: center;
 }
  
-.recipes-testimonials-avatar-content {
+.index-slider-avatar-content {
   flex: 1;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
  
-.recipes-testimonials-text {
+.index-slider-text {
   font-style: normal;
   font-weight: 600;
 }
  
-.recipes-testimonials-logo {
+.index-slider-logo {
   height: 2rem;
 }
  
-.recipes-testimonials-slider-pagination {
+.index-slider-slider-pagination {
   display: block;
 }
  
-.recipes-testimonials-fragment {
+.index-slider-fragment {
   display: contents;
 }
  
-.recipes-testimonials-text-inline {
+.index-slider-text-inline {
   display: inline-block;
 }
 
 
  
 @media(max-width: 991px) {
-  .recipes-testimonials-slide-container {
+  .index-slider-slide-container {
     flex-direction: column;
   }
-  .recipes-testimonials-thumbnail {
+  .index-slider-thumbnail {
     width: 100%;
   }
-  .recipes-testimonials-content {
+  .index-slider-content {
     align-items: center;
     justify-content: center;
   }
-  .recipes-testimonials-avatar {
+  .index-slider-avatar {
     gap: 0;
     width: 100%;
     justify-content: space-between;
@@ -120,22 +144,22 @@
 }
  
 @media(max-width: 767px) {
-  .recipes-testimonials-slide {
+  .index-slider-slide {
     padding: var(--dl-space-space-threeunits);
   }
 }
  
 @media(max-width: 479px) {
-  .recipes-testimonials-slide {
+  .index-slider-slide {
     padding: var(--dl-space-space-oneandhalfunits);
   }
-  .recipes-testimonials-text {
+  .index-slider-text {
     text-align: center;
   }
-  .recipes-testimonials-avatar {
+  .index-slider-avatar {
     flex-direction: column;
   }
-  .recipes-testimonials-avatar-content {
+  .index-slider-avatar-content {
     align-items: center;
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }

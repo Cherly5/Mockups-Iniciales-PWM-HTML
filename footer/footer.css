@@ -34,11 +34,10 @@
   overflow: hidden;
   align-items: flex-start;
   flex-direction: column;
+  height: auto;
 }
  
-.footer-logo2 {
-  height: 2rem;
-}
+
  
 .footer-links {
   gap: var(--dl-space-space-twounits);

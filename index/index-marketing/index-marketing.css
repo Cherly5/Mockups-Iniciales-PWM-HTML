@@ -1,0 +1,70 @@
+.index-marketing-container {
+  width: 100%;
+  display: grid;
+  grid-gap: var(--dl-space-space-fiveunits);
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+
+.index-marketing-image {
+  height: 100%;
+  display: flex;
+  position: relative;
+  animation-name: fadeIn;
+  animation-delay: 0s;
+  animation-duration: 300ms;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+
+.index-marketing-tabs-menu {
+  gap: var(--dl-space-space-twounits);
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.index-marketing-tab {
+  gap: var(--dl-space-space-twounits);
+  cursor: pointer;
+  display: flex;
+  overflow: hidden;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.index-marketing-divider-container {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  background-color: var(--dl-color-theme-neutral-dark);
+  width: 0.2rem;
+}
+
+.index-marketing-content {
+  gap: 1rem;
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  align-items: flex-start;
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.index-marketing-text {
+  display: inline-block;
+}
+ 
+@media(max-width: 991px) {
+  .index-marketing-container {
+    grid-gap: var(--dl-space-space-twounits);
+    grid-template-columns: 1fr;
+  }
+}
