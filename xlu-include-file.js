@@ -1,5 +1,5 @@
 // https://stackoverflow.com/questions/40162907/w3includehtml-sometimes-includes-twice
-/*
+
 
 async function xLuIncludeFile() {
     let z = document.getElementsByTagName("*");
@@ -118,4 +118,4 @@ function adjustLinks(component) {
     if (linkSignUp) linkSignUp.href = basePath + 'sign_up/sign_up.html';
     if (linkSignIn) linkSignIn.href = basePath + 'sign_in/sign_in.html';
     if (linkMyRecipes) linkMyRecipes.href = basePath + 'my_recipes/my_recipes.html';
-}*/
+}

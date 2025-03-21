@@ -1,3 +1,30 @@
+// Función para cargar un template en un elemento específico
+function loadTemplate(fileName, id, callback) {
+    console.log("Cargando template:", fileName, "en", id);
+    /*
+    if (id === 'index_marketing.html') {
+        if (typeof loadContent === 'function') {
+            console.log("Ejecutando loadContent()...");
+            loadContent();
+        } else {
+            console.error("Error: loadContent() no está definida.");
+        }
+    } else {*/
+        fetch(fileName)
+            .then((res) => res.text())
+            .then((text) => {
+                document.getElementById(id).innerHTML = text;
+                adjustLinks(id);
+
+                if (callback) callback();
+            })
+            .catch((error) => {
+                console.error(`Error cargando el template ${fileName}:`, error);
+            });
+
+}
+
+
 // Función principal (init)
 function init() {
     console.log("Inicializando templates desde JSON...");
@@ -9,7 +36,9 @@ function init() {
         .then((templates) => {
             templates.forEach((template) => {
                 // Cargar cada template según su configuración
-                loadTemplateAndPopulate(template.template, template.id, template.id);
+                loadTemplate(template.template, template.id, () => {
+                    console.log(`Template ${template.template} cargado en el elemento #${template.id}`);
+                });
             });
         })
         .catch((error) => {
@@ -53,28 +82,6 @@ function getRootPath() {
     const currentPath = window.location.pathname; // Ruta actual (ej.: /paginas/subcarpeta/contact.html)
     const depth = currentPath.split('/').length - 3; // Calcula la profundidad desde la raíz
     return '../'.repeat(depth); // Genera la ruta relativa hacia la raíz
-}
-
-function loadTemplateAndPopulate(templateFile, containerId, templateName) {
-    fetch(templateFile)
-        .then((res) => res.text())
-        .then((htmlContent) => {
-            const container = document.getElementById(containerId);
-            if (!container) {
-                console.error(`Contenedor con ID '${containerId}' no encontrado.`);
-                return;
-            }
-            container.innerHTML = htmlContent;
-
-            // Llama a adjustLinks después de cargar el template
-            adjustLinks(containerId);
-
-            // Ejecutar populateFromJSON solo después de cargar el template
-            populateFromJSON(templateName);
-        })
-        .catch((error) => {
-            console.error(`Error al cargar el template ${templateFile}:`, error);
-        });
 }
 
 

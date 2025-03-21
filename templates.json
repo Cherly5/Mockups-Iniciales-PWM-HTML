@@ -8,8 +8,8 @@
     "id": "footer"
   },
   {
-    "template":"/index/index_marketing1/index_marketing1.html",
-    "id": "index_marketing1"
+    "template":"/index/index_marketing/index_marketing.html",
+    "id": "index_marketing"
   },
   {
     "template":"/index/index_marketing2/index_marketing2.html",
