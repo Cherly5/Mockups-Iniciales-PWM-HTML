@@ -17,7 +17,7 @@
     <link href="sign_in.css" rel="stylesheet" />
     <link rel="stylesheet" href="../navigation-bar/navbar.css" />
     <link href="../footer/footer.css" rel="stylesheet" />
-    <script src="../xlu-include-file.js"></script>
+    <script src="../script.js" defer></script>
   </head>
   <body>
     <div>
@@ -78,7 +78,9 @@
                   <button
                     type="submit"
                     class="sign-in-button1 thq-button-filled"
+                    onclick="signIn()"
                   >
+                    <!--<a href="#" id="link-sign-in2" class="sign-in-text20"></a>-->
                     <span class="sign-in-text14 thq-body-small">
                       <fragment class="sign-in-fragment4">
                         <span class="sign-in-text20">Sign In</span>
@@ -113,7 +115,6 @@
           </div>
         </div>
       </div>
-
       <footer id="footer" xlu-include-file="../footer/footer.html">
       </footer>
 
@@ -122,10 +123,6 @@
       defer=""
       src="../teleport-custom-scripts.js"
     ></script>
-    <script>
-
-      xLuIncludeFile();
-
-    </script>
+    <script src="../login.js" defer></script>
   </body>
 </html>
