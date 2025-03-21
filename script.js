@@ -1,21 +1,29 @@
 // Función para cargar un template en un elemento específico
 function loadTemplate(fileName, id, callback) {
-    fetch(fileName)
-        .then((res) => res.text())
-        .then((text) => {
-            // Inserta el contenido del template en el elemento correspondiente
-            document.getElementById(id).innerHTML = text;
-            adjustLinks(id);
+    console.log("Cargando template:", fileName, "en", id);
+    /*
+    if (id === 'index_marketing.html') {
+        if (typeof loadContent === 'function') {
+            console.log("Ejecutando loadContent()...");
+            loadContent();
+        } else {
+            console.error("Error: loadContent() no está definida.");
+        }
+    } else {*/
+        fetch(fileName)
+            .then((res) => res.text())
+            .then((text) => {
+                document.getElementById(id).innerHTML = text;
+                adjustLinks(id);
 
-            // Llama al callback si se proporciona
-            if (callback) {
-                callback();
-            }
-        })
-        .catch((error) => {
-            console.error(`Error cargando el template ${fileName}:`, error);
-        });
+                if (callback) callback();
+            })
+            .catch((error) => {
+                console.error(`Error cargando el template ${fileName}:`, error);
+            });
+
 }
+
 
 // Función principal (init)
 function init() {

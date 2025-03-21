@@ -13,30 +13,30 @@
   <link rel="stylesheet" href="../../stylesheets/STIX-two-text-font.css" data-tag="font" />
   <link rel="stylesheet" href="../../stylesheets/Inter-font.css" data-tag="font" />
   <link rel="stylesheet" href="../../stylesheets/style.css" />
-  <script defer src="../../populateScript.js"></script> <!-- script.js contiene populateFromJSON -->
+  <link href="index_marketing.css" rel="stylesheet" />
+  <script src="./index_marketing.js" ></script>
+  <style>
+    .index_marketing-tabs-menu {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  </style>
 </head>
 <body>
 <div>
-  <link href="index_slider.css" rel="stylesheet" />
-  <div class="index_slider-gallery3 thq-section-padding">
-    <div class="index_slider-max-width thq-section-max-width">
-      <div class="index_slider-section-title">
-        <h2 data-field="title" class="index_slider-text1 thq-heading-2"></h2>
-        <span data-field="text" class="index_slider-text2 thq-body-large"></span>
+  <div class="thq-section-padding">
+    <div class="index_marketing-container2 thq-section-max-width text-right" id="content-container">
+      <div class="index_marketing-image-container">
+        <img id="dynamic-image" class="index_marketing-image1 thq-img-ratio-16-9"/>
       </div>
-      <div class="index_slider-container1">
-        <div class="index_slider-content">
-          <img
-                  data-field="image"
-                  alt="Culinary Image"
-                  class="index_slider-image1 thq-img-ratio-4-3"
-          />
-        </div>
-      </div>
+      <div class="index_marketing-tabs-menu" id="tabs-container"></div>
     </div>
   </div>
 </div>
-<script defer src="../../teleport-custom-scripts.js"></script>
-<script defer src="../../populateScript.js"></script> <!-- El archivo JavaScript del método -->
 </body>
+
+<script>
+  loadContent();
+</script>
 </html>

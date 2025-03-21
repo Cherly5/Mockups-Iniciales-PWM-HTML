@@ -39,21 +39,31 @@
   <link href="./index.css" rel="stylesheet" />
   <link href="recipes/components/keep-cooking/keep-cooking.css" rel="stylesheet" />
   <link href="navigation-bar/navbar.css" rel="stylesheet" />
-  <script src="script.js" defer></script>
+  <link href="/index/index_marketing/index_marketing.css" rel="stylesheet" />
+  <script src="/index/index_marketing/index_marketing.js" ></script>
+  <script src="./xlu-include-file.js" ></script>
 </head>
+
 <body>
 
-<nav id="navbar"></nav> <!-- Contenedor para el navbar -->
+<nav id="navbar" xlu-include-file="/navigation-bar/navbar.html"></nav> <!-- Contenedor para el navbar -->
 
 <div id="keep-cooking"></div> <!-- Contenedor para el navbar -->
 
-<div id="index_slider"></div> <!-- Contenedor para el slider -->
+<div id="index_slider" xlu-include-file="index/index_slider/index_slider.html"></div> <!-- Contenedor para el slider -->
 
-<div id="index_marketing1"></div> <!-- Contenedor para el marketing 1 -->
+<div id="index_marketing" xlu-include-file="index/index_marketing/index_marketing.html"></div> <!-- Contenedor para el marketing 1 -->
 
 <div id="index_marketing2"></div> <!-- Contenedor para el marketing 2 -->
 
 <footer id="footer"></footer> <!-- Contenedor para el footer -->
 
 </body>
+
+<script>
+  xLuIncludeFile();
+</script>
+
+
 </html>
+

@@ -1,0 +1,43 @@
+{
+  "navbar": {
+    "logo": "/public/external/logo-food-champs.png",
+    "links": [
+      { "id": "link-index", "text": "Home", "href": "#" },
+      { "id": "link-recipes", "text": "Recipes", "href": "#" },
+      { "id": "link-my-recipes", "text": "My recipes", "href": "#" },
+      { "id": "link-about", "text": "About us", "href": "#" }
+    ],
+    "buttons": [
+      { "id": "link-sign-up", "text": "Sign Up", "href": "#", "type": "filled" },
+      { "id": "link-sign-in", "text": "Sign In", "href": "#", "type": "outline" }
+    ],
+    "mobileMenu": {
+      "menuItems": [
+        {
+          "text": "Home",
+          "href": "#",
+          "image": "https://images.unsplash.com/photo-1574484184081-afea8a62f9c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+          "description": "Explore a variety of delicious recipes to try at home"
+        },
+        {
+          "text": "Recipes",
+          "href": "../recipes/recipes.html",
+          "image": "https://images.unsplash.com/photo-1493770348161-369560ae357d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+          "description": "Discover a wide range of recipes from appetizers to desserts"
+        },
+        {
+          "text": "Blog",
+          "href": "/my_recipes/my_recipes.html",
+          "image": "https://images.unsplash.com/photo-1486428263684-28ec9e4f2584?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+          "description": "Read interesting articles and tips about cooking and food trends"
+        },
+        {
+          "text": "Contact",
+          "href": "/about_us/about_us.html",
+          "image": "https://images.unsplash.com/photo-1586197103709-a0b1f31b76ff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+          "description": "Get in touch with us for any inquiries or collaborations"
+        }
+      ]
+    }
+  }
+}
