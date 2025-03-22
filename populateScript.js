@@ -49,7 +49,7 @@ function populateFromJSON(templateName) {
 
 document.addEventListener('DOMContentLoaded', () => {
     // Obtener el nombre del archivo HTML actual sin la extensión
-    const templateName = window.location.pathname.split('/').pop().split('.')[0];
+    const templateName = ("./index/index_slider/index_slider.html").split('/').pop().split('.')[0];
     console.log(`Detectado el archivo HTML: ${templateName}`); // Para verificar en la consola
     // Llamar al método con el nombre del template detectado
     populateFromJSON('index_slider');
