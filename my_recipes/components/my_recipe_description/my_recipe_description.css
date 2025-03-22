@@ -1,49 +1,5 @@
-.my_recipe_description-container {
-  width: 100%;
-  height: auto;
-  display: flex;
-  position: relative;
-  align-items: center;
-  flex-direction: column;
-}
-
-.my_recipe_description-max-width {
-  width: 100%;
-  display: flex;
-  max-width: var(--dl-size-size-maxwidth);
-  align-items: center;
-  flex-direction: column;
-}
-
 .my_recipe_description-buttons-container {
-  flex: 0 0 auto;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
   justify-content: center;
-}
-
-.my_recipe_description-content {
-  flex: 0 0 auto;
-  width: auto;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-
-.my_recipe_description-section {
-  align-self: stretch;
-  align-items: flex-start;
-}
-
-.my_recipe_description-li {
-  align-items: flex-start;
-}
-
-.my_recipe_description-heading {
-  align-self: center;
-  text-align: center;
 }
 
 .my_recipe_description-ul {
@@ -51,9 +7,6 @@
   padding-left: var(--dl-space-space-fiveunits);
 }
 
-.my_recipe_description-text {
-  display: inline-block;
-}
 
 @media(max-width: 767px) {
   .my_recipe_description-ul {

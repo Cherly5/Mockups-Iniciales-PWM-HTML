@@ -14,6 +14,8 @@
         <link rel="stylesheet" href="../stylesheets/STIX-two-text-font.css" data-tag="font"/>
         <link rel="stylesheet" href="../stylesheets/Inter-font.css" data-tag="font"/>
         <link rel="stylesheet" href="../stylesheets/style.css" />
+        <link rel="stylesheet" href="../stylesheets/swiper.css" />
+
 
         <link href="../footer/footer.css" rel="stylesheet" />
         <link href="components/my_recipe_description/my_recipe_description.css" rel="stylesheet" />
@@ -25,21 +27,14 @@
     <body>
         <nav class="navbar-wrapper" id="navbar" xlu-include-file="../navigation-bar/navbar.html">
         </nav>
-        <div>
-            <div class="my_recipes-container">
-
-                <slider_my_recipes id="slider_my_recipes" xlu-include-file="../my_recipes/components/slider_my_recipes/slider_my_recipes.html">
-                </slider_my_recipes>
-
-                <my_recipe_description id="my_recipe_description" xlu-include-file="../my_recipes/components/my_recipe_description/my_recipe_description.html">
-                </my_recipe_description>
-
-
-
-            </div>
-            <footer id="footer" xlu-include-file="../footer/footer.html">
-            </footer>
+        <div class="my_recipes-container">
+            <slider_my_recipes id="slider_my_recipes" xlu-include-file="./components/slider_my_recipes/slider_my_recipes.html">
+            </slider_my_recipes>
+            <my_recipe_description id="my_recipe_description" xlu-include-file="./components/my_recipe_description/my_recipe_description.html">
+            </my_recipe_description>
         </div>
+        <footer id="footer" xlu-include-file="../footer/footer.html">
+        </footer>
         <script>
 
             xLuIncludeFile();
