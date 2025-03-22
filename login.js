@@ -51,3 +51,23 @@ function signUp() {
     alert("¡Registro exitoso! Ahora puedes iniciar sesión.");
     window.location.href = "../sign_in/sign_in.html";
 }
+
+function togglePasswordVisibility(buttonSelector, inputSelector, textSelector) {
+    const button = document.querySelector(buttonSelector);
+    const passwordInput = document.querySelector(inputSelector);
+    const hideText = button.querySelector(textSelector); // Selector del texto
+
+    // Sincronizar el texto al cargar la página
+    hideText.textContent = passwordInput.type === 'password' ? 'Hide' : 'Show';
+
+    hideText.addEventListener('click', function () {
+        if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+            hideText.textContent = 'Show'; // Cambiar texto a "Show"
+        } else {
+            passwordInput.type = 'password';
+            hideText.textContent = 'Hide'; // Cambiar texto a "Hide"
+        }
+    });
+}
+togglePasswordVisibility('.sign-in-hide-password', '#thq-sign-in-1-password', 'span');
