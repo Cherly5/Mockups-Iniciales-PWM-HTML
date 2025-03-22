@@ -25,109 +25,89 @@
       <nav class="navbar-wrapper" id="navbar" xlu-include-file="../navigation-bar/navbar.html">
       </nav>
 
-      <div class="sign-up-container1 sign-up">
+      <div class="section-padding">
         <div class="sign-up-max-width section-max-width">
-          <div class="sign-up-container2">
+          <div class="image-container">
             <img
               alt="FoodChampsHQ Sign Up Image"
               src="https://images.unsplash.com/photo-1595834895565-74fdb5fc3488?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODg2NTY5M3w&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1400"
-              class="sign-up-sign-up-image img-ratio-4-6"
+              class="img-ratio-4-6"
             />
           </div>
-          <div class="sign-up-form-root">
-            <div class="sign-up-form1">
-              <div class="sign-up-title-root">
-                <h2 class="heading-2">
-                  <fragment class="sign-up-fragment1">
-                    <span class="sign-up-text20">
-                      Join Our Foodie Community
-                    </span>
-                  </fragment>
-                </h2>
-                <div class="sign-up-have-an-account-login">
-                  <p class="text-body-large">Already have an account? Sign in</p>
-                </div>
+          <div class="sign-up-form flex-column">
+            <div id="sign-up-title-root">
+              <span class="heading-2">Join Our Foodie Community</span>
+              <p class="text-body-large">Already have an account? Sign in</p>
+            </div>
+            <form class="flex-column">
+              <div id="sign-up-username" class="flex-column">
+                <label for="thq-sign-up-2-username" class="text-body-large">
+                  Username
+                </label>
+                <input
+                        type="text"
+                        id="thq-sign-up-2-username"
+                        required="required"
+                        placeholder="Username"
+                        class="text-input text-body-large"
+                />
               </div>
-              <form class="sign-up-form2">
-                <div class="sign-up-username">
-                  <label for="thq-sign-up-2-username" class="text-body-large">
-                    Username
+              <div id="sign-up-email" class="flex-column">
+                <label for="thq-sign-up-2-email" class="text-body-large">
+                  Email
+                </label>
+                <input
+                        type="email"
+                        id="thq-sign-up-2-email"
+                        required="required"
+                        placeholder="Email address"
+                        class="text-input text-body-large"
+                />
+              </div>
+              <div id="sign-up-password" class="flex-column">
+                <div class="flex-row">
+                  <label
+                          for="thq-sign-up-2-password"
+                          class="text-body-large"
+                  >
+                    Password
                   </label>
-                  <input
-                    type="text"
-                    id="thq-sign-up-2-username"
-                    required="required"
-                    placeholder="Username"
-                    class="sign-up-textinput1 text-input text-body-large"
-                  />
-                </div>
-                <div class="sign-up-email">
-                  <label for="thq-sign-up-2-email" class="text-body-large">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="thq-sign-up-2-email"
-                    required="required"
-                    placeholder="Email address"
-                    class="sign-up-textinput2 text-input text-body-large"
-                  />
-                </div>
-                <div class="sign-up-password">
-                  <div class="sign-up-textfield">
-                    <div class="sign-up-container3">
-                      <label
-                        for="thq-sign-up-2-password"
-                        class="text-body-large"
-                      >
-                        Password
-                      </label>
-                      <div class="sign-up-hide-password">
-                        <svg viewBox="0 0 1024 1024" class="sign-up-icon1">
-                          <path
-                            d="M317.143 762.857l44.571-80.571c-66.286-48-105.714-125.143-105.714-206.857 0-45.143 12-89.714 34.857-128.571-89.143 45.714-163.429 117.714-217.714 201.714 59.429 92 143.429 169.143 244 214.286zM539.429 329.143c0-14.857-12.571-27.429-27.429-27.429-95.429 0-173.714 78.286-173.714 173.714 0 14.857 12.571 27.429 27.429 27.429s27.429-12.571 27.429-27.429c0-65.714 53.714-118.857 118.857-118.857 14.857 0 27.429-12.571 27.429-27.429zM746.857 220c0 1.143 0 4-0.571 5.143-120.571 215.429-240 432-360.571 647.429l-28 50.857c-3.429 5.714-9.714 9.143-16 9.143-10.286 0-64.571-33.143-76.571-40-5.714-3.429-9.143-9.143-9.143-16 0-9.143 19.429-40 25.143-49.714-110.857-50.286-204-136-269.714-238.857-7.429-11.429-11.429-25.143-11.429-39.429 0-13.714 4-28 11.429-39.429 113.143-173.714 289.714-289.714 500.571-289.714 34.286 0 69.143 3.429 102.857 9.714l30.857-55.429c3.429-5.714 9.143-9.143 16-9.143 10.286 0 64 33.143 76 40 5.714 3.429 9.143 9.143 9.143 15.429zM768 475.429c0 106.286-65.714 201.143-164.571 238.857l160-286.857c2.857 16 4.571 32 4.571 48zM1024 548.571c0 14.857-4 26.857-11.429 39.429-17.714 29.143-40 57.143-62.286 82.857-112 128.571-266.286 206.857-438.286 206.857l42.286-75.429c166.286-14.286 307.429-115.429 396.571-253.714-42.286-65.714-96.571-123.429-161.143-168l36-64c70.857 47.429 142.286 118.857 186.857 192.571 7.429 12.571 11.429 24.571 11.429 39.429z"
-                          ></path>
-                        </svg>
-                        <span class="text-body-small"><span>Hide</span></span>
-                      </div>
-                    </div>
-                    <input
-                      type="password"
-                      id="thq-sign-up-2-password"
-                      required="required"
-                      placeholder="Password"
-                      class="sign-up-textinput3 text-input text-body-large"
-                    />
+                  <div class="sign-up-hide-password">
+                    <svg viewBox="0 0 1024 1024" class="sign-up-hide-icon">
+                      <path
+                              d="M317.143 762.857l44.571-80.571c-66.286-48-105.714-125.143-105.714-206.857 0-45.143 12-89.714 34.857-128.571-89.143 45.714-163.429 117.714-217.714 201.714 59.429 92 143.429 169.143 244 214.286zM539.429 329.143c0-14.857-12.571-27.429-27.429-27.429-95.429 0-173.714 78.286-173.714 173.714 0 14.857 12.571 27.429 27.429 27.429s27.429-12.571 27.429-27.429c0-65.714 53.714-118.857 118.857-118.857 14.857 0 27.429-12.571 27.429-27.429zM746.857 220c0 1.143 0 4-0.571 5.143-120.571 215.429-240 432-360.571 647.429l-28 50.857c-3.429 5.714-9.714 9.143-16 9.143-10.286 0-64.571-33.143-76.571-40-5.714-3.429-9.143-9.143-9.143-16 0-9.143 19.429-40 25.143-49.714-110.857-50.286-204-136-269.714-238.857-7.429-11.429-11.429-25.143-11.429-39.429 0-13.714 4-28 11.429-39.429 113.143-173.714 289.714-289.714 500.571-289.714 34.286 0 69.143 3.429 102.857 9.714l30.857-55.429c3.429-5.714 9.143-9.143 16-9.143 10.286 0 64 33.143 76 40 5.714 3.429 9.143 9.143 9.143 15.429zM768 475.429c0 106.286-65.714 201.143-164.571 238.857l160-286.857c2.857 16 4.571 32 4.571 48zM1024 548.571c0 14.857-4 26.857-11.429 39.429-17.714 29.143-40 57.143-62.286 82.857-112 128.571-266.286 206.857-438.286 206.857l42.286-75.429c166.286-14.286 307.429-115.429 396.571-253.714-42.286-65.714-96.571-123.429-161.143-168l36-64c70.857 47.429 142.286 118.857 186.857 192.571 7.429 12.571 11.429 24.571 11.429 39.429z"
+                      ></path>
+                    </svg>
+                    <span class="text-body-small"><span>Hide</span></span>
                   </div>
                 </div>
-              </form>
-              <div class="sign-up-terms-agree">
-                <p class="text-body-large">
-                  By creating an account, you agree to the Terms of use and
-                  Privacy Policy.
-                </p>
-              </div>
-              <div class="sign-up-container4">
-                <button type="submit" class="sign-up-button1 button-background-filled">
-                  <span class="sign-up-text18 text-body-small">
-                    <fragment class="sign-up-fragment2">
-                      <span class="sign-up-text21">Sign Up Now</span>
-                    </fragment>
-                  </span>
-                </button>
-                <img
-                  alt="pastedImage"
-                  src="../public/external/divider-bold.png"
-                  class="sign-up-pasted-image"
+                <input
+                        type="password"
+                        id="thq-sign-up-2-password"
+                        required="required"
+                        placeholder="Password"
+                        class="text-input text-body-large"
                 />
-                <button type="submit" class="sign-up-button2 button-background-filled">
-                  <span class="sign-up-text19 text-body-small">
-                    <fragment class="sign-up-fragment3">
-                      <span class="sign-up-text22">Sign In</span>
-                    </fragment>
-                  </span>
-                </button>
               </div>
+            </form>
+            <div id="sign-up-terms-agree">
+              <p class="text-body-large">
+                By creating an account, you agree to the Terms of use and
+                Privacy Policy.
+              </p>
+            </div>
+            <div class="flex-column sign-up-buttons-container" style="align-items: center;">
+              <button type="submit" class="sign-up-button button-background-filled">
+                  <span class=" text-body-small">Sign Up Now</span>
+              </button>
+              <img
+                      alt="pastedImage"
+                      src="../public/external/divider-bold.png"
+                      class="divider"
+              />
+              <button type="submit" class="sign-up-button button-background-filled">
+                  <span class=" text-body-small">Sign In</span>
+              </button>
             </div>
           </div>
         </div>
