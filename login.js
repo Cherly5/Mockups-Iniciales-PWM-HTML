@@ -70,4 +70,13 @@ function togglePasswordVisibility(buttonSelector, inputSelector, textSelector) {
         }
     });
 }
-togglePasswordVisibility('.sign-in-hide-password', '#thq-sign-in-1-password', 'span');
+
+document.addEventListener('DOMContentLoaded', function () {
+    if (document.querySelector('.sign-in-hide-password')) {
+        togglePasswordVisibility('.sign-in-hide-password', '#thq-sign-in-1-password', 'span');
+    }
+
+    if (document.querySelector('.sign-up-hide-password')) {
+        togglePasswordVisibility('.sign-up-hide-password', '#thq-sign-up-2-password', 'span');
+    }
+});
