@@ -37,22 +37,12 @@
   flex-direction: column;
 }
  
-.marketing-content {
-  gap: 48px;
-  display: flex;
-  align-self: stretch;
-  align-items: flex-start;
-
-  height: 100%;
-}
- 
 .marketing-row {
   align-items: flex-start;
 }
  
 .marketing-feature {
   flex: 1;
-  flex-direction: column;
   height: 100%;
 }
 
@@ -68,11 +58,6 @@
 .marketing-button {
   color: #bf4408;
   background-color: transparent;
-}
- 
-
-.marketing-text {
-  display: inline-block;
 }
 
 @media(max-width: 991px) {
@@ -90,15 +75,11 @@
     width: 100%;
     gap: var(--dl-space-space-oneandhalfunits);
   }
-  .marketing-text {
-    text-align: center;
-  }
+
   .marketing-row {
     flex-direction: column;
   }
-  .marketing-feature-image {
-    width: 100%;
-  }
+
   .marketing-feature {
     width: auto;
   }

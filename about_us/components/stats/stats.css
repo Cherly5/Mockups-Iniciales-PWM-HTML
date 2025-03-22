@@ -1,14 +1,6 @@
-.stats-container {
-  width: 100%;
-  flex-direction: column;
-}
- 
 .stats-max-width {
   gap: var(--dl-space-space-fourunits);
-  flex: 0 0 auto;
-  width: 100%;
   display: flex;
-  align-items: center;
 }
  
 .stats-image-container {
@@ -19,10 +11,6 @@
   align-self: center;
   align-items: flex-start;
   margin-left: auto;
-}
- 
-.stats-row {
-  width: 100%;
 }
  
 .stats-cell {

@@ -195,7 +195,7 @@
 }
  
 .img-ratio-1-1 {
-  height: 100%;
+  width: 100%;
   object-fit: cover;
   aspect-ratio: 1/1;
   border-radius: var(--dl-radius-radius-imageradius);
@@ -322,7 +322,7 @@
 .grid-columns-auto-300 {
   display: grid;
   grid-gap: var(--dl-space-space-oneandhalfunits);
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 }
  
 .carousel-horizontal, .carousel-horizontal-reverse {

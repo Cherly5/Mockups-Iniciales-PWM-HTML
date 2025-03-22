@@ -10,8 +10,6 @@
   gap: var(--dl-space-space-oneandhalfunits);
   width: 100%;
   display: flex;
-  flex-shrink: 0;
-  align-self: stretch;
   align-items: center;
   flex-direction: column;
 }
@@ -46,34 +44,21 @@
   flex: 1;
   width: 100%;
   display: flex;
-  max-width: 500px;
+  max-width: 300px;
   align-items: center;
-  flex-shrink: 0;
   flex-direction: column;
-}
-
-.team-placeholder-image {
-  width: 80px;
-  height: 80px;
 }
 
 .team-member-description {
   gap: var(--dl-space-space-unit);
-  display: flex;
-  align-self: stretch;
-  align-items: center;
-  flex-direction: column;
+  overflow: visible;
 }
 
 .team-title {
-  display: flex;
-  align-self: stretch;
-  align-items: center;
-  flex-direction: column;
+  gap: 0;
 }
 
 .team-member-name {
-  font-style: normal;
   font-weight: 600;
 }
 
