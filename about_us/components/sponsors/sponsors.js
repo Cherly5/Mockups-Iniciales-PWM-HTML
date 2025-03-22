@@ -30,23 +30,3 @@ function loadSponsorsFromJSON(jsonFilePath) {
 document.addEventListener("DOMContentLoaded", () => {
     loadSponsorsFromJSON(getProjectRoot() + "/JSON/sponsors.json");
 });
-
-
-function getProjectRoot() {
-    // Obtener la ruta actual desde donde se ejecuta el script
-    const currentPath = window.location.pathname;
-
-    // Dividir la ruta por '/' y buscar el índice donde está el proyecto
-    const pathSegments = currentPath.split('/');
-    const rootIndex = pathSegments.findIndex((segment) => segment === 'Mockups-Iniciales-PWM-HTML');
-
-    // Si se encuentra el nombre del proyecto en la ruta
-    if (rootIndex !== -1) {
-        // Crear la ruta a la raíz del proyecto
-        const rootPath = pathSegments.slice(0, rootIndex + 1).join('/');
-        return rootPath.endsWith('/') ? rootPath : rootPath + '/';
-    }
-
-    // Si no se encuentra el nombre del proyecto
-    throw new Error("El nombre 'Mockups-Iniciales-PWM-HTML' no está en la ruta actual.");
-}
