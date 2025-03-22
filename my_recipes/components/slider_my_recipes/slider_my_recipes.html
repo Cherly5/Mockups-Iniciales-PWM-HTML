@@ -1,18 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>My Recipes Slider</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta charset="utf-8">
-  <meta property="twitter:card" content="summary_large_image">
+  <title>Recipes Slider</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
 
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <link href="slider_my_recipes.css" rel="stylesheet">
-  <link rel="stylesheet" href="../../../stylesheets/style.css">
+  <link
+          rel="stylesheet"
+          href="https://unpkg.com/animate.css@4.1.1/animate.css"
+  />
+  <link
+          rel="stylesheet"
+          href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+  />
+  <link href="slider_my_recipes.css" rel="stylesheet" />
+  <script src="slider_my_recipes.js" defer></script>
 </head>
 <body>
-
 <div class="slider_my_recipes-gallery3 thq-section-padding">
+  <div class="slider_my_recipes-max-width thq-section-max-width">
+    <div class="slider_my_recipes-section-title">
+      <h2 class="slider_my_recipes-text1 thq-heading-2">
+        <span class="slider_my_recipes-text4">Delicious Recipes</span>
+      </h2>
+      <span class="slider_my_recipes-text2 thq-body-large">
+        <span class="slider_my_recipes-text3">
+          Explore our collection of delicious recipes from around the world.
+        </span>
+      </span>
+    </div>
+    <div class="slider_my_recipes-container">
+      <div class="slider_my_recipes-content">
+        <div data-thq="slider" class="swiper">
+          <div data-thq="slider-wrapper" class="swiper-wrapper">
+            <!-- Las recetas se insertan dinámicamente aquí -->
+          </div>
+          <!-- Botones de navegación -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <!-- Paginación -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  initializeRecipeSlider()
+</script>
+</body>
+</html>
+
+<!--<div class="slider_my_recipes-gallery3 thq-section-padding">
   <div class="slider_my_recipes-max-width thq-section-max-width">
     <div class="slider_my_recipes-section-title">
       <h2 class="slider_my_recipes-text1 thq-heading-2">
@@ -28,12 +69,12 @@
       <div class="slider_my_recipes-content">
         <div class="swiper-container">
           <div class="swiper-wrapper" id="slider-recipes-content">
-            <!-- Las recetas se cargarán dinámicamente aquí -->
+
           </div>
-          <!-- Botones de navegación -->
+
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
-          <!-- Paginación -->
+
           <div class="swiper-pagination"></div>
         </div>
       </div>
@@ -44,6 +85,4 @@
 <script>
 
 </script>
-
-</body>
-</html>
+-->
