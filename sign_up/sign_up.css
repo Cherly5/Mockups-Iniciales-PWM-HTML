@@ -4,23 +4,18 @@
 
 .sign-up-max-width {
   height: 100%;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.image-container {
-  width: 50%;
+.image-container {;
   height: 100%;
   display: flex;
   align-self: center;
-  align-items: flex-start;
-  flex-direction: row;
-  justify-content: flex-start;
 }
 
 .sign-up-form {
-  width: 50%;
+  width: 100%;
   padding: 2em;
 }
 
@@ -56,9 +51,8 @@
 }
  
 @media(max-width: 991px) {
-  .image-container {
-    width: 100%;
-    height: var(--dl-size-size-xxlarge);
+  .sign-up-max-width{
+    grid-template-columns: 1fr;
   }
 }
  
