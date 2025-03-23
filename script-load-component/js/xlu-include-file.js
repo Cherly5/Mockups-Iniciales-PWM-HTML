@@ -25,39 +25,44 @@ async function xLuIncludeFile() {
                         adjustLinks('navbar');
                     } else if (file.includes('footer.html')) {
                         adjustLinks('footer');
-                    } else if (file.includes('welcome_about_us.html')) {
-                        adjustLinks('welcome_about_us');
+                    } else if (file.includes('welcome-about-us.js.html')) {
+                        adjustLinks('welcome-about-us.js');
                     } else if (file.includes('marketing.html')) {
                         adjustLinks('marketing');
                     }
+
+                    //css
+                    const styles = a.querySelectorAll('link[rel="stylesheet"]');
+                    styles.forEach(style => {
+                        if (style.href){
+                            let href = pathing(style.href);
+                            const link = document.createElement("link");
+                            link.rel = "stylesheet";
+                            link.href = href;
+                            link.type = "text/css";
+                            document.head.appendChild(link);
+                            style.remove();
+                        }
+                    })
 
                     // Ahora ejecutamos el script si existe
                     const scripts = a.querySelectorAll('script');
                     scripts.forEach(script => {
                         if (script.src) {
-                            let src = script.src.split('/').slice(0,3).join('/');
-                            if (project() !== '/' + script.src.split('/').at(3) + '/') {
-                                console.log(src)
-                                console.log(project() + script.src.split('/').slice(3).join('/'));
-                                src = src + project() + script.src.split('/').slice(3).join('/');
-                            } else {
-                                src = script.src
-                            }
-                            console.log("change " + src)
+                            let src = pathing(script.src);
                             // Si el script tiene src, lo cargamos dinámicamente
                             const newScript = document.createElement('script');
                             newScript.src = src;
                             newScript.defer = false;
                             newScript.innerText = script.innerText;
                             document.body.appendChild(newScript);
-
                         } else {
                             // Si el script es inline, lo ejecutamos directamente
                             eval(script.innerText);
 
                         }
+                        script.remove()
                     });
-
                     // Introducir un retardo de 5 segundos antes de llamar nuevamente
                     setTimeout(() => {
                         xLuIncludeFile();
@@ -83,8 +88,8 @@ function adjustLinks(component) {
         container = document.querySelector('nav'); // Buscar el navbar
     } else if (component === 'footer') {
         container = document.querySelector('footer'); // Buscar el footer
-    } else if (component === 'welcome_about_us') {
-        container = document.querySelector('#welcome_about_us');
+    } else if (component === 'welcome-about-us.js') {
+        container = document.querySelector('#welcome-about-us.js');
     } else if (component === 'marketing') {
         container = document.querySelector('#marketing');
     }
@@ -132,3 +137,19 @@ function getProjectRoot() {
 function project() {
     return "/" + window.location.pathname.split('/').at(1) + '/'
 }
+
+/**
+ * pathing
+ * @param link source
+ * @returns {string} of absolute path under the working project
+ */
+function pathing(link){
+    let path = link.split('/').slice(0,3).join('/');
+    if (project() !== '/' + link.split('/').at(3) + '/') {
+        path = path + project() + link.split('/').slice(3).join('/');
+    } else {
+        path = link
+    }
+    return path;
+}
+

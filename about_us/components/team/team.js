@@ -1,60 +1,44 @@
 async function loadTeamPage(jsonFilePath) {
-    try {
-        const response = await fetch(jsonFilePath);
-        if (!response.ok) {
-            throw new Error("No se pudo cargar el archivo JSON");
-        }
-
-        const data = await response.json();
-
+    fetch(jsonFilePath).then((res) => res.json()).then((data) => {
         // Actualizar la sección de título
-        const headingElement = document.getElementById("section-heading");
-        const subheadingElement = document.getElementById("section-subheading");
-        const descriptionElement = document.getElementById("section-description");
+        const headingElement = document.getElementById("team-heading");
+        const subheadingElement = document.getElementById("team-subheading");
+        const descriptionElement = document.getElementById("team-description");
 
-        if (headingElement) headingElement.textContent = data.sectionTitle.heading;
-        if (subheadingElement) subheadingElement.textContent = data.sectionTitle.subheading;
-        if (descriptionElement) descriptionElement.textContent = data.sectionTitle.description;
+        if (headingElement) headingElement.textContent = data.title.heading;
+        if (subheadingElement) subheadingElement.textContent = data.title.subheading;
+        if (descriptionElement) descriptionElement.textContent = data.title.description;
 
         // Actualizar los miembros del equipo
-        const teamContainer = document.querySelector(".thq-grid-4"); // Clase para el contenedor de miembros
-        if (teamContainer) {
-            teamContainer.innerHTML = ""; // Limpiar contenido existente
+        const team = document.getElementById("team-members"); // Clase para el contenedor de miembros
+        const template = team.querySelector('template[id=team-member-card]');
+        if (team) {
+            data.members.forEach((member) => {
+                const clone = document.importNode(template.content,true);
+                const card = clone.querySelector(".team-member-card");
+                const img = card.querySelector("img");
+                const name = card.querySelector(".team-member-name");
+                const job = card.querySelector(".team-member-job");
+                const description = card.querySelector(".team-member-description");
+                const icons = card.querySelector(".team-member-icons");
 
-            data.teamMembers.forEach((member) => {
-                const memberCard = `
-          <div class="team-card">
-            <img
-              alt="${member.name}"
-              src="${member.imageSrc}"
-              class="team-placeholder-image1 thq-img-round thq-img-ratio-1-1"
-            />
-            <div class="team-content13">
-              <div class="team-title1">
-                <span class="team-member-name thq-body-small">${member.name}</span>
-                <span class="thq-body-small">${member.title}</span>
-              </div>
-              <span class="thq-body-small">${member.description}</span>
-            </div>
-            <div class="team-social-icons1">
-              ${member.socialIcons
-                    .map(
-                        (icon) =>
-                            `<svg class="thq-icon-small"><use href="#${icon}"></use></svg>`
-                    )
-                    .join("")}
-            </div>
-          </div>
-        `;
-                teamContainer.insertAdjacentHTML("beforeend", memberCard);
+                img.alt = member.name;
+                img.src = member.image;
+                name.textContent = member.name;
+                job.textContent = member.job;
+                description.textContent = member.description;
+                member.icons.forEach(icon => {
+                    icons.appendChild(
+                        document.importNode(
+                            team.querySelector("#"+icon).content,
+                            true).querySelector("svg")
+                    );
+                });
+                team.appendChild(card)
             });
         }
-    } catch (error) {
-        console.error("Error al cargar el JSON:", error);
-    }
+    })
 }
 
-// Llamar al método al cargar la página
-document.addEventListener("DOMContentLoaded", () => {
-    loadTeamPage(getProjectRoot() + "JSON/team.json");
-});
+loadTeamPage("/JSON/team.json").catch( (error) => {console.error("Error al cargar el JSON:", error);});
+

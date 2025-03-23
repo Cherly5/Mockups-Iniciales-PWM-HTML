@@ -247,7 +247,13 @@
 .grid-columns-6 {
   display: grid;
   grid-gap: var(--dl-space-space-twounits);
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(6,1fr);
+}
+
+.grid-columns-4 {
+  display: grid;
+  grid-gap: var(--dl-space-space-twounits);
+  grid-template-columns: repeat(4, 1fr);
 }
 
  
@@ -427,12 +433,18 @@
   .flex-row {
     gap: var(--dl-space-space-oneandhalfunits);
   }
+
   .grid-columns-6 {
     grid-gap: var(--dl-space-space-oneandhalfunits);
     grid-template-columns: 1fr 1fr 1fr;
   }
   .card-layout {
     padding: var(--dl-space-space-oneandhalfunits);
+  }
+
+  .grid-columns-4 {
+    grid-gap: var(--dl-space-space-oneandhalfunits);
+    grid-template-columns: 1fr 1fr;
   }
 
   .grid-columns-2 {
@@ -458,11 +470,16 @@
     grid-template-columns: 1fr 1fr;
   }
 
+  .grid-columns-2 {
+    grid-gap: var(--dl-space-space-unit);
+    grid-template-columns: 1fr;
+  }
 
   .grid-columns-2 {
     grid-gap: var(--dl-space-space-unit);
   }
   .grid-columns-auto-300 {
+    grid-gap: var(--dl-space-space-unit);
     grid-template-columns: 1fr;
   }
 }

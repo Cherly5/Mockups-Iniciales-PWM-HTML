@@ -5,6 +5,7 @@
  
 .stats-image-container {
   max-width: 50%;
+  justify-content: center;
 }
  
 .stats-content {

@@ -3,23 +3,22 @@ function loadSponsorsFromJSON(jsonFilePath) {
         .then((response) => response.json())
         .then((data) => {
             // Actualizar el título
-            const titleElement = document.querySelector(".sponsors-text2");
-            if (titleElement) {
-                titleElement.textContent = data.title;
+            const title = document.getElementById('sponsors-title')
+            if (title) {
+                title.textContent = data.title;
             }
-
+            const template = document.getElementById('sponsors').querySelector("template")
             // Seleccionar el contenedor por ID
-            const gridContainer = document.getElementById("sponsors-grid");
-            if (gridContainer) {
-                gridContainer.innerHTML = ""; // Limpiar contenido previo
-
+            const logos = document.getElementById("sponsors-logos");
+            if (logos) {
+                logos.innerHTML = ""; // Limpiar contenido previo
                 // Crear los logos dinámicamente
                 data.logos.forEach((logo) => {
-                    const imgElement = document.createElement("img");
-                    imgElement.alt = logo.alt;
-                    imgElement.src = logo.src;
-                    imgElement.className = `${logo.class} thq-img-ratio-16-9`;
-                    gridContainer.appendChild(imgElement);
+                    const clone = document.importNode(template.content, true);
+                    const img = clone.querySelector("img");
+                    img.alt = logo.alt;
+                    img.src = logo.src;
+                    logos.appendChild(img);
                 });
             }
         })
@@ -27,6 +26,4 @@ function loadSponsorsFromJSON(jsonFilePath) {
 }
 
 // Llamar a la función al cargar la página
-document.addEventListener("DOMContentLoaded", () => {
-    loadSponsorsFromJSON(getProjectRoot() + "/JSON/sponsors.json");
-});
+loadSponsorsFromJSON("/JSON/sponsors.json");
