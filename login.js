@@ -1,30 +1,38 @@
 function signIn() {
-    console.log("Botón Sign In presionado"); // Esto ayuda a depurar
+    console.log("Inicio de sesión iniciado");
 
     // Obtener los valores del formulario
     const email = document.getElementById("thq-sign-in-1-email").value;
     const password = document.getElementById("thq-sign-in-1-password").value;
 
-    // Verificar que los campos no estén vacíos
     if (!email || !password) {
         alert("Por favor, ingresa tu email y contraseña.");
         return;
     }
 
-    // Simulación de autenticación básica (reemplazar con backend en una app real)
-    if (email === "user@example.com" && password === "123") {
+    // Recuperar usuarios existentes en localStorage
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+
+    // Verificar credenciales
+    const user = users.find(user => user.email === email && user.password === password);
+
+    if (user) {
+        alert(`¡Bienvenido, ${user.username}!`);
         console.log("Inicio de sesión exitoso");
-        window.location.href = "profile.html"; // Redirige al usuario
+        // Redirige según sea necesario
+        window.location.href = "../profile/profile.html";
     } else {
-        console.log("Credenciales incorrectas");
         alert("Email o contraseña incorrectos.");
+        console.log("Credenciales incorrectas");
     }
 }
 
+
 // Función para registrarse (Sign Up)
 function signUp() {
-    console.log("Botón Sign Up presionado");
+    console.log("Registro iniciado");
 
+    // Obtener los valores ingresados del formulario
     const username = document.getElementById("thq-sign-up-2-username").value;
     const email = document.getElementById("thq-sign-up-2-email").value;
     const password = document.getElementById("thq-sign-up-2-password").value;
@@ -45,12 +53,27 @@ function signUp() {
         return;
     }
 
-    const user = { username, email, password };
-    localStorage.setItem("user", JSON.stringify(user));
+    // Recuperar usuarios existentes en localStorage
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+
+    // Verificar si el email ya está registrado
+    const existingUser = users.find(user => user.email === email);
+    if (existingUser) {
+        alert("El email ya está registrado. Por favor, inicia sesión.");
+        return;
+    }
+
+    // Crear un nuevo usuario
+    const newUser = { username, email, password };
+    users.push(newUser);
+
+    // Guardar en localStorage
+    localStorage.setItem("users", JSON.stringify(users));
 
     alert("¡Registro exitoso! Ahora puedes iniciar sesión.");
-    window.location.href = "../sign_in/sign_in.html";
+    window.location.href = "../sign_in/sign_in.html"; // Redirige a la página de inicio de sesión
 }
+
 
 function togglePasswordVisibility(buttonSelector, inputSelector, textSelector) {
     const button = document.querySelector(buttonSelector);
