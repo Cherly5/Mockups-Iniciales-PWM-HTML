@@ -35,9 +35,18 @@ async function xLuIncludeFile() {
                     const scripts = a.querySelectorAll('script');
                     scripts.forEach(script => {
                         if (script.src) {
+                            let src = script.src.split('/').slice(0,3).join('/');
+                            if (project() !== '/' + script.src.split('/').at(3) + '/') {
+                                console.log(src)
+                                console.log(project() + script.src.split('/').slice(3).join('/'));
+                                src = src + project() + script.src.split('/').slice(3).join('/');
+                            } else {
+                                src = script.src
+                            }
+                            console.log("change " + src)
                             // Si el script tiene src, lo cargamos dinámicamente
                             const newScript = document.createElement('script');
-                            newScript.src = script.src;
+                            newScript.src = src;
                             newScript.defer = false;
                             newScript.innerText = script.innerText;
                             document.body.appendChild(newScript);
@@ -118,4 +127,8 @@ function getProjectRoot() {
 
     // Si no se encuentra el nombre del proyecto
     throw new Error("El nombre 'Mockups-Iniciales-PWM-HTML' no está en la ruta actual.");
+}
+
+function project() {
+    return "/" + window.location.pathname.split('/').at(1) + '/'
 }

@@ -5,6 +5,7 @@ async function loadMarketingPage(jsonFilePath) {
             throw new Error("No se pudo cargar el archivo JSON");
         }
 
+        /** @type {JSON}*/
         const data = await response.json();
 
         // Actualizar la sección del título
@@ -17,25 +18,21 @@ async function loadMarketingPage(jsonFilePath) {
         if (descriptionElement) descriptionElement.textContent = data.sectionTitle.description;
 
         // Generar dinámicamente las características
-        const featuresContainer = document.querySelector(".marketing-row");
+        const featuresContainer = document.getElementById("marketing-features");
+        const template = featuresContainer.querySelector("template");
+        console.log(template)
         if (featuresContainer) {
             featuresContainer.innerHTML = ""; // Limpiar contenido existente
 
             data.features.forEach((feature) => {
-                const featureHTML = `
-          <div class="marketing-feature thq-flex-column">
-            <img
-              alt="${feature.altText}"
-              src="${feature.imageSrc}"
-              class="thq-img-ratio-4-3 marketing-feature-image"
-            />
-            <div class="marketing-content thq-flex-column">
-              <h3 class="thq-heading-3 marketing-text">${feature.title}</h3>
-              <span class="thq-body-small marketing-text">${feature.description}</span>
-            </div>
-          </div>
-        `;
-                featuresContainer.insertAdjacentHTML("beforeend", featureHTML);
+                const clone = document.importNode(template.content, true);
+                console.log(clone);
+                const img = clone.querySelector("img")
+                img.src = feature.image;
+                img.alt = feature.alt;
+                clone.querySelector(".heading-3").innerText = feature.title;
+                clone.querySelector(".text-body-small").innerText = feature.description;
+                featuresContainer.appendChild(clone)
             });
         }
 
@@ -50,7 +47,8 @@ async function loadMarketingPage(jsonFilePath) {
     }
 }
 
-// Llamar a la función al cargar la página
-document.addEventListener("DOMContentLoaded", () => {
-    loadMarketingPage(getProjectRoot() + "JSON/marketing.json");
+console.log(window.location.pathname + " mar")
+
+loadMarketingPage("/JSON/marketing.json").then(() => {
+    console.log("end");
 });
