@@ -1,0 +1,26 @@
+[
+  {
+    "template": "/navigation-bar/navbar.html",
+    "id": "navbar"
+  },
+  {
+    "template": "/footer/footer.html",
+    "id": "footer"
+  },
+  {
+    "template":"/index/index_marketing/index_marketing.html",
+    "id": "index_marketing"
+  },
+  {
+    "template":"/index/index_marketing2/index_marketing2.html",
+    "id": "index_marketing2"
+  },
+  {
+    "template":"/index/index_slider/index_slider.html",
+    "id": "index_slider"
+  },
+  {
+    "template":"/recipes/components/keep-cooking/keep-cooking.html",
+    "id": "keep-cooking"
+  }
+]

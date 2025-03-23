@@ -1,38 +1,5 @@
 // https://stackoverflow.com/questions/40162907/w3includehtml-sometimes-includes-twice
-/*
-function xLuIncludeFile() {
-    let z, i, a, file, xhttp;
 
-    z = document.getElementsByTagName("*");
-
-    for (i = 0; i < z.length; i++) {
-        if (z[i].getAttribute("xlu-include-file")) {
-            a = z[i].cloneNode(false);
-            file = z[i].getAttribute("xlu-include-file");
-            xhttp = new XMLHttpRequest();
-
-            xhttp.onreadystatechange = function () {
-                if (xhttp.readyState === 4 && xhttp.status === 200) {
-                    a.removeAttribute("xlu-include-file");
-                    a.innerHTML = xhttp.responseText;
-                    z[i].parentNode.replaceChild(a, z[i]);
-                    xLuIncludeFile();
-                }
-            }
-
-            // false makes the send operation synchronous, which solves a problem
-            // when using this function in short pages with Chrome. But it is
-            // deprecated on the main thread due to its impact on responsiveness.
-            // This call may end up throwing an exception someday.
-
-            xhttp.open("GET", file, false);
-            xhttp.send();
-
-            return;
-        }
-    }
-}
-*/
 
 async function xLuIncludeFile() {
     let z = document.getElementsByTagName("*");
@@ -47,28 +14,6 @@ async function xLuIncludeFile() {
                 if (response.ok) {
 
                     let content = await response.text();
-
-                    // Si el archivo es una plantilla, reemplazamos los placeholders
-                    if (file === "article-template.html") {
-                        let articleData = {
-                            title: z[i].getAttribute("data-title"),
-                            subtitle: z[i].getAttribute("data-subtitle"),
-                            date: z[i].getAttribute("data-date"),
-                            displayDate: z[i].getAttribute("data-display-date"),
-                            content: z[i].getAttribute("data-content"),
-                            image: z[i].getAttribute("data-image"),
-                            imageCaption: z[i].getAttribute("data-image-caption")
-                        };
-
-                        content = content.replace(/{{title}}/g, articleData.title)
-                            .replace(/{{subtitle}}/g, articleData.subtitle)
-                            .replace(/{{date}}/g, articleData.date)
-                            .replace(/{{displayDate}}/g, articleData.displayDate)
-                            .replace(/{{content}}/g, articleData.content)
-                            .replace(/{{image}}/g, articleData.image || '')
-                            .replace(/{{imageCaption}}/g, articleData.imageCaption || '');
-                    }
-
 
                     a.removeAttribute("xlu-include-file");
                     //a.innerHTML = await response.text();
@@ -93,7 +38,7 @@ async function xLuIncludeFile() {
                             // Si el script tiene src, lo cargamos dinámicamente
                             const newScript = document.createElement('script');
                             newScript.src = script.src;
-                            newScript.defer = true;
+                            newScript.defer = false;
                             newScript.innerText = script.innerText;
                             document.body.appendChild(newScript);
 
@@ -104,7 +49,10 @@ async function xLuIncludeFile() {
                         }
                     });
 
-                    xLuIncludeFile();
+                    // Introducir un retardo de 5 segundos antes de llamar nuevamente
+                    setTimeout(() => {
+                        xLuIncludeFile();
+                    }, 500); // 5000 milisegundos = 5 segundos
                 }
             } catch (error) {
                 console.error("Error fetching file:", error);
@@ -151,4 +99,23 @@ function adjustLinks(component) {
     if (linkSignUp) linkSignUp.href = basePath + 'sign_up/sign_up.html';
     if (linkSignIn) linkSignIn.href = basePath + 'sign_in/sign_in.html';
     if (linkMyRecipes) linkMyRecipes.href = basePath + 'my_recipes/my_recipes.html';
+}
+
+function getProjectRoot() {
+    // Obtener la ruta actual desde donde se ejecuta el script
+    const currentPath = window.location.pathname;
+
+    // Dividir la ruta por '/' y buscar el índice donde está el proyecto
+    const pathSegments = currentPath.split('/');
+    const rootIndex = pathSegments.findIndex((segment) => segment === 'Mockups-Iniciales-PWM-HTML');
+
+    // Si se encuentra el nombre del proyecto en la ruta
+    if (rootIndex !== -1) {
+        // Crear la ruta a la raíz del proyecto
+        const rootPath = pathSegments.slice(0, rootIndex + 1).join('/');
+        return rootPath.endsWith('/') ? rootPath : rootPath + '/';
+    }
+
+    // Si no se encuentra el nombre del proyecto
+    throw new Error("El nombre 'Mockups-Iniciales-PWM-HTML' no está en la ruta actual.");
 }
