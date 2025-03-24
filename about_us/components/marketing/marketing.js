@@ -41,4 +41,4 @@ async function loadMarketingPage(jsonFilePath) {
     }
 }
 
-loadMarketingPage("/JSON/about-us-marketing.json").catch((er) => {console.error("Error al cargar el JSON:", er);})
+loadMarketingPage(document.getElementById("marketing").querySelector("a[rel=json]").href).catch((er) => {console.error("Error al cargar el JSON:", er);})

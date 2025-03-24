@@ -1,4 +1,4 @@
-fetch("/JSON/stats.json").then((response) => response.json()).then((data) => {
+fetch(document.getElementById("stats").querySelector("a[rel=json]").href).then((response) => response.json()).then((data) => {
     const title = document.getElementById("stats-title");
     const subtitle = document.getElementById("stats-subtitle");
     const description = document.getElementById("stats-description");

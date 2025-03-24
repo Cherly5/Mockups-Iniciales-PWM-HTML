@@ -26,4 +26,4 @@ function loadSponsorsFromJSON(jsonFilePath) {
 }
 
 // Llamar a la función al cargar la página
-loadSponsorsFromJSON("/JSON/sponsors.json");
+loadSponsorsFromJSON(document.getElementById("sponsors").querySelector("a[rel=json]").href);

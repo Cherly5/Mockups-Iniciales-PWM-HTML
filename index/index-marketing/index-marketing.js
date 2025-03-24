@@ -1,4 +1,6 @@
-fetch("/JSON/index-marketing.json").then((response) => response.json()).then((data) => {
+
+
+fetch(document.getElementById("index-marketing").querySelector("a[rel=json]").href).then((response) => response.json()).then((data) => {
     const marketing = data.marketing;
     const template = document.getElementById("index-marketing-tab");
     const container = document.getElementById("index-marketing-container");

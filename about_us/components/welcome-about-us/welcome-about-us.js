@@ -1,4 +1,4 @@
-fetch("/JSON/welcome-about-us.json").then((response) => response.json()).then((data) => {
+fetch(document.getElementById("welcome-about-us").querySelector("a[rel=json]").href).then((response) => response.json()).then((data) => {
     const welcome = document.getElementById("welcome-about-us");
     welcome.querySelector(".heading-1").innerText = data.title;
     welcome.querySelector(".text-body-large").innerText = data.subtitle;

@@ -40,5 +40,5 @@ async function loadTeamPage(jsonFilePath) {
     })
 }
 
-loadTeamPage("/JSON/team.json").catch( (error) => {console.error("Error al cargar el JSON:", error);});
+loadTeamPage(document.getElementById("team").querySelector("a[rel=json]").href).catch( (error) => {console.error("Error al cargar el JSON:", error);});
 
