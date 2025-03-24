@@ -1,4 +1,4 @@
-function signIn() {
+async function signIn() {
     console.log("Inicio de sesión iniciado");
 
     // Obtener los valores del formulario
@@ -10,26 +10,30 @@ function signIn() {
         return;
     }
 
-    // Recuperar usuarios existentes en localStorage
-    let users = JSON.parse(localStorage.getItem("users")) || [];
+    try {
+        // Obtener usuarios desde el servidor JSON Fake
+        const response = await fetch("http://localhost:3000/users");
+        const users = await response.json();
 
-    // Verificar credenciales
-    const user = users.find(user => user.email === email && user.password === password);
+        // Verificar credenciales
+        const user = users.find(user => user.email === email && user.password === password);
 
-    if (user) {
-        alert(`¡Bienvenido, ${user.username}!`);
-        console.log("Inicio de sesión exitoso");
-        // Redirige según sea necesario
-        window.location.href = "../profile/profile.html";
-    } else {
-        alert("Email o contraseña incorrectos.");
-        console.log("Credenciales incorrectas");
+        if (user) {
+            alert(`¡Bienvenido, ${user.username}!`);
+            console.log("Inicio de sesión exitoso");
+            // Redirige según sea necesario
+            window.location.href = "../profile/profile.html";
+        } else {
+            alert("Email o contraseña incorrectos.");
+            console.log("Credenciales incorrectas");
+        }
+    } catch (error) {
+        console.error("Error al iniciar sesión:", error);
     }
 }
 
-
 // Función para registrarse (Sign Up)
-function signUp() {
+async function signUp() {
     console.log("Registro iniciado");
 
     // Obtener los valores ingresados del formulario
@@ -53,27 +57,35 @@ function signUp() {
         return;
     }
 
-    // Recuperar usuarios existentes en localStorage
-    let users = JSON.parse(localStorage.getItem("users")) || [];
+    try {
+        // Verificar si el email ya está registrado
+        const response = await fetch("http://localhost:3000/users");
+        const users = await response.json();
 
-    // Verificar si el email ya está registrado
-    const existingUser = users.find(user => user.email === email);
-    if (existingUser) {
-        alert("El email ya está registrado. Por favor, inicia sesión.");
-        return;
+        const existingUser = users.find(user => user.email === email);
+        if (existingUser) {
+            alert("El email ya está registrado. Por favor, inicia sesión.");
+            return;
+        }
+
+        // Crear un nuevo usuario
+        const newUser = { username, email, password };
+
+        // Guardar en el servidor
+        await fetch("http://localhost:3000/users", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(newUser)
+        });
+
+        alert("¡Registro exitoso! Ahora puedes iniciar sesión.");
+        window.location.href = "../sign_in/sign_in.html"; // Redirige a la página de inicio de sesión
+    } catch (error) {
+        console.error("Error al registrarse:", error);
     }
-
-    // Crear un nuevo usuario
-    const newUser = { username, email, password };
-    users.push(newUser);
-
-    // Guardar en localStorage
-    localStorage.setItem("users", JSON.stringify(users));
-
-    alert("¡Registro exitoso! Ahora puedes iniciar sesión.");
-    window.location.href = "../sign_in/sign_in.html"; // Redirige a la página de inicio de sesión
 }
-
 
 function togglePasswordVisibility(buttonSelector, inputSelector, textSelector) {
     const button = document.querySelector(buttonSelector);
