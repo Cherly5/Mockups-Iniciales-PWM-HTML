@@ -27,8 +27,8 @@ async function xLuIncludeFile() {
                         adjustLinks('footer');
                     } else if (file.includes('welcome-about-us.js.html')) {
                         adjustLinks('welcome-about-us.js');
-                    } else if (file.includes('marketing.html')) {
-                        adjustLinks('marketing');
+                    } else if (file.includes('index-marketing.html')) {
+                        adjustLinks('index-marketing');
                     }
 
                     //css
@@ -90,8 +90,8 @@ function adjustLinks(component) {
         container = document.querySelector('footer'); // Buscar el footer
     } else if (component === 'welcome-about-us.js') {
         container = document.querySelector('#welcome-about-us.js');
-    } else if (component === 'marketing') {
-        container = document.querySelector('#marketing');
+    } else if (component === 'index-marketing') {
+        container = document.querySelector('#index-marketing');
     }
 
     if (!container) {

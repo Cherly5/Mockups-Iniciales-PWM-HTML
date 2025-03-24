@@ -13,6 +13,7 @@
   animation-iteration-count: 1;
   animation-timing-function: ease;
   grid-area: image;
+  align-self: center;
 }
 
 .index-marketing-tabs-menu {
