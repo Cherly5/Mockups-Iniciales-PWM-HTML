@@ -1,7 +1,18 @@
+// Función para verificar si el JSON Server está activo
+async function isServerActive() {
+    try {
+        const response = await fetch("http://localhost:3000/users");
+        return response.ok;
+    } catch (error) {
+        console.warn("El JSON Server no está activo.");
+        return false;
+    }
+}
+
+// Función para iniciar sesión (Sign In)
 async function signIn() {
     console.log("Inicio de sesión iniciado");
 
-    // Obtener los valores del formulario
     const email = document.getElementById("thq-sign-in-1-email").value;
     const password = document.getElementById("thq-sign-in-1-password").value;
 
@@ -10,25 +21,21 @@ async function signIn() {
         return;
     }
 
-    try {
-        // Obtener usuarios desde el servidor JSON Fake
-        const response = await fetch("http://localhost:3000/users");
-        const users = await response.json();
+    const serverActive = await isServerActive();
+    const users = serverActive
+        ? await (await fetch("http://localhost:3000/users")).json()
+        : JSON.parse(localStorage.getItem("users")) || [];
 
-        // Verificar credenciales
-        const user = users.find(user => user.email === email && user.password === password);
+    const user = users.find(user => user.email === email && user.password === password);
 
-        if (user) {
-            alert(`¡Bienvenido, ${user.username}!`);
-            console.log("Inicio de sesión exitoso");
-            // Redirige según sea necesario
-            window.location.href = "../profile/profile.html";
-        } else {
-            alert("Email o contraseña incorrectos.");
-            console.log("Credenciales incorrectas");
-        }
-    } catch (error) {
-        console.error("Error al iniciar sesión:", error);
+    if (user) {
+        localStorage.setItem("currentUser", JSON.stringify(user));
+        alert(`¡Bienvenido, ${user.username}!`);
+        console.log("Inicio de sesión exitoso");
+        window.location.href = "../profile/profile.html";
+    } else {
+        alert("Email o contraseña incorrectos.");
+        console.log("Credenciales incorrectas");
     }
 }
 
@@ -36,7 +43,6 @@ async function signIn() {
 async function signUp() {
     console.log("Registro iniciado");
 
-    // Obtener los valores ingresados del formulario
     const username = document.getElementById("thq-sign-up-2-username").value;
     const email = document.getElementById("thq-sign-up-2-email").value;
     const password = document.getElementById("thq-sign-up-2-password").value;
@@ -57,34 +63,39 @@ async function signUp() {
         return;
     }
 
-    try {
-        // Verificar si el email ya está registrado
-        const response = await fetch("http://localhost:3000/users");
-        const users = await response.json();
+    const serverActive = await isServerActive();
+    const users = serverActive
+        ? await (await fetch("http://localhost:3000/users")).json()
+        : JSON.parse(localStorage.getItem("users")) || [];
 
-        const existingUser = users.find(user => user.email === email);
-        if (existingUser) {
-            alert("El email ya está registrado. Por favor, inicia sesión.");
-            return;
-        }
-
-        // Crear un nuevo usuario
-        const newUser = { username, email, password };
-
-        // Guardar en el servidor
-        await fetch("http://localhost:3000/users", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(newUser)
-        });
-
-        alert("¡Registro exitoso! Ahora puedes iniciar sesión.");
-        window.location.href = "../sign_in/sign_in.html"; // Redirige a la página de inicio de sesión
-    } catch (error) {
-        console.error("Error al registrarse:", error);
+    const existingUser = users.find(user => user.email === email);
+    if (existingUser) {
+        alert("El email ya está registrado. Por favor, inicia sesión.");
+        return;
     }
+
+    const newUser = { username, email, password };
+    users.push(newUser);
+
+    if (serverActive) {
+        try {
+            await fetch("http://localhost:3000/users", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(newUser)
+            });
+            console.log("Usuario guardado en el servidor.");
+        } catch (error) {
+            console.error("Error al guardar en el servidor:", error);
+        }
+    }
+
+    // Guardar en localStorage
+    localStorage.setItem("users", JSON.stringify(users));
+    alert("¡Registro exitoso! Ahora puedes iniciar sesión.");
+    window.location.href = "../profile/profile.html";
 }
 
 function togglePasswordVisibility(buttonSelector, inputSelector, textSelector) {
