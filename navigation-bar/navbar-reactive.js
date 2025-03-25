@@ -28,7 +28,7 @@ function updateNavbar(data, excludeIds) {
 
         if (!excludeIds.includes(link.id)) {
             const a = document.createElement("a");
-            a.href = link.href;
+            a.href = project() + link.href;
             a.id = link.id;
             a.className = "text-body-small link";
             a.innerHTML = `<span>${link.label}</span>`;
@@ -45,7 +45,7 @@ function updateNavbar(data, excludeIds) {
             btn.className = button.id === "link-profile" ? "button-animated button-background-filled-reverse" : "button-animated button-background-filled";
             const a = document.createElement("a");
 
-            a.href = button.href;
+            a.href = project() + button.href;
             a.id = button.id;
             a.className = "button-link";
             a.textContent = button.label;

@@ -1,5 +1,5 @@
 function setUserToNull() {
-    const users = JSON.stringify("cualquiercosa")
+    const users = JSON.stringify(null)
     localStorage.setItem("users", users);
 }
 

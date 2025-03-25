@@ -4,26 +4,26 @@
     "alt": "Food Champs Logo"
   },
   "links": [
-    { "id": "link-index", "label": "Home", "href": "#" },
-    { "id": "link-recipes", "label": "Recipes", "href": "#" },
-    { "id": "link-my-recipes", "label": "My recipes", "href": "#" },
-    { "id": "link-about", "label": "About us", "href": "#" }
+    { "id": "link-index", "label": "Home", "href": "/index/index.html" },
+    { "id": "link-recipes", "label": "Recipes", "href": "/recipes/recipes.html" },
+    { "id": "link-my-recipes", "label": "My recipes", "href": "/my_recipes/my_recipes.html" },
+    { "id": "link-about", "label": "About us", "href": "/about_us/about_us.html" }
   ],
   "buttons": [
-    { "id": "link-sign-up", "label": "Sign Up", "href": "#" },
-    { "id": "link-sign-in", "label": "Sign In", "href": "#" },
-    { "id": "link-profile", "label": "Your profile", "href": "#" }
+    { "id": "link-sign-up", "label": "Sign Up", "href": "/sign_up/sign_up.html" },
+    { "id": "link-sign-in", "label": "Sign In", "href": "/sign_in/sign_in.html" },
+    { "id": "link-profile", "label": "Your profile", "href": "/profile/profile.html" }
   ],
   "mobileLinks": [
     {
-      "href": "#",
+      "href": "/index/index.html",
       "imageSrc": "https://images.unsplash.com/photo-1574484184081-afea8a62f9c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
       "altText": "Image of a cozy kitchen setting",
       "title": "Home",
       "description": "Explore a variety of delicious recipes to try at home"
     },
     {
-      "href": "../recipes/recipes.html",
+      "href": "/recipes/recipes.html",
       "imageSrc": "https://images.unsplash.com/photo-1493770348161-369560ae357d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
       "altText": "Image of a beautifully plated dish",
       "title": "Recipes",
