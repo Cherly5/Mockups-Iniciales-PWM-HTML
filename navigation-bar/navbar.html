@@ -1,138 +1,90 @@
-<header data-thq="thq-navbar" class="navbar-navbar-interactive">
+<header data-thq="thq-navbar" class="navbar-interactive">
   <!-- thin -->
   <div data-thq="thq-navbar-nav" class="navbar-desktop-menu flex-row">
-    <img
-            alt="image"
-            src="/public/external/logo-food-champs.png"
-            class="logo"
-    />
+    <img alt="image" src="/public/external/logo-food-champs.png" class="logo"/>
     <nav id="navigation-bar" class=" flex-row">
-      <a href="#" id="link-index" class="text-body-small link">
-        <span >Home</span>
+      <a rel="internal" href="/index/index.html" id="link-index" class="text-body-small link"><span >Home</span></a>
+      <a rel="internal" href="/recipes/recipes.html" id="link-recipes" class="text-body-small link"><span >Recipes</span></a>
+      <a rel="internal" href="/my_recipes/my_recipes.html" id="link-my-recipes" class="text-body-small link"><span >My recipes</span>
       </a>
-      <a
-              href="#"
-              id="link-recipes"
-              class="text-body-small link"
-      >
-        <span >Recipes</span>
-      </a>
-      <a
-              href="#"
-              id="link-my-recipes"
-              class="text-body-small link"
-      >
-        <span >My recipes</span>
-      </a>
-      <a href="#" id="link-about" class="text-body-small link">
-        <span >About us</span>
-      </a>
-
+      <a rel="internal" href="/about_us/about_us.html" id="link-about" class="text-body-small link"><span >About us</span></a>
     </nav>
     <div class="flex-row">
-      <button
-              class="button-animated button-background-filled"
-      >
-        <a href="#" id="link-sign-up" class="button-link ">Sign Up</a>
+      <button class="button-animated button-background-filled">
+        <a rel="internal" href="/sign_up/sign_up.html" id="link-sign-up" class="button-link ">Sign Up</a>
       </button>
-      <button
-              class="button-animated button-background-filled-reverse"
-      >
-        <a href="#" id="link-sign-in" class="button-link ">Sign In</a>
+      <button class="button-animated button-background-filled-reverse">
+        <a rel="internal" href="/sign_in/sign_in.html" id="link-sign-in" class="button-link ">Sign In</a>
       </button>
     </div>
   </div>
   <!-- navbar-pop-up-menu -->
   <div data-thq="thq-burger-menu" class="navbar-burger-menu">
     <svg viewBox="0 0 1024 1024" class="navbar-icon-pop-up">
-      <path
-              d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-      ></path>
+      <path d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"></path>
     </svg>
   </div>
   <div data-thq="thq-mobile-menu" class="navbar-mobile-menu">
     <div class="flex-column menu">
       <div class="navbar-top section-max-width flex-row">
-        <img
-                alt="image"
-                src="/public/external/logo-food-champs.png"
-                class="logo"
-        />
+        <img alt="image" src="/public/external/logo-food-champs.png" class="logo"/>
         <!-- class navbar-close-menu is necessary for it to work -->
         <svg data-thq="thq-close-menu" class="navbar-close-menu navbar-icon-pop-up"  viewBox="0 0 1024 1024">
-          <path
-                  d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
-          ></path>
+          <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"></path>
         </svg>
       </div>
       <nav id="links-pop-up" class="flex-column">
-        <a href="#">
+        <a rel="internal" href="/index/index.html">
           <div class="flex-row">
-            <img
-                    alt="Image of a cozy kitchen setting"
-                    src="https://images.unsplash.com/photo-1574484184081-afea8a62f9c0?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODYxMzYxOHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                    class="navbar-page-image img-ratio-1-1"
-            />
+            <img alt="Image of a cozy kitchen setting"
+                 src="https://images.unsplash.com/photo-1574484184081-afea8a62f9c0?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODYxMzYxOHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                 class="navbar-page-image img-ratio-1-1"/>
             <div class="flex-column link-content">
               <span class="navbar-page text-body-large ">Home</span>
-              <span class="text-body-small ">
-                      Explore a variety of delicious recipes to try at home
-                    </span>
+              <span class="text-body-small ">Explore a variety of delicious recipes to try at home</span>
             </div>
           </div>
         </a>
-        <a href="../recipes/recipes.html">
+        <a rel="internal" href="/recipes/recipes.html">
           <div class="flex-row">
-            <img
-                    alt="Image of a beautifully plated dish"
-                    src="https://images.unsplash.com/photo-1493770348161-369560ae357d?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODYxMzYxOHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                    class="navbar-page-image img-ratio-1-1"
-            />
+            <img alt="Image of a beautifully plated dish"
+                 src="https://images.unsplash.com/photo-1493770348161-369560ae357d?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODYxMzYxOHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                 class="navbar-page-image img-ratio-1-1"/>
             <div class="flex-column link-content">
               <span class="navbar-page text-body-large ">Recipes</span>
-              <span class="text-body-small ">
-                      Discover a wide range of recipes from appetizers to desserts
-                    </span>
+              <span class="text-body-small ">Discover a wide range of recipes from appetizers to desserts</span>
             </div>
           </div>
         </a>
-        <a href="/my_recipes/my_recipes.html">
+        <a rel="internal" href="/my_recipes/my_recipes.html">
           <div class="flex-row">
-            <img
-                    alt="Image of a person writing in a food blog"
-                    src="https://images.unsplash.com/photo-1486428263684-28ec9e4f2584?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODYxMzYxOXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                    class="navbar-page-image img-ratio-1-1"
-            />
+            <img alt="Image of a person writing in a food blog"
+                 src="https://images.unsplash.com/photo-1486428263684-28ec9e4f2584?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODYxMzYxOXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                 class="navbar-page-image img-ratio-1-1"/>
             <div class="flex-column link-content">
               <span class="navbar-page text-body-large ">Blog</span>
-              <span class="text-body-small ">
-                      Read interesting articles and tips about cooking and food trends
-                    </span>
+              <span class="text-body-small ">Read interesting articles and tips about cooking and food trends</span>
             </div>
           </div>
         </a>
-        <a href="/about_us/about_us.html">
+        <a rel="internal" href="/about_us/about_us.html">
           <div class="flex-row">
-            <img
-                    alt="Image of a contact us form"
-                    src="https://images.unsplash.com/photo-1586197103709-a0b1f31b76ff?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODYxMzYxOHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
-                    class="navbar-page-image img-ratio-1-1"
-            />
+            <img alt="Image of a contact us form"
+                 src="https://images.unsplash.com/photo-1586197103709-a0b1f31b76ff?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODYxMzYxOHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+                 class="navbar-page-image img-ratio-1-1"/>
             <div class="flex-column link-content">
               <span class="navbar-page text-body-large ">Contact</span>
-              <span class="text-body-small">
-                      Get in touch with us for any inquiries or collaborations
-                    </span>
+              <span class="text-body-small">Get in touch with us for any inquiries or collaborations</span>
             </div>
           </div>
         </a>
       </nav>
       <div class="flex-row">
         <button class="button-background-filled">
-          <span >Sign Up</span>
+          <a rel="internal" href="/sign_in/sign_in.html" >Sign Up</a>
         </button>
         <button class="button-background-filled-reverse">
-          <span >Sign In</span>
+          <a rel="internal" href="/sign_up/sign_up.html">Sign In</a>
         </button>
       </div>
     </div>

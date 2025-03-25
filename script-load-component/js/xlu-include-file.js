@@ -1,35 +1,26 @@
 // https://stackoverflow.com/questions/40162907/w3includehtml-sometimes-includes-twice
 
-
 async function xLuIncludeFile() {
+    xLuInclude().then(() => adjustInternalLinks())
+}
+
+async function xLuInclude() {
     let z = document.getElementsByTagName("*");
 
     for (let i = 0; i < z.length; i++) {
         if (z[i].getAttribute("xlu-include-file")) {
             let a = z[i].cloneNode(false);
             let file = z[i].getAttribute("xlu-include-file");
-
+            console.log(file)
             try {
                 let response = await fetch(file);
                 if (response.ok) {
-
                     let content = await response.text();
-
+                    console.log(content)
                     a.removeAttribute("xlu-include-file");
                     //a.innerHTML = await response.text();
                     a.innerHTML = content;
                     z[i].parentNode.replaceChild(a, z[i]);
-
-                    // Ajustar rutas dinámicamente dependiendo del archivo cargado
-                    if (file.includes('navbar.html')) {
-                        adjustLinks('navbar');
-                    } else if (file.includes('footer.html')) {
-                        adjustLinks('footer');
-                    } else if (file.includes('welcome-about-us.js.html')) {
-                        adjustLinks('welcome-about-us.js');
-                    } else if (file.includes('index-marketing.html')) {
-                        adjustLinks('index-marketing');
-                    }
 
                     //css
                     const styles = a.querySelectorAll('link[rel="stylesheet"]');
@@ -77,69 +68,18 @@ async function xLuIncludeFile() {
     }
 }
 
-// Función genérica para ajustar enlaces en navbar o footer
-function adjustLinks(component) {
-    const currentPath = window.location.pathname; // Ruta actual
-    const levelsUp = currentPath.split('/').length - 3; // Niveles para regresar a la raíz
-    const basePath = '../'.repeat(levelsUp); // Ruta base generada
-
-    let container;
-    if (component === 'navbar') {
-        container = document.querySelector('nav'); // Buscar el navbar
-    } else if (component === 'footer') {
-        container = document.querySelector('footer'); // Buscar el footer
-    } else if (component === 'welcome-about-us.js') {
-        container = document.querySelector('#welcome-about-us.js');
-    } else if (component === 'index-marketing') {
-        container = document.querySelector('#index-marketing');
-    }
-
-    if (!container) {
-        console.error(`${component} no encontrado en el DOM.`);
-        return;
-    }
-
-    // Ajustar enlaces del navbar o footer
-    const linkIndex = container.querySelector('#link-index');
-    const linkAbout = container.querySelector('#link-about');
-    const linkRecipes = container.querySelector('#link-recipes');
-    const linkSignUp = container.querySelector('#link-sign-up');
-    const linkSignIn = container.querySelector('#link-sign-in');
-    const linkMyRecipes = container.querySelector('#link-my-recipes');
-
-    if (linkIndex) linkIndex.href = basePath + 'index.html';
-    if (linkAbout) linkAbout.href = basePath + 'about_us/about_us.html';
-    if (linkRecipes) linkRecipes.href = basePath + 'recipes/recipes.html';
-    if (linkSignUp) linkSignUp.href = basePath + 'sign_up/sign_up.html';
-    if (linkSignIn) linkSignIn.href = basePath + 'sign_in/sign_in.html';
-    if (linkMyRecipes) linkMyRecipes.href = basePath + 'my_recipes/my_recipes.html';
-}
-
-function getProjectRoot() {
-    // Obtener la ruta actual desde donde se ejecuta el script
-    const currentPath = window.location.pathname;
-
-    // Dividir la ruta por '/' y buscar el índice donde está el proyecto
-    const pathSegments = currentPath.split('/');
-    const rootIndex = pathSegments.findIndex((segment) => segment === 'Mockups-Iniciales-PWM-HTML');
-
-    // Si se encuentra el nombre del proyecto en la ruta
-    if (rootIndex !== -1) {
-        // Crear la ruta a la raíz del proyecto
-        const rootPath = pathSegments.slice(0, rootIndex + 1).join('/');
-        return rootPath.endsWith('/') ? rootPath : rootPath + '/';
-    }
-
-    // Si no se encuentra el nombre del proyecto
-    throw new Error("El nombre 'Mockups-Iniciales-PWM-HTML' no está en la ruta actual.");
-}
-
+/**
+ * while rendering a page, this function obtains the working project in the form: https://localhost:port/working-project/
+ * which is returned as:
+ * @returns {string}
+ */
 function project() {
     return "/" + window.location.pathname.split('/').at(1) + '/'
 }
 
 /**
- * pathing
+ * pathing - corrects routes according to an absolute path under de working project
+ * @see project() - defines the project directory under which the param link should be
  * @param link source
  * @returns {string} of absolute path under the working project
  */
@@ -151,5 +91,16 @@ function pathing(link){
         path = link
     }
     return path;
+}
+
+/**
+ * adjust links in the form a[rel=internal]
+ * @see pathing() - works for adjust path, in this case, used to modify a.href
+ */
+function adjustInternalLinks() {
+    document.querySelectorAll('a[rel=internal]').forEach(link => {
+        console.log(link)
+        link.href = pathing(link.href);
+    })
 }
 
