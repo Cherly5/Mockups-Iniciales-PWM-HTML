@@ -97,7 +97,6 @@ function pathing(link){
  */
 function adjustInternalLinks() {
     document.querySelectorAll('a[rel=internal]').forEach(link => {
-        console.log(link)
         link.href = pathing(link.href);
     })
 }

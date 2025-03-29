@@ -5,6 +5,7 @@ stars.forEach(star => {
         stars.forEach(s => {
             s.classList.toggle("selected", s.dataset.value <= rating);
             localStorage.setItem("rating", rating);
+            console.log(rating)
         });
     });
 });
