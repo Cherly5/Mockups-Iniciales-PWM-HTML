@@ -1,7 +1,7 @@
 fetch(document.querySelector("a[rel=json]")).then(res => res.json()).then((data) => {
-    const users = JSON.parse(localStorage.getItem("users"));
-    if (users !== null) {
-        document.getElementById("profile-title").innerText = users;
+    const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+    if (currentUser !== null) {
+        document.getElementById("profile-title").innerText = currentUser;
     } else {
         document.getElementById("profile-title").innerText = data.title;
     }
