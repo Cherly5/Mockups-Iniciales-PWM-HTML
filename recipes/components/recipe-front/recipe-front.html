@@ -54,12 +54,12 @@
                     </div>
                 </div>
                 <div id="recipe-tags" class="item-max-width flex-column">
-                    <div id="categories" class="flex-row">
+                    <div id="categories" class="flex-row tag-row">
                         <template>
-                            <samp class="recipe-tag recipe-tag-category"></samp>
+                            <span class="recipe-tag recipe-tag-category"></span>
                         </template>
                     </div>
-                    <div id="allergens" class="flex-row">
+                    <div id="allergens" class="flex-row tag-row">
                         <template>
                             <span class="recipe-tag recipe-tag-allergen"></span>
                         </template>
@@ -68,5 +68,6 @@
             </div>
         </div>
     </div>
+    <a rel="json" href="/recipes/recipe-page.json" style="display: none !important;"></a>
 </div>
 <script src="/recipes/components/recipe-front/recipe-front.js"></script>

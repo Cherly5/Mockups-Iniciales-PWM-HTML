@@ -70,6 +70,7 @@
   flex-wrap: wrap; /* Permite que las etiquetas se pasen a la siguiente línea */
   gap: 8px; /* Espacio entre etiquetas */
   max-width: 100%; /* Limita el ancho del contenedor */
+  align-items: flex-start;
 }
 .recipe-tag {
   padding: 5px 10px;
@@ -80,7 +81,7 @@
   width: fit-content; /* Permite que cada etiqueta solo ocupe el espacio necesario */
   max-width: 100%;
 }
-
+.tag-row {gap: 0}
 .recipe-tag-allergen { background-color: #f8d7da; color: #721c24;}
 .recipe-tag-category { background-color: #d4edda; color: #155724;}
 
