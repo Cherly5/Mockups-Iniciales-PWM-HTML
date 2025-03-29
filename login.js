@@ -71,7 +71,7 @@ function signUp() {
     localStorage.setItem("users", JSON.stringify(users));
 
     alert("¡Registro exitoso! Ahora puedes iniciar sesión.");
-    window.location.href = "../sign_in/sign_in.html"; // Redirige a la página de inicio de sesión
+    window.location.href = "../profile/profile.html"; // Redirige a la página de inicio de sesión
 }
 
 
@@ -95,8 +95,8 @@ function togglePasswordVisibility(buttonSelector, inputSelector, textSelector) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    if (document.querySelector('.sign-in-hide-password')) {
-        togglePasswordVisibility('.sign-in-hide-password', '#thq-sign-in-1-password', 'span');
+    if (document.querySelector('.hide-icon-container')) {
+        togglePasswordVisibility('.hide-icon-container', '#thq-sign-in-1-password', 'span');
     }
 
     if (document.querySelector('.sign-up-hide-password')) {
