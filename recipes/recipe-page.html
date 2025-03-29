@@ -8,29 +8,29 @@
     <meta property="twitter:card" content="summary_large_image" />
 
     <link rel="stylesheet" data-tag="reset-style-sheet" href="../stylesheets/reset-style-sheet.css"  />
-    <link rel="stylesheet" data-tag="default-style-sheet" href="../stylesheets/default-style-sheet.css" />>
+    <link rel="stylesheet" data-tag="default-style-sheet" href="../stylesheets/default-style-sheet.css" />
     <link rel="stylesheet" href="../stylesheets/animate-sheet.css"/>
     <link rel="stylesheet" href="../stylesheets/noto-sans-font.css" data-tag="font"/>
     <link rel="stylesheet" href="../stylesheets/STIX-two-text-font.css" data-tag="font"/>
     <link rel="stylesheet" href="../stylesheets/Inter-font.css" data-tag="font"/>
     <link rel="stylesheet" href="../stylesheets/style.css" />
 
-    <script src="/xlu-include-file.js"></script>
+    <script src="/script-load-component/js/xlu-include-file.js"></script>
     <link href="../navigation-bar/navbar.css" rel="stylesheet" />
     <link href="../footer/footer.css" rel="stylesheet" />
     <link href="components/recipe-front/recipe-front.css" rel="stylesheet" />
     <link href="components/recipe-steps/recipe-steps.css" rel="stylesheet" />
     <link href="components/star-rating-component/starRating.css" rel="stylesheet" />
-    <link href="components/keep-cooking/keep-cooking.css" rel="stylesheet" />
+    <link href="components/carousel-keep-cooking/carousel-keep-cooking.css" rel="stylesheet" />
 </head>
 <body>
 <div>
-    <navbar-wrapper xlu-include-file="../navigation-bar/navbar.html"></navbar-wrapper>
-    <recipe-front-wrapper xlu-include-file="./components/recipe-front/recipe-front.html"></recipe-front-wrapper>
-    <recipe-steps-wrapper xlu-include-file="./components/recipe-steps/recipe-steps.html"></recipe-steps-wrapper>
-    <keep-cooking-wrapper xlu-include-file="./components/keep-cooking/keep-cooking.html"></keep-cooking-wrapper>
-    <footer-wrapper xlu-include-file="../footer/footer.html"></footer-wrapper>
-    <script src="../teleport-custom-scripts.js"></script>
+    <div xlu-include-file="../navigation-bar/navbar.html"></div>
+    <div xlu-include-file="./components/recipe-front/recipe-front.html"></div>
+    <div xlu-include-file="./components/recipe-steps/recipe-steps.html"></div>
+    <div xlu-include-file="./components/keep-cooking/keep-cooking.html"></div>
+    <div xlu-include-file="../footer/footer.html"></div>
+    <div xlu-include-file="../script-load-component/script.html"></div>
 </div>
 <script>
 

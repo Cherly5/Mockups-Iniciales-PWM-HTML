@@ -63,7 +63,6 @@ function adjustLinks(componentId) {
     const linkSignUp = container.querySelector('#link-sign-up');
     const linkSignIn = container.querySelector('#link-sign-in');
     const linkMyRecipes = container.querySelector('#link-my-recipes');
-    const linkSignIn2 = container.querySelector('#link-sign-in2');
 
     if (linkIndex) linkIndex.href = basePath + 'index.html';
     if (linkAbout) linkAbout.href = basePath + 'about_us/about_us.html';
@@ -71,7 +70,7 @@ function adjustLinks(componentId) {
     if (linkSignUp) linkSignUp.href = basePath + 'sign_up/sign_up.html';
     if (linkSignIn) linkSignIn.href = basePath + 'sign_in/sign_in.html';
     if (linkMyRecipes) linkMyRecipes.href = basePath + 'my_recipes/my_recipes.html';
-    if (linkSignIn2) linkSignIn2.href = basePath + 'profile/profile.html';
+
     console.log(`Enlaces ajustados para ${componentId}`);
 }
 

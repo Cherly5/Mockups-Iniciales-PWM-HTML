@@ -15,12 +15,17 @@
     <link rel="stylesheet" href="../stylesheets/Inter-font.css" data-tag="font"/>
     <link rel="stylesheet" href="../stylesheets/style.css" />
 
-    <link href="about_us.css" rel="stylesheet" />
+    <script src="../script-load-component/js/xlu-include-file.js"></script>
+
     <link rel="stylesheet" href="../navigation-bar/navbar.css" />
     <link href="../footer/footer.css" rel="stylesheet" />
+
     <link href="components/marketing/marketing.css" rel="stylesheet"/>
-    <script src="../xlu-include-file.js"></script>
-    <script src="./components/sponsors/sponsors.js" ></script>
+    <link href="components/sponsors/sponsors.css" rel="stylesheet"/>
+    <link href="components/stats/stats.css" rel="stylesheet"/>
+    <link href="components/team/team.css" rel="stylesheet"/>
+    <link href="components/welcome_about_us/welcome_about_us.css" rel="stylesheet"/>
+
   </head>
 
   <body>
@@ -42,11 +47,12 @@
 
       <div id="team" xlu-include-file="./components/team/team.html">
       </div>
-
     </div>
 
     <footer id="footer" xlu-include-file="../footer/footer.html">
     </footer>
+
+    <div xlu-include-file="../script-load-component/script.html"></div>
     <script>
 
       xLuIncludeFile();

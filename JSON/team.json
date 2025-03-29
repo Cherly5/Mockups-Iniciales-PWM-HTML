@@ -1,0 +1,65 @@
+{
+  "sectionTitle": {
+    "heading": "Meet our team",
+    "subheading": "Join Our Team Today!",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  "teamMembers": [
+    {
+      "name": "Full Name 1",
+      "title": "Job Title 1",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+      "image": "https://images.unsplash.com/photo-1612827963846-58dc879a3114?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "socialIcons": ["facebook", "twitter"]
+    },
+    {
+      "name": "Full Name 2",
+      "title": "Job Title 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+      "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "socialIcons": ["linkedin", "instagram"]
+    },
+    {
+      "name": "Full Name 2",
+      "title": "Job Title 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+      "image": "https://images.unsplash.com/photo-1530095829295-3924294a386c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY4OTMwN3w&ixlib=rb-4.0.3&q=80&w=1080",
+      "socialIcons": ["linkedin", "instagram"]
+    },
+    {
+      "name": "Full Name 2",
+      "title": "Job Title 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+      "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "socialIcons": ["linkedin", "instagram"]
+    },
+    {
+      "name": "Full Name 2",
+      "title": "Job Title 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+      "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "socialIcons": ["linkedin", "instagram"]
+    },
+    {
+      "name": "Full Name 2",
+      "title": "Job Title 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+      "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "socialIcons": ["linkedin", "instagram"]
+    },
+    {
+      "name": "Full Name 2",
+      "title": "Job Title 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+      "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "socialIcons": ["linkedin", "instagram"]
+    },
+    {
+      "name": "Full Name 2",
+      "title": "Job Title 2",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.",
+      "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "socialIcons": ["linkedin", "instagram"]
+    }
+  ]
+}

@@ -1,28 +1,4 @@
-.welcome-about-us-header26 {
-  gap: var(--dl-space-space-twounits);
-}
- 
-.welcome-about-us-max-width {
-  align-self: center;
-}
- 
-.welcome-about-us-column {
-  gap: var(--dl-space-space-oneandhalfunits);
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
-  flex-direction: column;
-}
- 
-.welcome-about-us-content {
-  gap: var(--dl-space-space-oneandhalfunits);
-  width: 100%;
-  display: flex;
-  align-self: stretch;
-  align-items: center;
-  flex-direction: column;
-}
+
  
 .welcome-about-us-actions {
   gap: var(--dl-space-space-unit);
@@ -39,11 +15,6 @@
   animation-timing-function: ease;
 }
 
- 
-.welcome-about-us-text {
-  display: inline-block;
-}
- 
 @media(max-width: 479px) {
   .welcome-about-us-actions {
     width: 100%;
