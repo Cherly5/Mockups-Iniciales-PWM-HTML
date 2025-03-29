@@ -59,7 +59,7 @@
                 <label for="thq-sign-up-2-email1"></label>
               </div>
             </form>
-            <button type="submit" class="button-background-filled">
+            <button type="submit" class="button-background-filled" onclick=updateProfile()>
               <span class=" text-body-small">Change your Profile</span>
             </button>
           </div>
@@ -106,7 +106,7 @@
               class=" text-input text-body-large"/>
               <label for="thq-sign-up-2-email2"></label>
             </div>
-            <button type="submit" class="button-background-filled">
+            <button type="submit" class="button-background-filled" onclick=updatePassword()>
               <span class=" text-body-small">Change your Password</span>
             </button>
           </form>
@@ -127,5 +127,6 @@
 
   <a rel="json" href="/profile/profile.json"></a>
   <script src="/profile/profile.js"></script>
+  <script src="/profileForm.js" defer></script>
   </body>
 </html>
