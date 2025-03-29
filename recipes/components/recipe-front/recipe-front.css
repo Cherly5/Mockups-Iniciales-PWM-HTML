@@ -2,11 +2,6 @@
 .recipe-front-wrapper {
   display: contents;
 }
-.recipe-front-blog-post-header3 {
-  display: flex;
-  position: relative;
-  align-items: center;
-}
  
 .recipe-front-max-width {
   gap: var(--dl-space-space-oneandhalfunits);
@@ -21,15 +16,13 @@
 }
 
 .recipe-front-card {
-  display: flex;
-  flex-wrap: wrap; /* Permite que los elementos se acomoden sin desbordar */
-  align-items: stretch;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   overflow: hidden;
 }
  
 .recipe-front-image {
-  width: 50%;
   object-fit: cover;
 }
  
@@ -44,7 +37,6 @@
  
 .recipe-front-content {
   gap: var(--dl-space-space-oneandhalfunits);
-  width: 50%;
   height: 100%;
   display: flex;
   align-self: flex-start;

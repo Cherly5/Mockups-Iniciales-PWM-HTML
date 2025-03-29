@@ -15,42 +15,37 @@
     <link rel="stylesheet" href="../stylesheets/Inter-font.css" data-tag="font"/>
     <link rel="stylesheet" href="../stylesheets/style.css" />
 
-    <link href="about_us.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../navigation-bar/navbar.css" />
-    <link href="../footer/footer.css" rel="stylesheet" />
-    <link href="components/marketing/marketing.css" rel="stylesheet"/>
-    <link href="./components/team/team.css" rel="stylesheet" />
-    <script src="../xlu-include-file.js"></script>
-    <script src="./components/sponsors/sponsors.js" ></script>
-    <script src="./components/team/team.js"></script>
-    <script src="./components/marketing/marketing.js"></script>
+    <script src="../script-load-component/js/xlu-include-file.js"></script>
+
   </head>
 
   <body>
-    <nav class="navbar-wrapper" id="navbar2" xlu-include-file="../navigation-bar/navbar.html">
+    <nav class="navbar-wrapper" id="navbar" xlu-include-file="../navigation-bar/navbar.html">
     </nav>
+    <div class="about-container">
 
-    <div id="welcome_about_us" xlu-include-file="./components/welcome_about_us/welcome_about_us.html">
-    </div>
+      <div id="welcome-about-us" xlu-include-file="./components/welcome-about-us/welcome-about-us.html">
+      </div>
 
-    <div id="stats" xlu-include-file="./components/stats/stats.html">
-    </div>
+      <div id="stats" xlu-include-file="./components/stats/stats.html">
+      </div>
 
-    <div id="sponsors" xlu-include-file="./components/sponsors/sponsors.html">
-    </div>
+      <div id="sponsors" xlu-include-file="./components/sponsors/sponsors.html">
+      </div>
 
-    <div id="marketing" xlu-include-file="./components/marketing/marketing.html">
-    </div>
+      <div id="marketing" xlu-include-file="./components/marketing/marketing.html">
+      </div>
 
-    <div id="team" xlu-include-file="./components/team/team.html">
+      <div id="team" xlu-include-file="./components/team/team.html">
+      </div>
     </div>
 
     <footer id="footer" xlu-include-file="../footer/footer.html">
     </footer>
+
+
     <script>
-
       xLuIncludeFile();
-
     </script>
   </body>
 </html>

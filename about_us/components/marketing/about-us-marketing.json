@@ -1,0 +1,31 @@
+{
+  "sectionTitle": {
+    "subheading": "Where Flavor Meets Simplicity",
+    "title": "Features",
+    "description": "Explore the key features of our website that make cooking and recipe exploration a delightful experience."
+  },
+  "features": [
+    {
+      "title": "Wide Variety of Delicious Recipes",
+      "description": "Browse through a diverse collection of mouth-watering recipes from different cuisines, skill levels, and dietary preferences.",
+      "image": "https://images.unsplash.com/photo-1651802556259-aa8f0d062c9c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "alt": "Delicious Recipes Image"
+    },
+    {
+      "title": "Cooking Tips and Tricks",
+      "description": "Enhance your culinary skills with our expert cooking tips, techniques, and hacks to level up your dishes.",
+      "image": "https://images.unsplash.com/photo-1482930172332-2293d7138235?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "alt": "Cooking Tips Image"
+    },
+    {
+      "title": "Ingredient Substitution Advice",
+      "description": "Learn how to substitute ingredients in your recipes without compromising on taste or quality, making cooking hassle-free.",
+      "image": "https://images.unsplash.com/photo-1586197138382-e1d1479fbb14?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      "alt": "Ingredient Substitution Image"
+    }
+  ],
+  "button": {
+    "label": "Look up recipes",
+    "link": "#"
+  }
+}

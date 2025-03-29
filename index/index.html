@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Mockups Iniciales PWM</title>
+  <meta property="og:title" content="Mockups Iniciales PWM" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta property="twitter:card" content="summary_large_image" />
+
+  <link rel="stylesheet" data-tag="reset-style-sheet" href="../stylesheets/reset-style-sheet.css"  />
+  <link rel="stylesheet" data-tag="default-style-sheet" href="../stylesheets/default-style-sheet.css" />
+  <link rel="stylesheet" href="../stylesheets/animate-sheet.css"/>
+  <link rel="stylesheet" href="../stylesheets/noto-sans-font.css" data-tag="font"/>
+  <link rel="stylesheet" href="../stylesheets/STIX-two-text-font.css" data-tag="font"/>
+  <link rel="stylesheet" href="../stylesheets/Inter-font.css" data-tag="font"/>
+  <link rel="stylesheet" href="../stylesheets/style.css" />
+  <link rel="stylesheet" href="../stylesheets/swiper.css" />
+
+  <script src="../localStorage.js"></script>
+  <script src="../script-load-component/js/xlu-include-file.js"></script>
+
+
+  <link href="../recipes/components/carousel-keep-cooking/carousel-keep-cooking.css" rel="stylesheet" />
+  <link href="index_slider/index-slider.css" rel="stylesheet" />
+</head>
+<body>
+<nav class="navbar-wrapper" id="navbar" xlu-include-file="../navigation-bar/navbar.html">
+</nav>
+<div>
+  <div class="keep-cocking-wrapper" xlu-include-file="../recipes/components/carousel-keep-cooking/carousel-keep-cooking.html" ></div>
+  <div id="index-slider" xlu-include-file="./index_slider/index-slider.html"></div>
+  <div id="index-marketing" xlu-include-file="./index-marketing/index-marketing.html"></div>
+</div>
+<footer id="footer" xlu-include-file="../footer/footer.html"></footer>
+<div xlu-include-file="../script-load-component/script.html"></div>
+<script>
+
+setUserToNull();
+xLuIncludeFile();
+
+</script>
+</body>
+</html>

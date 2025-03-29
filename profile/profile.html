@@ -14,141 +14,100 @@
     <link rel="stylesheet" href="../stylesheets/Inter-font.css" data-tag="font"/>
     <link rel="stylesheet" href="../stylesheets/style.css" />
 
-    <link rel="stylesheet" href="../navigation-bar/navbar.css" />
     <link href="profile.css" rel="stylesheet" />
-    <link href="../footer/footer.css" rel="stylesheet" />
-    <script src="../xlu-include-file.js"></script>
+    <script src="../script-load-component/js/xlu-include-file.js"></script>
   </head>
   <body>
 
-  <nav class="navbar-wrapper" id="navbar2" xlu-include-file="../navigation-bar/navbar.html">
+  <nav class="navbar-wrapper" id="navbar" xlu-include-file="../navigation-bar/navbar.html">
   </nav>
 
-    <div class="profile-container1 profile">
-      <div class="profile-max-width thq-section-max-width">
-        <div class="profile-container2">
-          <div class="profile-title-root1">
-            <h1 class="profile-text10 thq-heading-2">
-              <fragment class="profile-fragment4">
-                <span class="profile-text23">Profile</span>
-              </fragment>
-            </h1>
-          </div>
-          <div class="profile-title-root2">
+    <div class="section-padding">
+      <div class="profile-max-width section-max-width">
+        <div class="profile-intro flex-column">
+          <span id="profile-title" class="heading-2"></span>
+          <div class="profile-image">
             <img
-              alt="Sign Up Image"
-              src="https://images.unsplash.com/photo-1708388064322-c15cca1f86a7?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczOTIxODg1OXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1400"
-              class="profile-sign-up-image thq-img-ratio-4-6"
+              alt=""
+              src=""
+              class="img-ratio-4-6"
             />
           </div>
         </div>
-        <div class="profile-form-root">
-          <div class="profile-form1">
-            <span class="profile-text11">
-              <fragment class="profile-fragment1">
-                <span class="profile-text20">Change your information</span>
-              </fragment>
-            </span>
-            <form class="profile-form2">
-              <div class="profile-username1">
-                <h2 for="thq-sign-up-2-username"
-                  class="profile-text12 thq-body-large"
-                >
-                  Username
-                </h2>
-                <label for="thq-sign-up-2-username1"></label><input
+        <div class="profile-form-root flex-column">
+          <div class="flex-column">
+            <span class="heading-3">Change your information</span>
+            <form class="profile-form flex-column">
+              <div class="flex-column">
+                <span data-form="thq-sign-up-2-username" class=" text-body-large">Username</span>
+                <input
                   type="text"
                   id="thq-sign-up-2-username1"
                   required="required"
                   placeholder="Mr. Lorem Ipsum"
-                  class="profile-textinput1 thq-input thq-body-large"
-                />
+                  class=" text-input text-body-large"/>
+                <label for="thq-sign-up-2-username1"></label>
               </div>
-              <div class="profile-email1">
-                <h2
-                  for="thq-sign-up-2-email"
-                  class="profile-text13 thq-body-large"
-                >
-                  Email
-                </h2>
-                <label for="thq-sign-up-2-email1"></label><input
+              <div class="flex-column">
+                <span data-form="thq-sign-up-2-email" class=" text-body-large">Email</span>
+                <input
                   type="email"
                   id="thq-sign-up-2-email1"
                   required="required"
                   placeholder="lorem@ipsum.com"
-                  class="profile-textinput2 thq-input thq-body-large"
-                />
+                  class=" text-input text-body-large"/>
+                <label for="thq-sign-up-2-email1"></label>
               </div>
             </form>
-            <button type="submit" class="profile-button1 thq-button-filled">
-              <span class="profile-text14 thq-body-small">
-                <fragment class="profile-fragment2">
-                  <span class="profile-text21">Change your Profile</span>
-                </fragment>
-              </span>
+            <button type="submit" class="button-background-filled">
+              <span class=" text-body-small">Change your Profile</span>
             </button>
           </div>
-          <div class="profile-container3">
+          <div class="forms-divider flex-row">
             <img
               alt="image"
-              src="../public/external/pastedimage-539q-200h.png"
-              class="profile-image1"
+              src="../public/external/divider.png"
+              class="divider"
             />
-            <div class="profile-container4">
-              <span class="profile-text15">
-                <fragment class="profile-fragment6">
-                  <span class="profile-text25">OR</span>
-                </fragment>
-              </span>
-            </div>
+            <span class="heading-2">OR</span>
             <img
               alt="image"
-              src="../public/external/pastedimage-539q-200h.png"
-              class="profile-image2"
+              src="../public/external/divider.png"
+              class="divider"
             />
           </div>
-          <form class="profile-form3">
-            <span class="profile-text16">
-              <fragment class="profile-fragment3">
-                <span class="profile-text22">Change your password</span>
-              </fragment>
-            </span>
-            <div class="profile-username2">
-              <h2
-                for="thq-sign-up-2-username"
-                class="profile-text17 thq-body-large"
+          <form class="flex-column">
+            <span class="heading-3">Change your password</span>
+            <div class="flex-column">
+              <h2 data-form="thq-sign-up-2-username"
+                class=" text-body-large"
               >
                 Old password
               </h2>
-              <label for="thq-sign-up-2-username2"></label><input
+              <input
                 type="text"
                 id="thq-sign-up-2-username2"
                 required="required"
                 placeholder="Mr. Lorem Ipsum"
-                class="profile-textinput3 thq-input thq-body-large"
-              />
+                class="text-input text-body-large"/>
+              <label for="thq-sign-up-2-username2"></label>
             </div>
-            <div class="profile-email2">
-              <h2
-                for="thq-sign-up-2-email"
-                class="profile-text18 thq-body-large"
+            <div class="flex-column">
+              <h2 data-form="thq-sign-up-2-email"
+                class=" text-body-large"
               >
                 New password
               </h2>
-              <label for="thq-sign-up-2-email2"></label><input
+              <input
                 type="email"
                 id="thq-sign-up-2-email2"
                 required="required"
                 placeholder="lorem@ipsum.com"
-                class="profile-textinput4 thq-input thq-body-large"
-              />
+              class=" text-input text-body-large"/>
+              <label for="thq-sign-up-2-email2"></label>
             </div>
-            <button type="submit" class="profile-button2 thq-button-filled">
-              <span class="profile-text19 thq-body-small">
-                <fragment class="profile-fragment5">
-                  <span class="profile-text24">Change your Password</span>
-                </fragment>
-              </span>
+            <button type="submit" class="button-background-filled">
+              <span class=" text-body-small">Change your Password</span>
             </button>
           </form>
         </div>
@@ -158,10 +117,7 @@
     <footer id="footer" xlu-include-file="../footer/footer.html">
     </footer>
 
-    <script
-      defer=""
-      src="../teleport-custom-scripts.js"
-    ></script>
+    <div xlu-include-file="../script-load-component/script.html"></div>
 
     <script>
 
@@ -169,5 +125,7 @@
 
     </script>
 
+  <a rel="json" href="/profile/profile.json"></a>
+  <script src="/profile/profile.js"></script>
   </body>
 </html>
