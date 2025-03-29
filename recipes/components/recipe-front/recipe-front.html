@@ -53,33 +53,20 @@
                         </div>
                     </div>
                 </div>
-                <div id="recipe-tags" class=" flex flex-wrap gap-2">
-                    <script>
-                        const categories = ['Vegetariano', 'Vegano', 'Sin Gluten'];
-                        const alergenos = ['Lácteos', 'Frutos Secos', 'Gluten'];
-
-                        const container = document.getElementById('recipe-tags');
-
-                        // Función para crear un span con la clase correspondiente
-                        function crearTag(texto, clase) {
-                            const span = document.createElement('span');
-                            span.textContent = texto;
-                            span.classList.add('recipe-tag', clase);
-                            return span;
-                        }
-
-                        // Agregar categorías
-                        categories.forEach(category => {
-                            container.appendChild(crearTag(category, 'recipe-tag-category'));
-                        });
-
-                        // Agregar alérgenos
-                        alergenos.forEach(alergeno => {
-                            container.appendChild(crearTag(alergeno, 'recipe-tag-allergen'));
-                        });
-                    </script>
+                <div id="recipe-tags" class="item-max-width flex-column">
+                    <div id="categories" class="flex-row">
+                        <template>
+                            <samp class="recipe-tag recipe-tag-category"></samp>
+                        </template>
+                    </div>
+                    <div id="allergens" class="flex-row">
+                        <template>
+                            <span class="recipe-tag recipe-tag-allergen"></span>
+                        </template>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<script src="/recipes/components/recipe-front/recipe-front.js"></script>

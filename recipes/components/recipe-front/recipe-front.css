@@ -85,15 +85,6 @@
 .recipe-tag-category { background-color: #d4edda; color: #155724;}
 
  
-.recipe-front-fragment {
-  display: contents;
-}
- 
-.recipe-front-text {
-  display: inline-block;
-}
-
- 
 @media(max-width: 991px) {
   .recipe-front-card {
     flex-direction: column;
@@ -105,10 +96,6 @@
   }
   .recipe-front-content {
     width: 100%;
-  }
-  .recipe-front-content-recipe-tags {
-
-    flex-direction: column;
   }
 }
  

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="../stylesheets/style.css" />
 
     <script src="/script-load-component/js/xlu-include-file.js"></script>
+
     <link href="../navigation-bar/navbar.css" rel="stylesheet" />
     <link href="../footer/footer.css" rel="stylesheet" />
     <link href="components/recipe-front/recipe-front.css" rel="stylesheet" />
@@ -26,16 +27,14 @@
 <body>
 <div>
     <div xlu-include-file="../navigation-bar/navbar.html"></div>
-    <div xlu-include-file="./components/recipe-front/recipe-front.html"></div>
-    <div xlu-include-file="./components/recipe-steps/recipe-steps.html"></div>
-    <div xlu-include-file="./components/carousel-keep-cooking/carousel-keep-cooking.html"></div>
+    <div id="front" xlu-include-file="./components/recipe-front/recipe-front.html"></div>
+    <div id="steps" xlu-include-file="./components/recipe-steps/recipe-steps.html"></div>
+    <div id="carousel" xlu-include-file="./components/carousel-keep-cooking/carousel-keep-cooking.html"></div>
     <div xlu-include-file="../footer/footer.html"></div>
     <div xlu-include-file="../script-load-component/script.html"></div>
 </div>
 <script>
-
-    xLuIncludeFile();
-
+    xLuIncludeFile()
 </script>
 </body>
 </html>

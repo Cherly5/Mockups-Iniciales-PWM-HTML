@@ -11,12 +11,10 @@ async function xLuInclude() {
         if (z[i].getAttribute("xlu-include-file")) {
             let a = z[i].cloneNode(false);
             let file = z[i].getAttribute("xlu-include-file");
-            // console.log(file)
             try {
                 let response = await fetch(file);
                 if (response.ok) {
                     let content = await response.text();
-                    // console.log(content)
                     a.removeAttribute("xlu-include-file");
                     //a.innerHTML = await response.text();
                     a.innerHTML = content;
