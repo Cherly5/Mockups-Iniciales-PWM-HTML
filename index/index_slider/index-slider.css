@@ -1,0 +1,16 @@
+.slider-container {
+  align-items: center;
+  aspect-ratio: 1 / 1;
+}
+
+@media (max-width: 1600px) {
+  .slider-container {
+    width: 600px;
+  }
+}
+
+@media (max-width: 800px) {
+  .slider-container {
+    width: 100%
+  }
+}

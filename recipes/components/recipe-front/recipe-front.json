@@ -1,0 +1,22 @@
+{
+  "recipes": [
+    {
+      "title": "Pasta with Sausage, Basil, and Mustard",
+      "imageSrc": "https://www.foodandwine.com/thmb/fjNakOY7IcuvZac1hR3JcSo7vzI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/FAW-recipes-pasta-sausage-basil-and-mustard-hero-06-cfd1c0a2989e474ea7e574a38182bbee.jpg",
+      "author": "John Doe",
+      "categories": ["Vegetariano", "Rápido"],
+      "allergens": ["Lácteos", "Gluten"],
+      "shareIcons": ["facebook", "twitter", "instagram"],
+      "link": "#"
+    },
+    {
+      "title": "Vegan Buddha Bowl",
+      "imageSrc": "https://www.foodandwine.com/thmb/KWxHZOWYlzP9QAYVOCEwpoFmi0I=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/buddha-bowl-vegan-recipe.jpg",
+      "author": "Jane Smith",
+      "categories": ["Vegano", "Saludable"],
+      "allergens": ["Frutos Secos"],
+      "shareIcons": ["pinterest", "linkedin"],
+      "link": "#"
+    }
+  ]
+}

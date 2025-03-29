@@ -1,0 +1,18 @@
+{
+  "recipes_slider": [{
+    "id": "",
+    "image": ""
+  }],
+  "recipes": [
+    {
+      "id": "",
+      "title": "",
+      "intro": "",
+      "tags": [],
+      "allergens": [],
+      "description": "",
+      "content": ""
+    }
+  ]
+
+}

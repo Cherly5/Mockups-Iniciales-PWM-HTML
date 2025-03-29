@@ -7,71 +7,45 @@
     <meta charset="utf-8" />
     <meta property="twitter:card" content="summary_large_image" />
 
-    <link data-tag="reset-style-sheet" rel="stylesheet" href="./recipes/components/reset-style-sheet.css"/>
-    <link data-tag="default-style-sheet" rel="stylesheet" href="./recipes/components/default-style-sheet.css"/>
+    <link rel="stylesheet" data-tag="reset-style-sheet" href="../stylesheets/reset-style-sheet.css"  />
+    <link rel="stylesheet" data-tag="default-style-sheet" href="../stylesheets/default-style-sheet.css" />
+    <link rel="stylesheet" href="../stylesheets/animate-sheet.css"/>
+    <link rel="stylesheet" href="../stylesheets/noto-sans-font.css" data-tag="font"/>
+    <link rel="stylesheet" href="../stylesheets/STIX-two-text-font.css" data-tag="font"/>
+    <link rel="stylesheet" href="../stylesheets/Inter-font.css" data-tag="font"/>
+    <link rel="stylesheet" href="../stylesheets/style.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/animate.css@4.1.1/animate.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
-    />
-    <script src="../xlu-include-file.js"></script>
-    <link href="about_us.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../navigation-bar/navbar.css" />
-    <link href="../footer/footer.css" rel="stylesheet" />
+    <script src="../script-load-component/js/xlu-include-file.js"></script>
+
   </head>
 
   <body>
-    <nav class="navbar-wrapper" id="navbar2" xlu-include-file="../navigation-bar/navbar.html">
+    <nav class="navbar-wrapper" id="navbar" xlu-include-file="../navigation-bar/navbar.html">
     </nav>
-        <div class="about-container">
+    <div class="about-container">
 
-          <div id="welcome_about_us" xlu-include-file="./components/welcome_about_us/welcome_about_us.html">
-          </div>
+      <div id="welcome-about-us" xlu-include-file="./components/welcome-about-us/welcome-about-us.html">
+      </div>
 
-          <div id="stats" xlu-include-file="./components/stats/stats.html">
-          </div>
+      <div id="stats" xlu-include-file="./components/stats/stats.html">
+      </div>
 
-          <div id="sponsors" xlu-include-file="./components/sponsors/sponsors.html">
-          </div>
+      <div id="sponsors" xlu-include-file="./components/sponsors/sponsors.html">
+      </div>
 
-          <div id="marketing" xlu-include-file="./components/marketing/marketing.html">
-          </div>
+      <div id="marketing" xlu-include-file="./components/marketing/marketing.html">
+      </div>
 
-          <div id="team" xlu-include-file="./components/team/team.html">
-          </div>
-        </div>
+      <div id="team" xlu-include-file="./components/team/team.html">
+      </div>
+    </div>
 
     <footer id="footer" xlu-include-file="../footer/footer.html">
     </footer>
 
-    <script
-      defer=""
-      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
-    ></script>
+
     <script>
-
       xLuIncludeFile();
-
     </script>
   </body>
 </html>
