@@ -31,7 +31,7 @@ function updateProfile() {
                 localStorage.setItem("users", JSON.stringify(users));
                 // Actualizar el currentUser con el nuevo email
                 localStorage.setItem("currentUser", JSON.stringify(emailInput));
-
+                document.getElementById("profile-title").innerText = emailInput;
                 alert("User and email updated successfully!");
             } else {
                 alert("User not found. Please verify the current email.");
