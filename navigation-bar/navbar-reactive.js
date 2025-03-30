@@ -6,7 +6,8 @@ function loadNavbarForGuestUser(data) {
     updateNavbar(data, ["link-my-recipes", "link-profile"]);
 }
 function updateNavbar(data, excludeIds) {
-
+    updateMobileNavbar(data, excludeIds);
+    console.log(excludeIds)
     const navBar = document.getElementById("navigation-bar");
     navBar.innerHTML = "";
     data.links.forEach(link => {
@@ -39,6 +40,11 @@ function updateNavbar(data, excludeIds) {
             buttonContainer.appendChild(btn);
         }
     });
+}
+
+function updateMobileNavbar(data, excludeIds){
+    data = data.mobileLinks
+    console.log(data)
 }
 
 function loadNavbar() {
