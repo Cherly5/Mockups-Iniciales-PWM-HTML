@@ -5,12 +5,10 @@ stars.forEach(star => {
         stars.forEach(s => {
             s.classList.toggle("selected", s.dataset.value <= rating);
             localStorage.setItem("rating", rating);
-            console.log(rating)
         });
     });
 });
 
 window.addEventListener("beforeunload", function () {
-    let rating = localStorage.getItem("rating");
-    console.log("Valor de rating antes de salir:", rating);
+    console.log(localStorage.getItem("rating"))
 });

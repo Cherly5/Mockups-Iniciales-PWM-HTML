@@ -5,4 +5,4 @@ fetch(document.getElementById("welcome-about-us").querySelector("a[rel=json]").h
     const img = welcome.querySelector("img");
     img.src = data.image.src;
     img.alt = data.image.alt;
-}).catch((error) => console.log("error json",error));
+}).catch((error) => console.error("error json",error));

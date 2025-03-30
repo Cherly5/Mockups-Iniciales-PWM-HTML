@@ -16,10 +16,8 @@ fetch(document.getElementById("index-slider").querySelector("a[rel=json]").href)
     })
     const pagination = document.getElementById("index-slider").querySelector(".swiper-pagination");
     if (images.length > 1) {
-        console.log(images.length)
         for (let i = 0; i <= images.length; i++) {
-            console.log(i)
             pagination.appendChild(document.importNode(bullet.content,true).querySelector(".swiper-pagination-bullet"));
         }
     }
-}).catch(err => console.log("JSON", err));
+}).catch(err => console.error("JSON", err));

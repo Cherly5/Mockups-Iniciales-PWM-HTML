@@ -24,4 +24,4 @@ fetch(document.getElementById("index-marketing").querySelector("a[rel=json]").hr
         }
         document.getElementById("index-marketing").querySelector(".section-padding").appendChild(clone)
     })
-}).catch((error) => console.log("JSON", error));
+}).catch((error) => console.error("JSON", error));

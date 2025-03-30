@@ -13,7 +13,6 @@ fetch(carousel.querySelector("a[rel=json]").href)
 })
 
 async function carouselImages(data, container, template) {
-    console.log(data)
     for (let i = 0; i < 2; i++) {
         data.forEach(element => {
             let clone = document.importNode(template.content, true).querySelector("img")

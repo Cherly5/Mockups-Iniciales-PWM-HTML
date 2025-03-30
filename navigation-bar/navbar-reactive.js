@@ -1,10 +1,8 @@
 
 function loadNavbarForAuthenticatedUser(data) {
-
     updateNavbar(data, ["link-sign-up", "link-sign-in"]);
 }
 function loadNavbarForGuestUser(data) {
-
     updateNavbar(data, ["link-my-recipes", "link-profile"]);
 }
 function updateNavbar(data, excludeIds) {
