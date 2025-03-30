@@ -29,7 +29,23 @@
         </svg>
       </div>
       <!-- Contenedor de enlaces móviles -->
-      <nav id="links-pop-up" class="flex-column"></nav>
+      <nav id="links-pop-up" class="flex-column">
+          <template>
+            <a href="">
+              <div class="flex-row">
+                <img
+                        alt=""
+                        src=""
+                        class="navbar-page-image img-ratio-1-1"
+                />
+                <div class="flex-column link-content">
+                  <span class="navbar-page text-body-large "></span>
+                  <span class="text-body-small "></span>
+                </div>
+              </div>
+            </a>
+          </template>
+      </nav>
       <!-- Contenedor de botones móviles -->
       <div class="flex-row"></div>
     </div>
@@ -37,5 +53,5 @@
 </header>
 <link rel="stylesheet" href="../navigation-bar/navbar.css" />
 <a rel="json" href="/navigation-bar/navbar.json"></a>
-<script src="../script-load-component/js/xlu-include-file.js"></script>
 <script src="/navigation-bar/navbar-reactive.js"></script>
+

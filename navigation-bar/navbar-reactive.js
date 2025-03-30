@@ -5,6 +5,26 @@ function loadNavbarForAuthenticatedUser(data) {
 function loadNavbarForGuestUser(data) {
     updateNavbar(data, ["link-my-recipes", "link-profile"]);
 }
+
+function buttons(data, excludeIds, buttonContainer) {
+    data.buttons.forEach(button => {
+
+        if (!excludeIds.includes(button.id)) {
+            const btn = document.createElement("button");
+            btn.className = button.id === "link-profile" ? "button-animated button-background-filled-reverse" : "button-animated button-background-filled";
+            const a = document.createElement("a");
+
+            a.href = project() + button.href;
+            a.id = button.id;
+            a.className = "button-link";
+            a.textContent = button.label;
+            btn.appendChild(a);
+
+            buttonContainer.appendChild(btn);
+        }
+    });
+}
+
 function updateNavbar(data, excludeIds) {
     updateMobileNavbar(data, excludeIds);
     console.log(excludeIds)
@@ -24,27 +44,24 @@ function updateNavbar(data, excludeIds) {
     const buttonContainer = document.querySelector(".navbar-desktop-menu .flex-row:last-child");
 
     buttonContainer.innerHTML = "";
-    data.buttons.forEach(button => {
-
-        if (!excludeIds.includes(button.id)) {
-            const btn = document.createElement("button");
-            btn.className = button.id === "link-profile" ? "button-animated button-background-filled-reverse" : "button-animated button-background-filled";
-            const a = document.createElement("a");
-
-            a.href = project() + button.href;
-            a.id = button.id;
-            a.className = "button-link";
-            a.textContent = button.label;
-            btn.appendChild(a);
-
-            buttonContainer.appendChild(btn);
-        }
-    });
+    buttons(data, excludeIds, buttonContainer);
 }
 
 function updateMobileNavbar(data, excludeIds){
-    data = data.mobileLinks
-    console.log(data)
+    console.log(data.mobileLinks)
+    const links = document.getElementById("links-pop-up")
+    const template = links.querySelector("template")
+    for (const link of data.mobileLinks) {
+        const clone = document.importNode(template.content, true).querySelector("a")
+        clone.href = project() + link.href;
+        clone.querySelector("img").src = link.imageSrc
+        clone.querySelector("img").alt = link.altText
+        clone.querySelector("span").innerText = link.title
+        clone.querySelector("span").nextElementSibling.innerText = link.description
+        links.appendChild(clone);
+
+    }
+    buttons(data, excludeIds, links.nextElementSibling);
 }
 
 function loadNavbar() {
