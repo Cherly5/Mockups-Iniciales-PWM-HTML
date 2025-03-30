@@ -470,7 +470,7 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .grid-columns-2 {
+  .grid-columns-4 {
     grid-gap: var(--dl-space-space-unit);
     grid-template-columns: 1fr;
   }
