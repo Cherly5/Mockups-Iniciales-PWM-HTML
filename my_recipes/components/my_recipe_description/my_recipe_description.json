@@ -1,0 +1,36 @@
+{
+  "recipes": [
+    {
+      "name": "Spaghetti Carbonara",
+      "description": "A classic Italian pasta dish made with simple ingredients.",
+      "ingredients": [
+        { "title": "Pasta", "details": "200g of spaghetti." },
+        { "title": "Eggs", "details": "2 large eggs for creaminess." },
+        { "title": "Pecorino Cheese", "details": "50g of grated cheese." },
+        { "title": "Pancetta", "details": "100g, cut into small cubes." }
+      ],
+      "steps": [
+        "Cook the spaghetti in salted boiling water until al dente.",
+        "Crisp the pancetta in a frying pan over medium heat.",
+        "Whisk the eggs and cheese together in a bowl.",
+        "Combine the drained pasta with pancetta and mix with the egg mixture.",
+        "Serve with freshly ground pepper and extra cheese."
+      ]
+    },
+    {
+      "name": "Vegan Buddha Bowl",
+      "description": "A nutritious and colorful bowl packed with wholesome ingredients.",
+      "ingredients": [
+        { "title": "Quinoa", "details": "1 cup, cooked according to package instructions." },
+        { "title": "Chickpeas", "details": "1 cup of canned or cooked chickpeas." },
+        { "title": "Sweet Potato", "details": "1 large potato, roasted." }
+      ],
+      "steps": [
+        "Cook the quinoa according to package instructions.",
+        "Roast the sweet potato until tender.",
+        "Assemble the quinoa, chickpeas, and sweet potato in a bowl.",
+        "Top with your favorite dressing and serve."
+      ]
+    }
+  ]
+}
