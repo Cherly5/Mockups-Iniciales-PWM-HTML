@@ -68,11 +68,11 @@ function loadNavbar() {
     fetch("/navigation-bar/navbar.json") // Reemplaza con la ruta real del JSON
         .then(response => response.json())
         .then(data => {
-            const users = JSON.parse(localStorage.getItem("users"));
-            if (users !== null) {
-                loadNavbarForAuthenticatedUser(data);
-            } else {
+            const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+            if (currentUser === null) {
                 loadNavbarForGuestUser(data);
+            } else {
+                loadNavbarForAuthenticatedUser(data);
             }
         })
         .catch(error => console.error("Error loading navbar JSON:", error));
