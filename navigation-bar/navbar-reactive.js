@@ -3,7 +3,7 @@ function loadNavbarForAuthenticatedUser(data) {
     updateNavbar(data, ["link-sign-up", "link-sign-in"]);
 }
 function loadNavbarForGuestUser(data) {
-    updateNavbar(data, ["link-my-recipes", "link-profile"]);
+    updateNavbar(data, ["link-my-recipes", "link-profile", "link-log-out"]);
 }
 
 function buttons(data, excludeIds, buttonContainer) {
@@ -93,4 +93,11 @@ burgerMenu.addEventListener("click", function () {
 closeMenu.addEventListener("click", function () {
     mobileMenu.classList.remove("active");
     burgerMenu.classList.remove("hidden");
+});
+
+document.getElementById("link-log-out").addEventListener("click", function () {
+    event.preventDefault();
+    const currentUser = JSON.stringify(null)
+    localStorage.setItem("currentUser", currentUser);
+    window.location.href = "/index/index.html";
 });

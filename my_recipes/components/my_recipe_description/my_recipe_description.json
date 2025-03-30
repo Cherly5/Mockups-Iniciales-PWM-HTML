@@ -31,6 +31,25 @@
         "Assemble the quinoa, chickpeas, and sweet potato in a bowl.",
         "Top with your favorite dressing and serve."
       ]
+    },
+    {
+      "name": "Chocolate Lava Cake",
+      "description": "A rich and decadent dessert with a molten chocolate center.",
+      "ingredients": [
+        { "title": "Dark Chocolate", "details": "100g, melted." },
+        { "title": "Unsalted Butter", "details": "50g, melted with the chocolate." },
+        { "title": "Eggs", "details": "2 whole eggs and 2 yolks, whisked." },
+        { "title": "Sugar", "details": "50g granulated sugar." },
+        { "title": "Flour", "details": "30g all-purpose flour." }
+      ],
+      "steps": [
+        "Preheat the oven to 200°C (400°F). Grease ramekins with butter and dust with cocoa powder.",
+        "Melt the chocolate and butter together until smooth. Let it cool slightly.",
+        "Whisk the eggs, yolks, and sugar until pale and fluffy. Fold in the chocolate mixture.",
+        "Gently fold in the flour until fully combined.",
+        "Pour the mixture into the prepared ramekins and bake for 10-12 minutes.",
+        "Let the cakes cool for 1 minute, then carefully invert onto plates. Serve immediately."
+      ]
     }
   ]
 }

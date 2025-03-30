@@ -12,7 +12,8 @@
   "buttons": [
     { "id": "link-sign-up", "label": "Sign Up", "href": "sign_up/sign_up.html" },
     { "id": "link-sign-in", "label": "Sign In", "href": "sign_in/sign_in.html" },
-    { "id": "link-profile", "label": "Your profile", "href": "profile/profile.html" }
+    { "id": "link-profile", "label": "Your profile", "href": "profile/profile.html" },
+    { "id": "link-log-out", "label": "Log Out", "href": "index/index.html"}
   ],
   "mobileLinks": [
     {

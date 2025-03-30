@@ -21,7 +21,7 @@ function signIn() {
         console.log("Inicio de sesión exitoso");
         // Redirige según sea necesario
         localStorage.setItem("currentUser", JSON.stringify(email));
-        window.location.href = "../profile/profile.html";
+        window.location.href = "../index/index.html";
     } else {
         alert("Email o contraseña incorrectos.");
         console.log("Credenciales incorrectas");
@@ -73,7 +73,7 @@ function signUp() {
 
     alert("¡Registro exitoso! Ahora puedes iniciar sesión.");
     localStorage.setItem("currentUser", JSON.stringify(email));
-    window.location.href = "../profile/profile.html"; // Redirige a la página de inicio de sesión
+    window.location.href = "../index/index.html"; // Redirige a la página de inicio de sesión
 }
 
 

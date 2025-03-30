@@ -36,7 +36,6 @@
     width: 100%;
     display: flex;
     z-index: 100;
-    max-width: var(--dl-size-size-maxwidth);
     align-items: center;
     padding: var(--dl-space-space-unit) var(--dl-space-space-threeunits) var(--dl-space-space-oneandhalfunits);
     justify-content: space-between;
