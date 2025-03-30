@@ -1,6 +1,6 @@
 function setUserToNull() {
-    const users = JSON.stringify(null)
-    localStorage.setItem("users", users);
+    const currentUser = JSON.stringify(null)
+    localStorage.setItem("currentUser", currentUser);
 }
 
 // Llamar al método
