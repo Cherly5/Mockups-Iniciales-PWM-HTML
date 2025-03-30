@@ -1,5 +1,5 @@
 // Asegúrate de que las clases asignadas a los elementos tienen estilos CSS coherentes para la alineación del texto
-
+let max_index = 0
 async function loadRecipePage(jsonFilePath, recipeIndex) {
     try {
         const response = await fetch(jsonFilePath);
@@ -9,6 +9,7 @@ async function loadRecipePage(jsonFilePath, recipeIndex) {
 
         const data = await response.json();
 
+        max_index = data.recipes.length;
         // Validar que la receta existe
         const recipe = data.recipes[recipeIndex];
         if (!recipe) {
@@ -57,4 +58,18 @@ async function loadRecipePage(jsonFilePath, recipeIndex) {
     }
 }
 
-loadRecipePage("components/my_recipe_description/my_recipe_description.json", 0);
+loadRecipePage("components/my_recipe_description/my_recipe_description.json", 0).then(() => {
+    const prev = document.querySelector(".swiper-button-prev")
+    const next = document.querySelector(".swiper-button-next")
+    let index = 0
+    prev.addEventListener("click", () => {
+        index = index === 0 ? max_index - 1 : index - 1
+        loadRecipePage("components/my_recipe_description/my_recipe_description.json", index);
+    })
+    next.addEventListener("click", () => {
+        index = index === max_index - 1 ? 0 : index + 1
+        loadRecipePage("components/my_recipe_description/my_recipe_description.json", index);
+    })
+
+})
+
