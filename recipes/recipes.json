@@ -1,34 +1,168 @@
 {
   "welcome": {
-    "image": "",
-    "title": "",
-    "text": ""
+    "image": {
+      "alt": "Image of a variety of delicious dishes",
+      "src": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MDM5Mnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+    },
+    "title": "Discover Delicious Recipes",
+    "text": "Explore a wide range of mouth-watering recipes from around the\n                world. From quick and easy meals to gourmet dishes, we have\n                something for every taste bud."
   },
   "ingredients": {
-    "title":"",
-    "text": "",
+    "title":"Features",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.\n        Suspendisse varius enim in eros elementum tristique. Duis\n        cursus, mi quis viverra ornare, eros dolor interdum nulla.",
     "cards": [
       {
-        "image": "",
-        "name": "",
-        "description": ""
+        "image": {
+          "alt": "Image depicting a variety of dishes from different cultures",
+          "src": "https://images.unsplash.com/photo-1636773572958-4601d8d0b222?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjUwMHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+        },
+        "name": "Wide Variety of Recipes",
+        "description": "Explore a diverse range of delicious recipes from different cuisines."
+      },
+      {
+        "image": {
+          "alt": "Image showing a cooking process with clear instructions",
+          "src": "https://images.unsplash.com/photo-1510693206972-df098062cb71?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjUwMXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+        },
+        "name": "Step-by-Step Instructions",
+        "description": "Follow easy-to-understand recipes with detailed step-by-step instructions."
+      },
+      {
+        "image": {
+          "alt": "Image showcasing different ingredient options for substitution",
+          "src": "https://images.unsplash.com/photo-1570112686245-ec7e043ad444?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjUwMXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+        },
+        "name": "Ingredient Substitution Advice",
+        "description": "Find helpful tips on substituting ingredients to suit\n                            dietary preferences or restrictions."
+      },
+      {
+        "image": {
+          "alt": "Image featuring fresh and high-quality food ingredients",
+          "src": "https://images.unsplash.com/photo-1505576399279-565b52d4ac71?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjUwMXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+        },
+        "name": "Quality Ingredients",
+        "description": "Learn about the importance of using quality ingredients in\n                            your cooking."
+      },
+      {
+        "image": {
+          "alt": "Image showing positive reviews and feedback from users",
+          "src": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjQ5OXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+        },
+        "name": "Testimonials from Users",
+        "description": "Read testimonials from satisfied users who have tried and\n                            loved our recipes."
+      },
+      {
+        "image": {
+          "alt": "Image illustrating current food trends and popular dishes",
+          "src": "https://images.unsplash.com/photo-1510403926823-881457de56ba?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjUwMXw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+        },
+        "name": "Food Trends Articles",
+        "description": "Stay updated on the latest food trends and culinary\n                            innovations."
+      },
+      {
+        "image": {
+          "alt": "Image representing partnership and collaboration in the culinary world",
+          "src": "https://images.unsplash.com/photo-1585162344582-ac008beec6e2?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjUwMHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+        },
+        "name": "Collaboration Opportunities",
+        "description": "Connect with us for inquiries or collaborations in the food\n                            industry."
+      },
+      {
+        "image": {
+          "alt": "Image showing a chef sharing cooking tips and advice",
+          "src": "https://images.unsplash.com/photo-1636648980523-ab269ed42385?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjUwMHw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+        },
+        "name": "Expert Cooking Tips",
+        "description": "Discover expert tips and tricks to enhance your cooking\n                            skills and techniques."
       }
+
     ]
   },
   "gallery": {
-    "long": [],
-    "short": []
+    "title": "Explore Our Culinary Creations",
+    "text": "Browse through a selection of our visually stunning and\n                  delectable dishes. From appetizers to desserts, we have\n                  something for every palate.",
+    "first": [
+      {
+        "alt": "Delicious Pasta Carbonara",
+        "src": "https://images.unsplash.com/photo-1715204800869-5c24da515b33?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MDM5M3w&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+      },
+      {
+        "alt": "Mouth-watering Chocolate Lava Cake",
+        "src": "https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MDM5M3w&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+      }
+    ],
+    "middle": [
+      {
+        "alt": "Fresh and Colorful Greek Salad",
+        "src": "https://images.unsplash.com/photo-1528649247577-4f5a475af4d0?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MDM5Mnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+      },
+      {
+        "alt": "Sizzling BBQ Ribs",
+        "src": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MDM5Mnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+      },
+      {
+        "alt": "Decadent Tiramisu Dessert",
+        "src": "https://images.unsplash.com/photo-1625144093498-bf62fca631c5?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MDM5Mnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+      }
+    ],
+    "last": [
+      {
+        "alt": "Spicy Chicken Tacos",
+        "src": "https://images.unsplash.com/photo-1547417080-bdc11256756f?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MDM5M3w&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+      },
+      {
+        "alt": "Refreshing Watermelon Salad",
+        "src": "https://images.unsplash.com/photo-1681168714705-532b9764e4f9?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MDM5Mnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+      }
+    ]
   },
   "testimonials": {
-    "title": "",
+    "title": "Learn Popular Recipes",
     "slides": [
       {
-        "image": "",
-        "valuation": "",
-        "description": "",
-        "author": "",
-        "job": "",
-        "brand-logo": ""
+        "image": {
+          "alt": "Sarah Smith Image",
+          "src": "https://images.unsplash.com/photo-1603388290000-b9f8934776f4?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjY0Nnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+        },
+        "valuation": 5,
+        "description": "FoodChampsHQ has revolutionized the way I cook at\n                home. The recipes are easy to follow and always turn\n                out delicious!",
+        "author": "Sarah Smith",
+        "job": "Food Blogger",
+        "logo": {
+          "alt": "Food Blogger Association",
+          "src": "https://presentation-website-assets.teleporthq.io/logos/logo.png",
+          "class": "recipes-testimonials-logo"
+        }
+      },
+      {
+        "image": {
+          "alt": "John Doe Image",
+          "src": "https://images.unsplash.com/photo-1506716681432-e29d83314064?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjY0Nnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+        },
+        "valuation": 5,
+        "description": "I love trying out new recipes from FoodChampsHQ. The\n                ingredient substitution advice has been a game-changer\n                for me!",
+        "author": "John Doe",
+        "job": "Home Cook",
+        "logo": {
+          "alt": "Home Cooking Club",
+          "src": "https://presentation-website-assets.teleporthq.io/logos/logo.png",
+          "class": "recipes-testimonials-logo"
+        }
+      },
+      {
+        "image": {
+          "alt": "Emily Johnson Image",
+          "src": "https://images.unsplash.com/photo-1541614101331-1a5a3a194e92?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w5MTMyMXwwfDF8cmFuZG9tfHx8fHx8fHx8MTczODY5MjY0Nnw&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1080"
+        },
+        "valuation": 5,
+        "description": "FoodChampsHQ has made cooking fun and exciting for me.\n                I highly recommend this website to anyone looking to\n                explore new cuisines!",
+        "author": "Emily Johnson",
+        "job": "Food Enthusiast",
+        "logo": {
+          "alt": "Food Enthusiasts Society",
+          "src": "https://presentation-website-assets.teleporthq.io/logos/logo.png",
+          "class": "recipes-testimonials-logo"
+        }
       }
     ]
   }
