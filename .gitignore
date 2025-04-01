@@ -1,0 +1,62 @@
+.idea/*
+!.idea/inspectionProfiles/
+
+
+# Visual Studio Code
+angular/.vscode/*
+!angular/.vscode/settings.json
+!angular/.vscode/tasks.json
+!angular/.vscode/launch.json
+!angular/.vscode/extensions.json
+angular/.history/*
+
+# Compiled output
+/dist
+angular/dist
+/tmp
+angular/tmp
+/out-tsc
+angular/out-tsc
+/bazel-out
+angular/bazel-out
+
+# Node
+angular/node_modules/
+angular/npm-debug.log
+angular/yarn-error.log
+
+# IDEs and editors
+.project
+angular/.project
+.classpath
+angular/.classpath
+.c9/
+angular/.c9/
+*.launch
+angular/*.launch
+.settings/
+angular/.settings/
+*.sublime-workspace
+angular/*.sublime-workspace
+
+# Miscellaneous
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+angular/.angular/cache
+angular.sass-cache/
+angular/connect.lock
+angular/coverage
+angular/libpeerconnection.log
+angulartestem.log
+angular/typings
+
+# System files
+.DS_Store
+Thumbs.db
+angular/.DS_Store
+angular/Thumbs.db

@@ -6,3 +6,10 @@
 # Datasource local storage ignored files
 /dataSources/
 /dataSources.local.xml
+../angular/dist
+../angular/tmp
+../angular/out-tsc
+../angular/bazel-out
+../angular/node_modules
+../angular/npm-debug.log
+../angular/yarn-error.log
