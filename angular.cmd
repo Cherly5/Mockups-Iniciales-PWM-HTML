@@ -26,7 +26,14 @@ webstorm --version
 #luego de instalar el plugin
 npm install -g @angular/cli
 
-ng --help # comprobar que esta instalado
+ # comprobar que esta instalado
 ng --version # 19.2.5
 ng new angular
 # no, CSS, yes, no
+
+
+cd angular
+npm install -g firebase-tools@13.35.1
+npm install firebase @angular/fire --legacy-peer-deps
+
+
