@@ -1,0 +1,55 @@
+{
+  "recipes": [
+    {
+      "name": "Spaghetti Carbonara",
+      "description": "A classic Italian pasta dish made with simple ingredients.",
+      "ingredients": [
+        { "title": "Pasta", "details": "200g of spaghetti." },
+        { "title": "Eggs", "details": "2 large eggs for creaminess." },
+        { "title": "Pecorino Cheese", "details": "50g of grated cheese." },
+        { "title": "Pancetta", "details": "100g, cut into small cubes." }
+      ],
+      "steps": [
+        "Cook the spaghetti in salted boiling water until al dente.",
+        "Crisp the pancetta in a frying pan over medium heat.",
+        "Whisk the eggs and cheese together in a bowl.",
+        "Combine the drained pasta with pancetta and mix with the egg mixture.",
+        "Serve with freshly ground pepper and extra cheese."
+      ]
+    },
+    {
+      "name": "Vegan Buddha Bowl",
+      "description": "A nutritious and colorful bowl packed with wholesome ingredients.",
+      "ingredients": [
+        { "title": "Quinoa", "details": "1 cup, cooked according to package instructions." },
+        { "title": "Chickpeas", "details": "1 cup of canned or cooked chickpeas." },
+        { "title": "Sweet Potato", "details": "1 large potato, roasted." }
+      ],
+      "steps": [
+        "Cook the quinoa according to package instructions.",
+        "Roast the sweet potato until tender.",
+        "Assemble the quinoa, chickpeas, and sweet potato in a bowl.",
+        "Top with your favorite dressing and serve."
+      ]
+    },
+    {
+      "name": "Chocolate Lava Cake",
+      "description": "A rich and decadent dessert with a molten chocolate center.",
+      "ingredients": [
+        { "title": "Dark Chocolate", "details": "100g, melted." },
+        { "title": "Unsalted Butter", "details": "50g, melted with the chocolate." },
+        { "title": "Eggs", "details": "2 whole eggs and 2 yolks, whisked." },
+        { "title": "Sugar", "details": "50g granulated sugar." },
+        { "title": "Flour", "details": "30g all-purpose flour." }
+      ],
+      "steps": [
+        "Preheat the oven to 200°C (400°F). Grease ramekins with butter and dust with cocoa powder.",
+        "Melt the chocolate and butter together until smooth. Let it cool slightly.",
+        "Whisk the eggs, yolks, and sugar until pale and fluffy. Fold in the chocolate mixture.",
+        "Gently fold in the flour until fully combined.",
+        "Pour the mixture into the prepared ramekins and bake for 10-12 minutes.",
+        "Let the cakes cool for 1 minute, then carefully invert onto plates. Serve immediately."
+      ]
+    }
+  ]
+}

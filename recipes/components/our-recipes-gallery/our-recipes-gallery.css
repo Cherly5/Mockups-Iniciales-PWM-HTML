@@ -69,15 +69,11 @@
 }
 
 .our-recipes-gallery-image-large {
-  width: 100%;
   flex-grow: 1;
-  object-fit: cover;
 }
 
 .our-recipes-gallery-image-short {
-  width: 100%;
   flex-grow: 0.5;
-  object-fit: cover;
 }
 
  

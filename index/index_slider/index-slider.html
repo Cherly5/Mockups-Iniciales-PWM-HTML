@@ -1,0 +1,44 @@
+<div>
+
+  <div class="section-padding">
+    <div id="index-slider-title">
+      <span class="heading-1"></span>
+    </div>
+    <div class="section-max-width slider-container">
+      <div
+              data-thq="slider"
+              data-loop="true"
+              data-autoplay="true"
+              data-navigation="true"
+              data-pagination="true"
+              class="swiper"
+      >
+        <div data-thq="slider-wrapper" class="swiper-wrapper">
+          <template id="index-slider-slide">
+            <div data-thq="slider-slide" class="swiper-slide">
+              <img alt="" src="" class="img-ratio-1-1"/>
+            </div>
+          </template>
+        </div>
+        <div data-thq="slider-pagination"
+             class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal">
+          <!-- active first -->
+          <!-- <div data-thq="slider-pagination-bullet"
+               class="swiper-pagination-bullet swiper-pagination-bullet-active"></div>
+               -->
+
+          <!-- then the rest-->
+          <template id="slider-pagination-bullet">
+            <div data-thq="slider-pagination-bullet" class="swiper-pagination-bullet"></div>
+          </template>
+        </div>
+        <div data-thq="slider-button-prev" class="swiper-button-prev"></div>
+        <div data-thq="slider-button-next" class="swiper-button-next"></div>
+      </div>
+    </div>
+  </div>
+  <a rel="json" href="/index/index_slider/index-slider.json" style="display: none !important;"></a>
+</div>
+<link rel="stylesheet" href="/stylesheets/swiper.css">
+<link rel="stylesheet" href="/index/index_slider/index-slider.css">
+<script src="/index/index_slider/index-slider.js"></script>

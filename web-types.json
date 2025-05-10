@@ -1,0 +1,19 @@
+{
+  "framework": "web",
+  "name": "PWM-recipes",
+  "version": "1.0.0",
+  "contributions": {
+    "html": {
+      "attributes": [
+        {
+          "name": "xlu-include-file",
+          "description": "A custom attribute that accepts file paths.",
+          "value": {
+            "type": "file-path",
+            "kind": "plain"
+          }
+        }
+      ]
+    }
+  }
+}
